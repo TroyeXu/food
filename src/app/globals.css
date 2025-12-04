@@ -1,26 +1,669 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* 🧧 過年喜氣配色 - 優化版 */
+  --background: #fff9f5;
+  --foreground: #2d1810;
+  --primary: #d42027; /* 大紅色 */
+  --primary-hover: #b81c22;
+  --secondary: #6b4423; /* 深褐色 */
+  --accent: #f5c542; /* 亮金色 */
+  --success: #2e7d32;
+  --warning: #ed6c02;
+  --danger: #d32f2f;
+  --card-bg: #ffffff;
+  --border: #f5ddd0;
+  --muted: #8b7355;
+
+  /* 過年特殊色 */
+  --gold: #f5c542;
+  --gold-light: #fff8e1;
+  --gold-dark: #c9a227;
+  --red-light: #ffebee;
+  --red-dark: #b71c1c;
+  --lantern-orange: #ff7043;
+  --lucky-pink: #ff80ab;
 }
+
+/* 單一過年主題 - 不需要暗色模式 */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-danger: var(--danger);
+  --color-card-bg: var(--card-bg);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* 固定使用過年主題，不跟隨系統偏好 */
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* 🎊 過年背景 - 漂浮裝飾容器 */
+.festive-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* 🏮 燈籠動畫 */
+@keyframes lantern-sway {
+  0%, 100% { transform: rotate(-5deg) translateY(0); }
+  50% { transform: rotate(5deg) translateY(-5px); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes falling {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0.3; }
+}
+
+@keyframes rising {
+  0% { transform: translateY(100vh) scale(0); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-100vh) scale(1); opacity: 0; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(245, 197, 66, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(245, 197, 66, 0.8), 0 0 30px rgba(212, 32, 39, 0.4); }
+}
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* 燈籠裝飾 */
+.lantern {
+  display: inline-block;
+  animation: lantern-sway 4s ease-in-out infinite;
+  transform-origin: top center;
+  filter: drop-shadow(0 5px 15px rgba(255, 100, 50, 0.5));
+}
+
+/* 漂浮動畫 */
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+/* 閃耀動畫 */
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.twinkle {
+  animation: twinkle 1.5s ease-in-out infinite;
+}
+
+/* 脈衝發光 */
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* 柔和彈跳 */
+.bounce-soft {
+  animation: bounce-soft 2s ease-in-out infinite;
+}
+
+/* 金色閃爍文字效果 */
+.gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--gold) 0%,
+    #fff7cc 25%,
+    var(--gold) 50%,
+    #fff7cc 75%,
+    var(--gold) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* 過年紅色漸層按鈕 */
+.btn-festive {
+  background: linear-gradient(135deg, #d42027 0%, #ff6b6b 50%, #d42027 100%);
+  background-size: 200% 200%;
+  color: white;
+  border: 2px solid var(--gold);
+  box-shadow: 0 4px 15px rgba(212, 32, 39, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-festive:hover {
+  background-position: 100% 100%;
+  box-shadow: 0 6px 20px rgba(212, 32, 39, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* 金色邊框卡片 */
+.card-festive {
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  box-shadow: 0 2px 10px rgba(212, 32, 39, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-festive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(245, 197, 66, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.card-festive:hover::before {
+  left: 100%;
+}
+
+.card-festive:hover {
+  border-color: var(--gold);
+  box-shadow: 0 8px 25px rgba(245, 197, 66, 0.2), 0 4px 10px rgba(212, 32, 39, 0.1);
+  transform: translateY(-4px);
+}
+
+/* 春聯風格標題 */
+.spring-couplet {
+  background: linear-gradient(180deg, #d42027 0%, #8b0000 100%);
+  color: var(--gold);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+}
+
+/* 紅包風格標籤 */
+.tag-hongbao {
+  background: linear-gradient(135deg, #d42027 0%, #ff5252 100%);
+  color: var(--gold);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(212, 32, 39, 0.3);
+}
+
+/* 金幣價格標籤 */
+.price-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, #ffed4a 50%, var(--gold) 100%);
+  color: #5d4037;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(245, 197, 66, 0.4);
+}
+
+/* Scrollbar styling - 過年風格 */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--red-light);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #d42027 0%, #b71c1c 100%);
+  border-radius: 5px;
+  border: 2px solid var(--red-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #ff5252 0%, #d42027 100%);
+}
+
+/* Custom utility classes */
+.shadow-card {
+  box-shadow: 0 2px 8px rgba(212, 32, 39, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 8px 25px rgba(245, 197, 66, 0.15), 0 4px 10px rgba(212, 32, 39, 0.08);
+}
+
+/* 過年裝飾性分隔線 */
+.divider-festive {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), var(--primary), var(--gold), transparent);
+}
+
+/* 選中項目的過年風格 */
+.selected-festive {
+  background: linear-gradient(135deg, #d42027 0%, #ff5252 100%);
+  color: white;
+  border: 2px solid var(--gold) !important;
+  box-shadow: 0 0 15px rgba(245, 197, 66, 0.4);
+}
+
+/* 輸入框過年風格 */
+input:focus, select:focus, textarea:focus {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 0 3px rgba(245, 197, 66, 0.3) !important;
+}
+
+/* 載入動畫 - 過年旋轉 */
+@keyframes spin-festive {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-festive {
+  border: 3px solid var(--red-light);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin-festive 1s linear infinite;
+}
+
+/* 煙火效果 */
+@keyframes firework {
+  0% { transform: scale(0); opacity: 1; }
+  50% { opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+.firework {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gold);
+  animation: firework 1.5s ease-out infinite;
+}
+
+/* 漂浮金幣/元寶 */
+.floating-coin {
+  position: absolute;
+  font-size: 1.5rem;
+  animation: rising 15s linear infinite;
+  opacity: 0.6;
+}
+
+.floating-coin:nth-child(1) { left: 5%; animation-delay: 0s; }
+.floating-coin:nth-child(2) { left: 15%; animation-delay: 3s; }
+.floating-coin:nth-child(3) { left: 25%; animation-delay: 6s; }
+.floating-coin:nth-child(4) { left: 75%; animation-delay: 2s; }
+.floating-coin:nth-child(5) { left: 85%; animation-delay: 5s; }
+.floating-coin:nth-child(6) { left: 95%; animation-delay: 8s; }
+
+/* 飄落的櫻花/紅包 */
+.falling-item {
+  position: absolute;
+  animation: falling 20s linear infinite;
+  opacity: 0.4;
+}
+
+/* 區塊標題裝飾 */
+.section-title {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  margin-left: 0.5rem;
+}
+
+/* 祥雲裝飾邊框 */
+.cloud-border {
+  position: relative;
+}
+
+.cloud-border::before,
+.cloud-border::after {
+  content: "☁";
+  position: absolute;
+  font-size: 1.5rem;
+  opacity: 0.15;
+  color: var(--gold);
+}
+
+.cloud-border::before {
+  top: -10px;
+  left: -10px;
+}
+
+.cloud-border::after {
+  bottom: -10px;
+  right: -10px;
+}
+
+/* 福字角落裝飾 */
+.fu-corner::before {
+  content: "福";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 0.8rem;
+  color: var(--gold);
+  opacity: 0.3;
+  transform: rotate(15deg);
+}
+
+/* 特價標籤 */
+.sale-tag {
+  position: relative;
+  background: linear-gradient(135deg, #ff1744 0%, #d50000 100%);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(213, 0, 0, 0.3);
+}
+
+.sale-tag::before {
+  content: "🔥";
+  margin-right: 2px;
+}
+
+/* 熱門標籤 */
+.hot-tag {
+  background: linear-gradient(135deg, #ff6d00 0%, #ff9100 100%);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 4px;
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* 新品標籤 */
+.new-tag {
+  background: linear-gradient(135deg, var(--gold) 0%, #ffeb3b 100%);
+  color: #5d4037;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* 工具列按鈕共用樣式 */
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid rgba(255, 215, 0, 0.5);
+  color: #5d4037;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-btn:hover {
+  background: white;
+  border-color: var(--gold);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toolbar-btn-active {
+  background: linear-gradient(135deg, var(--gold) 0%, #ffeb3b 100%);
+  color: #5d4037;
+  border-color: var(--gold);
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(245, 197, 66, 0.5);
+}
+
+/* 數字徽章 */
+.badge-gold {
+  background: var(--gold);
+  color: #5d4037;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.125rem 0.375rem;
+  border-radius: 999px;
+  min-width: 1.25rem;
+  text-align: center;
+}
+
+.badge-white {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.125rem 0.375rem;
+  border-radius: 999px;
+  min-width: 1.25rem;
+  text-align: center;
+}
+
+/* 橫幅閃爍效果 */
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* 卡片選中時金色光芒邊框 */
+.card-selected-glow {
+  box-shadow:
+    0 0 0 2px var(--gold),
+    0 0 15px rgba(245, 197, 66, 0.5),
+    0 0 30px rgba(245, 197, 66, 0.3);
+}
+
+/* 春節卡片樣式增強 */
+.card-cny {
+  position: relative;
+  background: linear-gradient(135deg, #fff9f5 0%, #fff5f0 100%);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.card-cny::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--gold), var(--primary), var(--gold));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-cny:hover::before {
+  opacity: 1;
+}
+
+/* 紅包飄落動畫 */
+@keyframes hongbao-fall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.hongbao-falling {
+  animation: hongbao-fall 10s linear infinite;
+}
+
+/* 金幣跳動效果 */
+@keyframes coin-bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.1);
+  }
+}
+
+.coin-bounce {
+  animation: coin-bounce 1s ease-in-out infinite;
+}
+
+/* 祝福文字漸變 */
+.blessing-text {
+  background: linear-gradient(90deg, var(--gold), #fff7cc, var(--gold));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 2s linear infinite;
+}
+
+/* 卡片角落蛇年標記 */
+.snake-year-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--gold) 0%, #ffeb3b 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(245, 197, 66, 0.5);
+  z-index: 10;
+}
+
+/* 🐴 馬年特別動畫 */
+@keyframes horse-gallop {
+  0%, 100% {
+    transform: translateY(-50%) translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-55%) translateX(3px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-45%) translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-55%) translateX(-3px) rotate(5deg);
+  }
+}
+
+.horse-gallop {
+  animation: horse-gallop 1s ease-in-out infinite;
+}
+
+/* ✨ 飄落星星動畫 */
+@keyframes falling-sparkle {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(50px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.falling-sparkle {
+  animation: falling-sparkle 3s ease-in-out infinite;
+}
+
+/* 🎆 煙火爆炸效果 */
+@keyframes firework-burst {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.firework-burst {
+  animation: firework-burst 2s ease-out infinite;
+}
+
+/* 隱藏捲軸但保留滾動功能 */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
 }
