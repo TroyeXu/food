@@ -159,8 +159,10 @@ export interface FilterState {
   servingsMax?: number;
   shippingType?: ShippingType | 'all';
   shippingTypes?: ShippingType[]; // 多選
+  shippingFee?: 'free' | 'all'; // 運費篩選
   storageType?: StorageType | 'all';
   storageTypes?: StorageType[]; // 多選
+  maxDistance?: number; // 最大距離（公里）
   targetDate?: string; // 用餐日期
   mustBeBeforeDeadline?: boolean;
   canSelectDate?: boolean;
