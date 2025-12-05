@@ -158,7 +158,9 @@ export interface FilterState {
   servingsMin?: number;
   servingsMax?: number;
   shippingType?: ShippingType | 'all';
+  shippingTypes?: ShippingType[]; // 多選
   storageType?: StorageType | 'all';
+  storageTypes?: StorageType[]; // 多選
   targetDate?: string; // 用餐日期
   mustBeBeforeDeadline?: boolean;
   canSelectDate?: boolean;
