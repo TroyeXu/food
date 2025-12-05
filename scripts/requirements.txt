@@ -1,0 +1,5 @@
+# Crawl4AI - AI-powered web crawler
+crawl4ai>=0.3.0
+
+# ScrapeGraphAI - LLM-based web scraping
+scrapegraphai>=1.0.0

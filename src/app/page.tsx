@@ -33,15 +33,16 @@ export default function Home() {
     init();
   }, [loadPlans]);
 
-  useEffect(() => {
-    const checkAndSeed = async () => {
-      if (isInitialized && plans.length === 0) {
-        await seedMockData(addPlan);
-        await loadPlans();
-      }
-    };
-    checkAndSeed();
-  }, [isInitialized, plans.length, addPlan, loadPlans]);
+  // 不再自動填充假資料
+  // useEffect(() => {
+  //   const checkAndSeed = async () => {
+  //     if (isInitialized && plans.length === 0) {
+  //       await seedMockData(addPlan);
+  //       await loadPlans();
+  //     }
+  //   };
+  //   checkAndSeed();
+  // }, [isInitialized, plans.length, addPlan, loadPlans]);
 
   // 確保消費者只看到已上架的
   useEffect(() => {

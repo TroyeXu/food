@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Search, Heart, X, Clock, GitCompare, Sparkles, LayoutGrid, List } from 'lucide-react';
+import { Search, Heart, X, Clock, GitCompare, LayoutGrid, List } from 'lucide-react';
 import { usePlanStore } from '@/stores/planStore';
 
 interface ConsumerToolbarProps {
@@ -149,11 +149,6 @@ export default function ConsumerToolbar({ onOpenCompare }: ConsumerToolbarProps)
               </span>
             )}
           </button>
-
-          {/* 過年裝飾標記 */}
-          <div className="hidden md:flex items-center gap-1 text-[var(--gold)] sparkle">
-            <Sparkles className="w-4 h-4" />
-          </div>
 
           {/* View mode toggle - 卡片 */}
           <button

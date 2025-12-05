@@ -17,22 +17,25 @@ import {
   CheckSquare,
   Square,
   X,
+  Rocket,
 } from 'lucide-react';
 import { usePlanStore } from '@/stores/planStore';
 import { seedMockData } from '@/lib/mockData';
 import EditPanel from '@/components/EditPanel';
 import ImportModal from '@/components/ImportModal';
+import BatchImportModal from '@/components/BatchImportModal';
 import type { Plan } from '@/types';
 import { REGION_LABELS } from '@/types';
 
 export default function AdminPage() {
-  const { plans, loadPlans, addPlan, deletePlan, batchUpdateStatus, batchDelete } = usePlanStore();
+  const { plans, loadPlans, addPlan, deletePlan, batchUpdateStatus, batchDelete, clearAllData } = usePlanStore();
 
   const [searchQuery, setSearchQuery] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'published' | 'draft' | 'needs_review'>('all');
   const [editingPlan, setEditingPlan] = useState<Plan | null>(null);
   const [isNewPlan, setIsNewPlan] = useState(false);
   const [importMode, setImportMode] = useState<'url' | 'image' | null>(null);
+  const [showBatchImport, setShowBatchImport] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
   const [selectedIds, setSelectedIds] = useState<string[]>([]);
   const [isBatchProcessing, setIsBatchProcessing] = useState(false);
@@ -45,15 +48,16 @@ export default function AdminPage() {
     init();
   }, [loadPlans]);
 
-  useEffect(() => {
-    const checkAndSeed = async () => {
-      if (isInitialized && plans.length === 0) {
-        await seedMockData(addPlan);
-        await loadPlans();
-      }
-    };
-    checkAndSeed();
-  }, [isInitialized, plans.length, addPlan, loadPlans]);
+  // 不再自動填充假資料，讓使用者可以從空白開始匯入真實資料
+  // useEffect(() => {
+  //   const checkAndSeed = async () => {
+  //     if (isInitialized && plans.length === 0) {
+  //       await seedMockData(addPlan);
+  //       await loadPlans();
+  //     }
+  //   };
+  //   checkAndSeed();
+  // }, [isInitialized, plans.length, addPlan, loadPlans]);
 
   const filteredPlans = plans.filter((plan) => {
     const matchesSearch =
@@ -129,8 +133,52 @@ export default function AdminPage() {
     }
   };
 
-  const handleImport = async (data: { url?: string; files?: FileList }) => {
-    if (data.url) {
+  const handleClearAllData = async () => {
+    if (!window.confirm('確定要清除所有資料嗎？此操作無法復原！')) return;
+    if (!window.confirm('再次確認：這會刪除所有年菜方案資料，確定要繼續嗎？')) return;
+    try {
+      await clearAllData();
+      setSelectedIds([]);
+    } catch (error) {
+      console.error('清除資料失敗:', error);
+    }
+  };
+
+  const handleImport = async (data: { url?: string; files?: FileList; parsedPlan?: Partial<Plan> }) => {
+    // 如果有 AI 解析的資料，使用解析結果
+    if (data.parsedPlan) {
+      const newPlanId = await addPlan({
+        vendorId: '',
+        vendorName: data.parsedPlan.vendorName || '（待填寫）',
+        title: data.parsedPlan.title || '匯入的方案',
+        description: data.parsedPlan.description,
+        sourceUrl: data.parsedPlan.sourceUrl || data.url,
+        priceOriginal: data.parsedPlan.priceOriginal,
+        priceDiscount: data.parsedPlan.priceDiscount || 0,
+        shippingFee: data.parsedPlan.shippingFee,
+        shippingType: data.parsedPlan.shippingType || 'delivery',
+        storageType: data.parsedPlan.storageType || 'frozen',
+        servingsMin: data.parsedPlan.servingsMin || 4,
+        servingsMax: data.parsedPlan.servingsMax,
+        orderDeadline: data.parsedPlan.orderDeadline,
+        fulfillStart: data.parsedPlan.fulfillStart,
+        fulfillEnd: data.parsedPlan.fulfillEnd,
+        region: data.parsedPlan.region,
+        city: data.parsedPlan.city,
+        address: data.parsedPlan.address,
+        tags: data.parsedPlan.tags || [],
+        dishes: data.parsedPlan.dishes || [],
+        imageUrl: data.parsedPlan.imageUrl,
+        status: 'needs_review',
+      });
+      await loadPlans();
+      const updatedPlans = usePlanStore.getState().plans;
+      const newPlan = updatedPlans.find(p => p.id === newPlanId);
+      if (newPlan) {
+        setEditingPlan(newPlan);
+      }
+    } else if (data.url) {
+      // 舊的純 URL 匯入（備用）
       const newPlanId = await addPlan({
         vendorId: '',
         vendorName: '（待填寫）',
@@ -138,14 +186,15 @@ export default function AdminPage() {
         sourceUrl: data.url,
         priceDiscount: 0,
         shippingType: 'delivery',
-        storageType: 'unknown',
+        storageType: 'frozen',
         servingsMin: 4,
         tags: [],
         dishes: [],
         status: 'needs_review',
       });
       await loadPlans();
-      const newPlan = plans.find(p => p.id === newPlanId);
+      const updatedPlans = usePlanStore.getState().plans;
+      const newPlan = updatedPlans.find(p => p.id === newPlanId);
       if (newPlan) {
         setEditingPlan(newPlan);
       }
@@ -156,17 +205,43 @@ export default function AdminPage() {
         title: '從圖片匯入的方案',
         priceDiscount: 0,
         shippingType: 'delivery',
-        storageType: 'unknown',
+        storageType: 'frozen',
         servingsMin: 4,
         tags: [],
         dishes: [],
         status: 'needs_review',
       });
       await loadPlans();
-      const newPlan = plans.find(p => p.id === newPlanId);
+      const updatedPlans = usePlanStore.getState().plans;
+      const newPlan = updatedPlans.find(p => p.id === newPlanId);
       if (newPlan) {
         setEditingPlan(newPlan);
       }
+    }
+  };
+
+  const handleExportToPublic = async () => {
+    const data = plans.filter(p => p.status === 'published');
+    if (data.length === 0) {
+      alert('沒有已上架的資料可匯出');
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/export-data', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        alert(`成功匯出 ${data.length} 筆資料！\n\n現在可以 commit 並 push 到 GitHub 部署。`);
+      } else {
+        alert('匯出失敗：' + result.error);
+      }
+    } catch (error) {
+      alert('匯出失敗：' + String(error));
     }
   };
 
@@ -269,6 +344,13 @@ export default function AdminPage() {
               貼網址
             </button>
             <button
+              onClick={() => setShowBatchImport(true)}
+              className="flex items-center gap-2 px-3 py-2 text-sm border border-[var(--primary)] text-[var(--primary)] rounded-lg hover:bg-[var(--primary)]/10 transition-colors"
+            >
+              <Upload className="w-4 h-4" />
+              批次匯入
+            </button>
+            <button
               onClick={() => setImportMode('image')}
               className="flex items-center gap-2 px-3 py-2 text-sm border border-[var(--border)] rounded-lg hover:bg-[var(--background)] transition-colors"
             >
@@ -340,6 +422,13 @@ export default function AdminPage() {
           </div>
           <div className="flex items-center gap-2 ml-auto">
             <button
+              onClick={handleClearAllData}
+              className="flex items-center gap-2 px-3 py-2 text-sm border border-red-300 text-red-600 rounded-lg hover:bg-red-50 transition-colors"
+            >
+              <Trash2 className="w-4 h-4" />
+              清除所有資料
+            </button>
+            <button
               onClick={() => handleExport('csv')}
               className="flex items-center gap-2 px-3 py-2 text-sm border border-[var(--border)] rounded-lg hover:bg-[var(--background)] transition-colors"
             >
@@ -352,6 +441,13 @@ export default function AdminPage() {
             >
               <Download className="w-4 h-4" />
               匯出 JSON
+            </button>
+            <button
+              onClick={handleExportToPublic}
+              className="flex items-center gap-2 px-3 py-2 text-sm bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:opacity-90 transition-colors"
+            >
+              <Rocket className="w-4 h-4" />
+              發布到網站
             </button>
           </div>
         </div>
@@ -539,6 +635,13 @@ export default function AdminPage() {
         isOpen={importMode !== null}
         mode={importMode || 'url'}
         onClose={() => setImportMode(null)}
+        onImport={handleImport}
+      />
+
+      {/* Batch Import Modal */}
+      <BatchImportModal
+        isOpen={showBatchImport}
+        onClose={() => setShowBatchImport(false)}
         onImport={handleImport}
       />
     </div>

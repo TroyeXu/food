@@ -33,20 +33,40 @@ const EMPTY_PLAN: Omit<Plan, 'id' | 'createdAt' | 'updatedAt'> = {
   status: 'draft',
 };
 
-const TAG_SUGGESTIONS = [
-  '台式',
-  '粵式',
-  '日式',
-  '西式',
-  '海鮮',
-  '蔬食',
-  '素食',
-  '佛跳牆',
-  '烏魚子',
-  '含酒',
-  '不含酒',
-  '無甲殼類',
-  '有機',
+// 標籤分類 - 與前台 FilterSidebar 同步
+const TAG_CATEGORIES = [
+  {
+    label: '菜系風格',
+    tags: ['台式', '粵式', '日式', '西式', '川式', '上海', '客家', '潮州'],
+  },
+  {
+    label: '主打食材',
+    tags: ['海鮮', '雞肉', '豬肉', '牛肉', '鴨肉', '羊肉', '蔬食', '素食'],
+  },
+  {
+    label: '經典年菜',
+    tags: ['佛跳牆', '烏魚子', '東坡肉', '紅燒蹄膀', '燒雞', '烤鴨', '鮑魚', '龍蝦', '帝王蟹', '干貝', '魚翅'],
+  },
+  {
+    label: '年節必備',
+    tags: ['年糕', '蘿蔔糕', '發糕', '長年菜', '魚料理', '湯品', '甜點'],
+  },
+  {
+    label: '套餐類型',
+    tags: ['圍爐套餐', '年菜禮盒', '單點組合', '精緻小家庭', '澎湃大家庭'],
+  },
+  {
+    label: '品牌特色',
+    tags: ['飯店級', '米其林', '老字號', '手工製作', '有機', '無添加', '低油低鈉'],
+  },
+  {
+    label: '其他',
+    tags: ['含酒', '不含酒', '可加熱即食', '需料理'],
+  },
+  {
+    label: '飲食限制',
+    tags: ['不吃牛', '不吃豬', '不吃海鮮', '無甲殼類', '無堅果', '清真'],
+  },
 ];
 
 export default function EditPanel({ plan, onClose, isNew = false }: EditPanelProps) {
@@ -422,7 +442,6 @@ export default function EditPanel({ plan, onClose, isNew = false }: EditPanelPro
                 >
                   <option value="delivery">宅配</option>
                   <option value="pickup">自取</option>
-                  <option value="both">宅配/自取皆可</option>
                 </select>
               </div>
               <div>
@@ -438,9 +457,7 @@ export default function EditPanel({ plan, onClose, isNew = false }: EditPanelPro
                   className="w-full px-3 py-2 rounded-lg border border-[var(--border)] bg-[var(--background)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
                 >
                   <option value="frozen">冷凍</option>
-                  <option value="chilled">冷藏</option>
                   <option value="room_temp">常溫</option>
-                  <option value="unknown">未知</option>
                 </select>
               </div>
             </div>
@@ -511,20 +528,30 @@ export default function EditPanel({ plan, onClose, isNew = false }: EditPanelPro
           {/* Tags */}
           <section>
             <h3 className="text-sm font-medium mb-3 text-[var(--secondary)]">標籤</h3>
-            <div className="flex flex-wrap gap-2 mb-3">
-              {TAG_SUGGESTIONS.map((tag) => (
-                <button
-                  key={tag}
-                  type="button"
-                  onClick={() => handleToggleTag(tag)}
-                  className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
-                    formData.tags.includes(tag)
-                      ? 'bg-[var(--primary)] text-white'
-                      : 'bg-[var(--background)] border border-[var(--border)] hover:border-[var(--primary)]'
-                  }`}
-                >
-                  {tag}
-                </button>
+            <div className="space-y-4 mb-4">
+              {TAG_CATEGORIES.map((category, categoryIndex) => (
+                <div key={category.label}>
+                  <p className="text-xs text-[var(--muted)] mb-2 font-medium">{category.label}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {category.tags.map((tag) => (
+                      <button
+                        key={tag}
+                        type="button"
+                        onClick={() => handleToggleTag(tag)}
+                        className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
+                          formData.tags.includes(tag)
+                            ? 'bg-[var(--primary)] text-white'
+                            : 'bg-[var(--background)] border border-[var(--border)] hover:border-[var(--primary)]'
+                        }`}
+                      >
+                        {tag}
+                      </button>
+                    ))}
+                  </div>
+                  {categoryIndex < TAG_CATEGORIES.length - 1 && (
+                    <div className="mt-3 border-b border-[var(--border)]" />
+                  )}
+                </div>
               ))}
             </div>
             <div className="flex gap-2">

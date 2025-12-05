@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import type { Plan, FilterState, SortOption, ViewMode, EditMode, UserLocation } from '@/types';
-import { db, getAllPlans, addPlan, updatePlan, deletePlan } from '@/lib/db';
+import { db, getAllPlans, addPlan, updatePlan, deletePlan, clearAllData } from '@/lib/db';
 
 // 計算兩點之間的距離（公里）- Haversine formula
 function calculateDistance(lat1: number, lng1: number, lat2: number, lng2: number): number {
@@ -94,6 +94,7 @@ interface PlanStore {
   // 批量操作
   batchUpdateStatus: (ids: string[], status: Plan['status']) => Promise<void>;
   batchDelete: (ids: string[]) => Promise<void>;
+  clearAllData: () => Promise<void>;
 
   // 計算屬性方法
   getFilteredPlans: () => Plan[];
@@ -137,7 +138,29 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
   loadPlans: async () => {
     set({ isLoading: true, error: null });
     try {
-      const plans = await getAllPlans();
+      // 判斷是否為正式環境（GitHub Pages）
+      const isProduction = typeof window !== 'undefined' &&
+        (window.location.hostname.includes('github.io') ||
+         process.env.NODE_ENV === 'production');
+
+      let plans: Plan[];
+
+      if (isProduction) {
+        // 正式環境：從靜態 JSON 讀取
+        const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+        const res = await fetch(`${basePath}/data/plans.json`);
+        const data = await res.json();
+        // 轉換日期字串為 Date 物件
+        plans = data.map((p: Plan & { createdAt: string; updatedAt: string }) => ({
+          ...p,
+          createdAt: new Date(p.createdAt),
+          updatedAt: new Date(p.updatedAt),
+        }));
+      } else {
+        // 開發環境：從 IndexedDB 讀取
+        plans = await getAllPlans();
+      }
+
       set({ plans, isLoading: false });
     } catch (error) {
       set({ error: (error as Error).message, isLoading: false });
@@ -256,6 +279,22 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
         comparisonIds: state.comparisonIds.filter((cid) => !ids.includes(cid)),
         favoriteIds: state.favoriteIds.filter((fid) => !ids.includes(fid)),
       }));
+    } catch (error) {
+      set({ error: (error as Error).message });
+      throw error;
+    }
+  },
+
+  clearAllData: async () => {
+    try {
+      await clearAllData();
+      set({
+        plans: [],
+        comparisonIds: [],
+        favoriteIds: [],
+        historyIds: [],
+        notes: {},
+      });
     } catch (error) {
       set({ error: (error as Error).message });
       throw error;

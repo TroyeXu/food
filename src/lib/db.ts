@@ -83,6 +83,22 @@ export async function getExtractionsByPlanId(planId: string): Promise<Extraction
   return db.extractions.where('planId').equals(planId).toArray();
 }
 
+// 清除所有資料
+export async function clearAllData(): Promise<void> {
+  await db.transaction('rw', [db.plans, db.vendors, db.extractions], async () => {
+    await db.plans.clear();
+    await db.vendors.clear();
+    await db.extractions.clear();
+  });
+
+  // 同時清除 localStorage 中的相關資料
+  if (typeof window !== 'undefined') {
+    localStorage.removeItem('favoriteIds');
+    localStorage.removeItem('historyIds');
+    localStorage.removeItem('planNotes');
+  }
+}
+
 // 計數函數
 export async function countPlansByStatus(): Promise<{ draft: number; published: number; needs_review: number }> {
   const [draft, published, needs_review] = await Promise.all([
