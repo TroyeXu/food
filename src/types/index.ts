@@ -202,7 +202,7 @@ export interface UserLocation {
 }
 
 // 視圖模式
-export type ViewMode = 'list' | 'map' | 'split';
+export type ViewMode = 'list' | 'grid' | 'map' | 'split';
 export type EditMode = 'browse' | 'edit';
 
 // 比對盤狀態
