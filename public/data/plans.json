@@ -47,7 +47,7 @@
     "storageTypes": [
       "room_temp"
     ],
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "plan-2026-002",
@@ -94,7 +94,7 @@
     "storageTypes": [
       "room_temp"
     ],
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "plan-2026-003",
@@ -139,8 +139,9 @@
       "frozen",
       "chilled"
     ],
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7szsf3rc2yj_1",
@@ -152,7 +153,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1998,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -191,7 +192,8 @@
       "frozen"
     ],
     "duplicateOf": "bab0d401fe0fb5ac9aa861b09702f27d",
-    "duplicateReason": "資料完整度: 7 > 5"
+    "duplicateReason": "資料完整度: 7 > 5",
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7sm98ncd92j_2",
@@ -203,7 +205,7 @@
     "images": [],
     "priceOriginal": 10100,
     "priceDiscount": 8888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -256,7 +258,7 @@
     "images": [],
     "priceOriginal": 14800,
     "priceDiscount": 9988,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -309,7 +311,7 @@
     "images": [],
     "priceOriginal": 5555,
     "priceDiscount": 4888,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -349,7 +351,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 100
   },
   {
     "id": "plan_mixrwo7sfu8i4mnqy_5",
@@ -361,7 +364,7 @@
     "images": [],
     "priceOriginal": 11136,
     "priceDiscount": 9800,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -403,7 +406,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 100
   },
   {
     "id": "plan_mixrwo7svkebr6fal_6",
@@ -415,7 +419,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 6888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -470,7 +474,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 6888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -523,7 +527,7 @@
     "images": [],
     "priceOriginal": 10000,
     "priceDiscount": 8800,
-    "shippingFee": 0,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -561,7 +565,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 200
   },
   {
     "id": "plan_mixrwo7sj5ur582dq_9",
@@ -573,7 +578,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 7800,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -611,7 +616,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 200
   },
   {
     "id": "plan_mixrwo7s29f0adtsj_10",
@@ -623,7 +629,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2199,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -664,7 +670,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7somnjw2qj7_11",
@@ -676,7 +683,7 @@
     "images": [],
     "priceOriginal": 8888,
     "priceDiscount": 6666,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -719,7 +726,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7sxohslm2wr_12",
@@ -731,7 +739,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1999,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -773,7 +781,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7s6d7y574fp_13",
@@ -785,7 +794,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 650,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -821,7 +830,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7sm1b29ulxz_14",
@@ -833,7 +843,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 350,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -868,7 +878,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7sed16j33mh_15",
@@ -880,7 +891,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2888,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -917,7 +928,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7ss75mpztwr_16",
@@ -929,7 +941,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 4888,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -968,7 +980,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 100
   },
   {
     "id": "plan_mixrwo7se5zntq17u_17",
@@ -980,7 +993,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3888,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1025,7 +1038,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7s7vdfc3evx_18",
@@ -1037,7 +1051,7 @@
     "images": [],
     "priceOriginal": 14545,
     "priceDiscount": 12800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1236,7 +1250,7 @@
     "images": [],
     "priceOriginal": 7727,
     "priceDiscount": 6800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1288,7 +1302,7 @@
     "images": [],
     "priceOriginal": 5113,
     "priceDiscount": 4499,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1333,7 +1347,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7siqwdomu61_24",
@@ -1345,7 +1360,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2988,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1381,7 +1396,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7shrtxmemwu_25",
@@ -1393,7 +1409,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 5880,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1433,7 +1449,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7su3mx0myrq_26",
@@ -1445,7 +1462,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3888,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1487,7 +1504,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7s6uqaklke7_27",
@@ -1499,7 +1517,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2499,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1542,7 +1560,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7smu425qjf4_28",
@@ -1554,7 +1573,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1999,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1592,7 +1611,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixrwo7s288mm0769_29",
@@ -1604,7 +1624,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3680,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1652,7 +1672,7 @@
     "images": [],
     "priceOriginal": 10000,
     "priceDiscount": 8800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1702,7 +1722,7 @@
     "images": [],
     "priceOriginal": 5100,
     "priceDiscount": 4488,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -1738,7 +1758,8 @@
     "storageTypes": [
       "frozen",
       "room_temp"
-    ]
+    ],
+    "maxDistance": 100
   },
   {
     "id": "plan_mixrwo7serbdya4ef_32",
@@ -1750,7 +1771,7 @@
     "images": [],
     "priceOriginal": 10888,
     "priceDiscount": 9799,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1798,7 +1819,7 @@
     "images": [],
     "priceOriginal": 11236,
     "priceDiscount": 9888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1851,7 +1872,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 8800,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1888,7 +1909,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 150
   },
   {
     "id": "plan_mixrwo7snaga3u5hk_35",
@@ -1900,7 +1922,7 @@
     "images": [],
     "priceOriginal": 14545,
     "priceDiscount": 12800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -1954,7 +1976,7 @@
     "images": [],
     "priceOriginal": 10000,
     "priceDiscount": 8800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "chilled",
     "pickupPoints": [],
@@ -2007,7 +2029,7 @@
     "images": [],
     "priceOriginal": 8282,
     "priceDiscount": 7288,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2056,7 +2078,7 @@
     "images": [],
     "priceOriginal": 11136,
     "priceDiscount": 9800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2106,7 +2128,7 @@
     "images": [],
     "priceOriginal": 7680,
     "priceDiscount": 6912,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2157,7 +2179,7 @@
     "images": [],
     "priceOriginal": 14545,
     "priceDiscount": 12800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2207,7 +2229,7 @@
     "images": [],
     "priceOriginal": 12188,
     "priceDiscount": 9588,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2254,7 +2276,7 @@
     "images": [],
     "priceOriginal": 7827,
     "priceDiscount": 6888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2302,7 +2324,7 @@
     "images": [],
     "priceOriginal": 10000,
     "priceDiscount": 8800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2350,7 +2372,7 @@
     "images": [],
     "priceOriginal": 9800,
     "priceDiscount": 8800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2398,7 +2420,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2988,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2435,7 +2457,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekq315usv9c_3",
@@ -2447,7 +2470,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2899,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2485,7 +2508,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekg2box2l9b_4",
@@ -2542,7 +2566,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekyislocxcn_5",
@@ -2554,7 +2579,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 880,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2591,7 +2616,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekcll4e7ixj_6",
@@ -2603,7 +2629,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3680,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2640,7 +2666,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekyu3deysa1_7",
@@ -2652,7 +2679,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2988,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2689,7 +2716,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ek8eemybccm_8",
@@ -2701,7 +2729,7 @@
     "images": [],
     "priceOriginal": 7827,
     "priceDiscount": 6888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -2749,7 +2777,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 5888,
-    "shippingFee": 0,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2787,7 +2815,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ek67hn44uzh_10",
@@ -2799,7 +2828,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 4888,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2836,7 +2865,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 100
   },
   {
     "id": "plan_mixsl8ek0a5m26oje_11",
@@ -2848,7 +2878,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 8800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "chilled",
     "pickupPoints": [],
@@ -2898,7 +2928,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2688,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2939,7 +2969,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekb0x9p4du0_13",
@@ -2951,7 +2982,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 4288,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -2990,7 +3021,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 100
   },
   {
     "id": "plan_mixsl8ek02coxu169_14",
@@ -3002,7 +3034,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 6800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -3054,7 +3086,7 @@
     "images": [],
     "priceOriginal": 8864,
     "priceDiscount": 7800,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3094,7 +3126,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 200
   },
   {
     "id": "plan_mixsl8eky54zc5qcd_16",
@@ -3106,7 +3139,7 @@
     "images": [],
     "priceOriginal": 10100,
     "priceDiscount": 8888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -3157,7 +3190,7 @@
     "images": [],
     "priceOriginal": 11136,
     "priceDiscount": 9800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -3205,7 +3238,7 @@
     "images": [],
     "priceOriginal": 7727,
     "priceDiscount": 6800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "chilled",
     "pickupPoints": [],
@@ -3257,7 +3290,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3999,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3297,7 +3330,8 @@
     ],
     "storageTypes": [
       "chilled"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekr1mid9q15_20",
@@ -3309,7 +3343,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1288,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3346,7 +3380,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsl8ekbpyudm5sh_21",
@@ -3358,7 +3393,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2480,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3398,7 +3433,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf5a0gnsenz_0",
@@ -3410,7 +3446,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 5888,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3454,7 +3490,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfqu6chpswm_1",
@@ -3466,7 +3503,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3288,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3510,7 +3547,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfwpsxipfhu_2",
@@ -3522,7 +3560,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 4999,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3571,7 +3609,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf49phqhpr6_3",
@@ -3583,7 +3622,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2388,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3624,7 +3663,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfha8rgkjfd_4",
@@ -3636,7 +3676,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3988,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3680,7 +3720,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf1v99lexnc_5",
@@ -3692,7 +3733,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 4680,
-    "shippingFee": 0,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -3735,7 +3776,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfwmkd7y7ei_6",
@@ -3747,7 +3789,7 @@
     "images": [],
     "priceOriginal": 8864,
     "priceDiscount": 7800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -3798,7 +3840,7 @@
     "images": [],
     "priceOriginal": 7827,
     "priceDiscount": 6888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "chilled",
     "pickupPoints": [],
@@ -4056,7 +4098,7 @@
     "images": [],
     "priceOriginal": 6691,
     "priceDiscount": 5888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4105,7 +4147,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2999,
-    "shippingFee": 0,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -4142,7 +4184,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfebmwomfsq_14",
@@ -4257,7 +4300,7 @@
     "images": [],
     "priceOriginal": 14545,
     "priceDiscount": 12800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4306,7 +4349,7 @@
     "images": [],
     "priceOriginal": 18800,
     "priceDiscount": 16800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4358,7 +4401,7 @@
     "images": [],
     "priceOriginal": 11136,
     "priceDiscount": 9800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4407,7 +4450,7 @@
     "images": [],
     "priceOriginal": 10000,
     "priceDiscount": 8800,
-    "shippingFee": 0,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -4445,7 +4488,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 200
   },
   {
     "id": "plan_mixsowcft534qi8tp_20",
@@ -4457,7 +4501,7 @@
     "images": [],
     "priceOriginal": 7827,
     "priceDiscount": 6888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4505,7 +4549,7 @@
     "images": [],
     "priceOriginal": 6691,
     "priceDiscount": 5888,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4553,7 +4597,7 @@
     "images": [],
     "priceOriginal": 8864,
     "priceDiscount": 7800,
-    "shippingFee": null,
+    "shippingFee": 0,
     "shippingType": "pickup",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4602,7 +4646,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3888,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -4639,7 +4683,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf0gp62ztbi_24",
@@ -4651,7 +4696,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1680,
-    "shippingFee": null,
+    "shippingFee": 50,
     "shippingType": "both",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -4691,7 +4736,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfbtl75qjkz_25",
@@ -4703,7 +4749,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2480,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -4743,7 +4789,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfv6zm7oxp1_26",
@@ -4755,7 +4802,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 888,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -4792,7 +4839,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf83nrv6f3f_27",
@@ -4804,7 +4852,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 599,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4841,7 +4889,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfdt0s7rpjc_28",
@@ -4853,7 +4902,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1280,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "chilled",
     "pickupPoints": [],
@@ -4892,7 +4941,8 @@
     ],
     "storageTypes": [
       "chilled"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf7mt76nw8q_29",
@@ -4904,7 +4954,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 399,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4943,7 +4993,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcfbtrgy7o1e_30",
@@ -4955,7 +5006,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 680,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -4993,7 +5044,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf61a023559_31",
@@ -5005,7 +5057,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 880,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -5044,7 +5096,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf140n6u3cw_32",
@@ -5056,7 +5109,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 580,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "room_temp",
     "pickupPoints": [],
@@ -5094,7 +5147,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf3v2jq57oy_33",
@@ -5106,7 +5160,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1280,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -5143,7 +5197,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "plan_mixsowcf26eotrjg9_34",
@@ -5155,7 +5210,7 @@
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 680,
-    "shippingFee": null,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "pickupPoints": [],
@@ -5193,7 +5248,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 999
   },
   {
     "id": "5077f310f7b7a29ffa1e80cdb035e297",
@@ -5245,7 +5301,7 @@
     "status": "published",
     "createdAt": "2025-12-09T00:53:46.284Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 19091
   },
   {
@@ -5298,7 +5354,7 @@
     "status": "published",
     "createdAt": "2025-12-09T00:53:46.285Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 11136
   },
   {
@@ -5341,7 +5397,7 @@
     "status": "published",
     "createdAt": "2025-12-09T00:53:46.285Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 4318
   },
   {
@@ -5383,7 +5439,7 @@
     "status": "published",
     "createdAt": "2025-12-09T00:53:46.285Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 1591
   },
   {
@@ -5427,7 +5483,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.757Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 7827
   },
   {
@@ -5472,7 +5528,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 11633
   },
   {
@@ -5517,7 +5573,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "f324d0871d8c3be3d901604ca7d60fad",
@@ -5545,7 +5601,11 @@
       "粵式",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -5555,7 +5615,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "baf8e556f43bcd7ab4ed73030ce5d985",
@@ -5580,7 +5640,11 @@
       "飯店級",
       "台式"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -5590,7 +5654,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 14545,
     "orderDeadline": "2026-01-25"
   },
@@ -5617,7 +5681,11 @@
       "飯店級",
       "台式"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -5627,7 +5695,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 21364,
     "orderDeadline": "2026-01-25"
   },
@@ -5658,7 +5726,11 @@
       "宅配",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5668,8 +5740,9 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "e35ac43a5fc058dfcf8416d003d39807",
@@ -5699,7 +5772,11 @@
       "早鳥優惠",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5737,7 +5814,11 @@
       "小家庭",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5747,7 +5828,7 @@
     "status": "duplicate",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-10T03:06:49.694Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "duplicateOf": "plan_mixsl8eklspjh40xr_1",
     "duplicateReason": "菜名數量: 1 > 0"
   },
@@ -5777,7 +5858,11 @@
       "台式",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "other",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5787,7 +5872,7 @@
     "status": "duplicate",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-10T03:06:49.694Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "duplicateOf": "plan-2026-002",
     "duplicateReason": "菜名數量: 6 > 0"
   },
@@ -5816,7 +5901,11 @@
       "現煮",
       "高CP值"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5826,7 +5915,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.047Z",
     "updatedAt": "2025-12-09T05:58:53.047Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 6818,
     "orderDeadline": "2026-01-25"
   },
@@ -5855,7 +5944,11 @@
       "除夕圍爐",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5865,7 +5958,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 24705
   },
   {
@@ -5894,7 +5987,11 @@
       "早鳥優惠",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5904,7 +6001,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 35293
   },
   {
@@ -5932,7 +6029,11 @@
       "飯店級",
       "除夕圍爐"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5942,7 +6043,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 31818,
     "orderDeadline": "2026-01-25"
   },
@@ -5972,7 +6073,11 @@
       "除夕圍爐",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -5982,7 +6087,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 40909,
     "orderDeadline": "2026-01-25"
   },
@@ -6016,7 +6121,11 @@
       "限量",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "素炒米粉",
+      "素肉捲",
+      "香菇雞湯"
+    ],
     "vendorType": "vegetarian",
     "productType": "single_dish",
     "cuisineStyle": "vegetarian",
@@ -6026,7 +6135,9 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "priceOriginal": 5506
+    "priceOriginal": 5506,
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "ea44ba37eb74bc61a8b74a50204cee65",
@@ -6074,8 +6185,9 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "9524d71911792f42ba7c06260bac0fc4",
@@ -6104,7 +6216,11 @@
       "辦桌",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "other",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -6114,7 +6230,7 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "d9af24b3236f0a80bc0c380ca698a091",
@@ -6161,7 +6277,9 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "orderDeadline": "2026-01-20",
     "duplicateOf": "9719daf0ee38da063f712f3a0a1bd2ab",
-    "duplicateReason": "菜名數量: 7 > 6"
+    "duplicateReason": "菜名數量: 7 > 6",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "6605cd6b89bfaf0d01b6d601a6dd8834",
@@ -6209,7 +6327,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.750Z",
     "updatedAt": "2025-12-09T06:00:13.751Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "8fbac2f0931bc3c101b01d96542f5946",
@@ -6259,7 +6377,8 @@
     "createdAt": "2025-12-09T06:00:13.751Z",
     "updatedAt": "2025-12-09T06:00:13.751Z",
     "priceOriginal": 14545,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 200
   },
   {
     "id": "d53ac061237b5ad4bee26c4436578f67",
@@ -6285,7 +6404,11 @@
       "高CP值",
       "宅配"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -6297,7 +6420,9 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "orderDeadline": "2026-01-20",
     "duplicateOf": "c2416ee1e41c54f81425b9ad2d637872",
-    "duplicateReason": "資料完整度: 6 > 4.5"
+    "duplicateReason": "資料完整度: 6 > 4.5",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "815b2263cf6507fe4bc01d6188d086b8",
@@ -6324,7 +6449,11 @@
       "小家庭",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -6334,8 +6463,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.751Z",
     "updatedAt": "2025-12-09T06:00:13.751Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "4af494975f49af655d321bcfd21b778a",
@@ -6362,7 +6492,11 @@
       "平價",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -6372,8 +6506,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.751Z",
     "updatedAt": "2025-12-09T06:00:13.751Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "d4466459e2fd8fdbb9068a91e526cd1f",
@@ -6400,7 +6535,11 @@
       "五星",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -6410,9 +6549,10 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.751Z",
     "updatedAt": "2025-12-09T06:00:13.751Z",
-    "shippingFee": 0,
+    "shippingFee": 100,
     "priceOriginal": 7727,
-    "orderDeadline": "2026-01-20"
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "e38992f15c78d8bc48fe8a7f2b8c3cd5",
@@ -6451,7 +6591,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.751Z",
     "updatedAt": "2025-12-09T06:00:13.751Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 10000,
     "orderDeadline": "2026-01-25"
   },
@@ -6479,7 +6619,11 @@
       "日式",
       "御節料理"
     ],
-    "dishes": [],
+    "dishes": [
+      "壽司拼盤",
+      "握壽司",
+      "生魚片"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "japanese",
@@ -6489,7 +6633,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.752Z",
     "updatedAt": "2025-12-09T06:00:13.752Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 6591,
     "orderDeadline": "2026-01-25"
   },
@@ -6517,7 +6661,11 @@
       "火鍋",
       "海陸"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -6527,7 +6675,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.752Z",
     "updatedAt": "2025-12-09T06:00:13.752Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 5455,
     "orderDeadline": "2026-01-25"
   },
@@ -6556,7 +6704,11 @@
       "冷凍年菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -6566,8 +6718,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.752Z",
     "updatedAt": "2025-12-09T06:00:13.752Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "5394148c117a1fa3417053a8cf312e9f",
@@ -6605,7 +6758,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.752Z",
     "updatedAt": "2025-12-09T06:00:13.752Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 1909,
     "orderDeadline": "2026-01-25"
   },
@@ -6646,7 +6799,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.752Z",
     "updatedAt": "2025-12-09T06:00:13.752Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 1455,
     "orderDeadline": "2026-01-25"
   },
@@ -6769,8 +6922,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 50,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "2c71067c32db4d2295a3f601e0b272c3",
@@ -6809,8 +6963,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 50,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "4a60cb70b3c87c652c5f28f31ed0e468",
@@ -6849,8 +7004,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 50,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "10c99a295ebaeed46cb185e88fe945fc",
@@ -6877,7 +7033,11 @@
       "冷凍年菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7002,7 +7162,11 @@
       "限量",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7012,7 +7176,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "7948944f6c6f048e2fbc4f643bb90542",
@@ -7053,7 +7217,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 14545,
     "orderDeadline": "2026-01-25"
   },
@@ -7083,7 +7247,11 @@
       "台菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7133,7 +7301,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 12273,
     "orderDeadline": "2026-01-25"
   },
@@ -7173,7 +7341,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 10000,
     "orderDeadline": "2026-01-25"
   },
@@ -7200,7 +7368,11 @@
       "飯店級",
       "小家庭"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7210,7 +7382,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "priceOriginal": 5455,
     "orderDeadline": "2026-01-25"
   },
@@ -7251,7 +7423,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:02:37.025Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "orderDeadline": "2026-01-25"
   },
   {
@@ -7291,7 +7463,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "orderDeadline": "2026-01-25"
   },
   {
@@ -7332,7 +7504,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "orderDeadline": "2026-01-25"
   },
   {
@@ -7372,7 +7544,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "orderDeadline": "2026-01-25"
   },
   {
@@ -7412,7 +7584,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "orderDeadline": "2026-01-25"
   },
   {
@@ -7461,7 +7633,8 @@
     "status": "published",
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "d29a3e31dbfb0669b8a40c86726b44ed",
@@ -7507,8 +7680,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.105Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "0d13d44945305e9c73c16b2dd8e43b1a",
@@ -7548,8 +7722,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "590a0e95183c8e398cd48e65ba02bb5e",
@@ -7589,8 +7764,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "3102209ccecd3f75a753bd760323ccd0",
@@ -7635,8 +7811,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "b6c7aec3fc9d8c8437ac8997efc020da",
@@ -7682,8 +7859,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "92923c49fd32b603810badc5c8f2f8de",
@@ -7711,7 +7889,11 @@
       "冷凍年菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7721,8 +7903,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "5ffd8b1235af8a926e423fdee9a38e95",
@@ -7750,7 +7933,11 @@
       "冷凍年菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7760,8 +7947,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": 0,
-    "orderDeadline": "2026-01-20"
+    "shippingFee": 100,
+    "orderDeadline": "2026-01-20",
+    "maxDistance": 999
   },
   {
     "id": "05f75f07c44429df69eb88013adb0156",
@@ -7799,7 +7987,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "orderDeadline": "2026-01-25"
   },
   {
@@ -7826,7 +8014,11 @@
       "火鍋",
       "王品"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "brand",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7836,7 +8028,7 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "shippingFee": null,
+    "shippingFee": 0,
     "orderDeadline": "2026-01-25"
   },
   {
@@ -7864,7 +8056,11 @@
       "北方菜",
       "冷凍年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7874,7 +8070,9 @@
     "status": "published",
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
-    "orderDeadline": "2026-01-20"
+    "orderDeadline": "2026-01-20",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "c8810bdb56265499ab5cc12a7868575f",
@@ -7904,7 +8102,11 @@
       "早鳥優惠",
       "除夕圍爐"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -7914,7 +8116,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.509Z",
     "updatedAt": "2025-12-09T07:30:44.510Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "16703bda62d457066f384a62969abde4",
@@ -7943,7 +8145,11 @@
       "早鳥優惠",
       "小家庭"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -7953,7 +8159,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.510Z",
     "updatedAt": "2025-12-09T07:30:44.510Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "42002f747cfcc8b62dcd442d0717bcd3",
@@ -7982,7 +8188,11 @@
       "早鳥優惠",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -7992,7 +8202,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "11a3e5d82ac0122cf106672ccb3af961",
@@ -8034,7 +8244,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "8776fe6004606606267a3363e490517d",
@@ -8083,7 +8293,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "4091984f3a8e9099f1809aa00dab4bb6",
@@ -8132,7 +8342,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "327d86860f29affbb2a2200714aca5b0",
@@ -8160,7 +8371,11 @@
       "冷凍年菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -8170,7 +8385,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "3369d55533595ad2fff18b9aa47ebbc9",
@@ -8199,7 +8415,11 @@
       "小家庭",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -8209,7 +8429,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "d1e284737ed264690defefe96b7e18e6",
@@ -8238,7 +8459,11 @@
       "早鳥優惠",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -8248,7 +8473,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "62904c542ef68f5af5e5a491f5fb9cef",
@@ -8276,7 +8501,11 @@
       "台式",
       "常溫年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -8286,7 +8515,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "4cce4e942a6eb58f3f31a809833af2e8",
@@ -8314,7 +8543,11 @@
       "粵式",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -8324,7 +8557,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "d13c5751bb48e9c2a8e808f2744ed225",
@@ -8354,7 +8587,11 @@
       "早鳥優惠",
       "老字號"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -8364,7 +8601,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "723af7d9bc2f860e5ebd5dce75ad0de7",
@@ -8392,7 +8629,11 @@
       "老字號",
       "多國料理"
     ],
-    "dishes": [],
+    "dishes": [
+      "素炒米粉",
+      "素肉捲",
+      "香菇雞湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "vegetarian",
@@ -8402,7 +8643,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "c5973867595cfbc1f6c6cda3eda5b707",
@@ -8446,7 +8687,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "a98381f135b99ef993e9efe8db446b0d",
@@ -8498,7 +8739,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "0c5be3ec439a3f265229938fc46291e2",
@@ -8541,7 +8783,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "986dfa5ff67d6f5a4eaa9055194e7eb1",
@@ -8585,7 +8828,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "112ba042793d2c43876c51997da5b751",
@@ -8617,7 +8861,11 @@
       "除夕圍爐",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -8627,7 +8875,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": 0
+    "shippingFee": 50,
+    "maxDistance": 200
   },
   {
     "id": "8ac8210863ecc60ba9a2a061b8941385",
@@ -8658,7 +8907,11 @@
       "除夕圍爐",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -8668,7 +8921,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": 0
+    "shippingFee": 50,
+    "maxDistance": 200
   },
   {
     "id": "7387c7f447826be8c4a251ab448347cc",
@@ -8711,7 +8965,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "1dba7349d22578b23ce8cf483d080047",
@@ -8755,7 +9009,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "0ab81060c0cbe324164ab3a01676a3e4",
@@ -8784,7 +9038,11 @@
       "台式",
       "冷凍年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -8793,7 +9051,9 @@
     "sourceUrl": "https://www.windsorinlife.com/pages/裕元花園酒店-2025年菜",
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
-    "updatedAt": "2025-12-09T07:33:58.587Z"
+    "updatedAt": "2025-12-09T07:33:58.587Z",
+    "shippingFee": 50,
+    "maxDistance": 150
   },
   {
     "id": "6d3d1aa8011f6468a2587657dceaf5e1",
@@ -8821,7 +9081,11 @@
       "粵式",
       "老字號"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -8831,7 +9095,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "14825c4336bce30a89acec713ec45378",
@@ -8859,7 +9123,11 @@
       "粵式",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -8869,7 +9137,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "2fdc74fe59a11a3beb037a460e8fcd12",
@@ -8898,7 +9166,11 @@
       "粵式",
       "冷凍年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -8908,7 +9180,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "ba417893ce898c436b164baec571830b",
@@ -8936,7 +9208,11 @@
       "粵式",
       "老字號"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "cantonese",
@@ -8946,7 +9222,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "e78066ef745ae882eedad43a57d2a9d0",
@@ -8974,7 +9250,11 @@
       "粵式",
       "老字號"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "cantonese",
@@ -8984,7 +9264,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "eee6fb8e1fe01fca08b89a671c2d9b59",
@@ -9012,7 +9292,11 @@
       "台式",
       "在地風味"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -9022,7 +9306,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "ba4fe353f8f49ca02d3643491f278f37",
@@ -9050,7 +9334,11 @@
       "粵式",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "cantonese",
@@ -9060,7 +9348,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "ace02afa2aa9c67ff5414689fa760613",
@@ -9090,7 +9378,11 @@
       "小家庭",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -9100,7 +9392,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "1987525721657f9cde131d1700e568ef",
@@ -9129,7 +9422,11 @@
       "冷凍年菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "set_meal",
     "cuisineStyle": "taiwanese",
@@ -9139,7 +9436,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "696e2a4c18981d1cc39fc7d76a50f0fe",
@@ -9169,7 +9467,11 @@
       "烤鴨",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -9179,7 +9481,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "a9422490a0dad83073b8caa903966eeb",
@@ -9210,7 +9513,11 @@
       "台式",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "壽司拼盤",
+      "握壽司",
+      "生魚片"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -9220,7 +9527,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "71f099988eb5548b89e852262369ff44",
@@ -9250,7 +9558,11 @@
       "免運",
       "台式"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -9260,7 +9572,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "f9bb96a023aef52c445b25d9c7cdd7a4",
@@ -9289,7 +9602,11 @@
       "常溫年菜",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -9299,7 +9616,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "f53a23d7eefb7b08a46fa7cdee4b9cf8",
@@ -9328,7 +9645,11 @@
       "頂級",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "western",
@@ -9338,7 +9659,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "2ec38c2dfa490d8a5b0c24474cb9e7c9",
@@ -9384,7 +9705,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "14dfb9f02b419e1f1bd6d13ad00a9d03",
@@ -9413,7 +9735,11 @@
       "頂級",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "cantonese",
@@ -9423,7 +9749,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "8eca69c7198b767d1a1f58e0063bc945",
@@ -9453,7 +9779,11 @@
       "頂級",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "cantonese",
@@ -9463,7 +9793,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "452b205f80cfc529d2ad94cf2ae83eb9",
@@ -9492,7 +9822,11 @@
       "米其林",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "cantonese",
@@ -9502,7 +9836,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "d3cd12fb329aef72246e15b08d018748",
@@ -9531,7 +9865,11 @@
       "冷凍年菜",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "shanghainese",
@@ -9541,7 +9879,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "14cd35ec587c3dc36fd49f133540bdfa",
@@ -9571,7 +9910,11 @@
       "老字號",
       "免運"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "set_meal",
     "cuisineStyle": "shanghainese",
@@ -9581,7 +9924,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "38a2bb8a5f73f6a8195b2a43bce4a77e",
@@ -9609,7 +9953,11 @@
       "上海菜",
       "老字號"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "shanghainese",
@@ -9619,7 +9967,7 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": null
+    "shippingFee": 0
   },
   {
     "id": "56a22cbb9ec9af8b5443678a08611617",
@@ -9664,7 +10012,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.862Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "286316d9aeb0dee0befd1e3324fc2370",
@@ -9710,7 +10059,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "ba3749c2a0f2264af26a328d16a86200",
@@ -9757,7 +10107,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "24d746afc27a9a62a8b9a84d2b4038fe",
@@ -9801,7 +10152,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "80e24f6488957d6e2126a36009f3139f",
@@ -9851,7 +10203,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "cfe782579b00572694eff894a05536d4",
@@ -9895,7 +10248,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "6d20908d46dfb8909f6a2991e3309e9c",
@@ -9923,7 +10277,11 @@
       "粵式",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -9934,7 +10292,8 @@
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "4cce4e942a6eb58f3f31a809833af2e8",
-    "duplicateReason": "較早建立"
+    "duplicateReason": "較早建立",
+    "shippingFee": 0
   },
   {
     "id": "2f7df7e80d18a043e48d18331d4be576",
@@ -9963,7 +10322,11 @@
       "早鳥優惠",
       "老字號"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "set_meal",
     "cuisineStyle": "shanghainese",
@@ -9972,7 +10335,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "3ef014c4e2fc253b6bdbf7309df67b61",
@@ -10002,7 +10366,11 @@
       "早鳥優惠",
       "常溫年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -10011,7 +10379,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "2db28a61aa176368fc3fc52078c80f30",
@@ -10058,7 +10427,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "60ab22cee174dccffb393b5483631140",
@@ -10105,7 +10475,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "7d8455048f81804bf27588432005cc84",
@@ -10133,7 +10504,11 @@
       "粵式",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -10142,7 +10517,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "8dfc08751a674f82572ec6fb6a2a71c4",
@@ -10171,7 +10547,11 @@
       "早鳥優惠",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -10180,7 +10560,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "bff3d311fe87761e91dd7f056d91c45d",
@@ -10225,7 +10606,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "2d26dc1936528f0cf9bf418f34c86a5b",
@@ -10269,7 +10651,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "b1cfaa59744ad69924ee38c8e1588fdd",
@@ -10317,7 +10700,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "fc36a96faa869b5d72e05fa284aa2825",
@@ -10362,7 +10746,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "3aca7492b3726538d740e989262d0b95",
@@ -10407,7 +10792,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "f294a4dea5c729923fa58fd563ea59d6",
@@ -10454,7 +10840,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "cf2f438630efd9ab21a820729c370062",
@@ -10496,7 +10883,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "49bf6a1db46d87ebe3177cbb51ddb94e",
@@ -10540,7 +10928,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "58c0eaf93ef1bdcbd52438c473459bb0",
@@ -10585,7 +10974,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "b79c4e24ef9abf97b5f88e81c0a8bd49",
@@ -10633,7 +11023,9 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "30e4aae10cb0b2c4b1ab81db25761e26",
@@ -10680,7 +11072,9 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "f09452f0877ed638839fd1451ed9ab43",
@@ -10727,7 +11121,9 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "67d7f5d8112da3ef97cce6871df0941f",
@@ -10773,7 +11169,9 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "59682d260aa047a2089f3eb75f26696a",
@@ -10817,7 +11215,9 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "31b2aa9241649e5de088a462a8bd3b2f",
@@ -10860,7 +11260,9 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "dfe252ae7fdbff83391594bec56b7495",
@@ -10900,7 +11302,9 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "def1759131a8cfc72ad8bac5fc28e39f",
@@ -10941,7 +11345,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "63ad02cfeb73088f208127421887cd06",
@@ -10982,7 +11387,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "43e8ef8907097b64d2db87db7210b2e3",
@@ -11028,7 +11434,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "33602da1e07acadbbf9aa53b8ec9571f",
@@ -11070,7 +11477,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "12e04fc56cfa9d830416346a7f3ff0bc",
@@ -11110,7 +11518,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "3c1f17b28e9f8f8d2fa44f8d12f17907",
@@ -11151,7 +11560,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
-    "updatedAt": "2025-12-09T12:24:23.863Z"
+    "updatedAt": "2025-12-09T12:24:23.863Z",
+    "shippingFee": 0
   },
   {
     "id": "611206df7bcdcd6215ed55690c3655d7",
@@ -11197,7 +11607,9 @@
     "sourceUrl": "https://www.grand-hotel.org/TW/official/news-detail.aspx?gh=tp&id=2435",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.036Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "3b28cc4148692850696e9b43832d7556",
@@ -11237,7 +11649,9 @@
     "sourceUrl": "https://www.grand-hotel.org/TW/official/news-detail.aspx?gh=tp&id=2435",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "a6d6ba273e8f634b8ee290d1764308dc",
@@ -11278,7 +11692,9 @@
     "sourceUrl": "https://www.grand-hotel.org/TW/official/news-detail.aspx?gh=tp&id=2435",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "7c899e3b187280ef48d3c998d947627e",
@@ -11320,7 +11736,9 @@
     "sourceUrl": "https://www.grand-hotel.org/TW/official/news-detail.aspx?gh=tp&id=2435",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "25859c00a0c4fe1a7b610bda3d1ac9e7",
@@ -11361,7 +11779,9 @@
     "sourceUrl": "https://www.grand-hotel.org/TW/official/news-detail.aspx?gh=tp&id=2435",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "335626ca583b500bf1e3081178a30104",
@@ -11405,7 +11825,8 @@
     "sourceUrl": "https://www.mountain-n-seahouse.com/zh-hant/dish_set/lny_takeourset/",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "0b101e9345a2fa49d345595a514db09c",
@@ -11446,7 +11867,8 @@
     "sourceUrl": "https://www.dintaifung.tw/年菜系列",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "maxDistance": 999
   },
   {
     "id": "6d54155cbb4f4eb216d5bc4eb102f412",
@@ -11487,7 +11909,8 @@
     "sourceUrl": "https://www.dintaifung.tw/年菜系列",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "maxDistance": 999
   },
   {
     "id": "3815c3fb47ca8c54d26deddf2cce90ec",
@@ -11528,7 +11951,8 @@
     "sourceUrl": "https://www.dintaifung.tw/年菜系列",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "maxDistance": 999
   },
   {
     "id": "51774f1672ac736ba597b9a6937eb29c",
@@ -11569,7 +11993,8 @@
     "sourceUrl": "https://www.dintaifung.tw/年菜系列",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "maxDistance": 999
   },
   {
     "id": "4d301b6f5a88294c123c866fd4794f77",
@@ -11610,7 +12035,8 @@
     "sourceUrl": "https://www.dintaifung.tw/年菜系列",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "maxDistance": 999
   },
   {
     "id": "a9213fc9bae5e8a3b2f5bb8448cf3fa5",
@@ -11650,7 +12076,8 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "815fbaecbb07e3c16bc2839acb34f43c",
@@ -11690,7 +12117,8 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "3780ca815ba6a1c59c3fc7cb93c238eb",
@@ -11730,7 +12158,8 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "88a44c8c9457e73d67a89f7f7829cc21",
@@ -11759,7 +12188,11 @@
       "限量",
       "小家庭"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -11768,7 +12201,8 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "5a39e292a0a1447a85a1dd36a0c94127",
@@ -11811,7 +12245,8 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "dd57f913b05d681833fbebf3dd52d595",
@@ -11851,7 +12286,8 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "b851f928fcde5fb5ccbd5fc20d69a0dd",
@@ -11891,7 +12327,8 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "bab0d401fe0fb5ac9aa861b09702f27d",
@@ -11932,7 +12369,9 @@
     "sourceUrl": "https://www.pxmart.com.tw/about-us/news/全聯新聞/272",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "663aac5758df698deef648cffd1adf9c",
@@ -11972,7 +12411,9 @@
     "sourceUrl": "https://supertaste.tvbs.com.tw/pack/353068",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "931768157a1281977c78265d1574fba2",
@@ -12012,7 +12453,9 @@
     "sourceUrl": "https://www.beauty321.com/post/37923",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "11efce51348231adb4b786a33ce797be",
@@ -12052,7 +12495,8 @@
     "sourceUrl": "https://supertaste.tvbs.com.tw/pack/347050",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "d9815113a32ff1315abab06771556c60",
@@ -12081,7 +12525,11 @@
       "早鳥優惠",
       "大家庭"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12090,7 +12538,8 @@
     "sourceUrl": "https://supertaste.tvbs.com.tw/pack/347050",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 0
   },
   {
     "id": "d32ac2171b1838494f94a641ae94ecd1",
@@ -12131,7 +12580,9 @@
     "sourceUrl": "https://supertaste.tvbs.com.tw/pack/353068",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
-    "updatedAt": "2025-12-09T12:43:58.039Z"
+    "updatedAt": "2025-12-09T12:43:58.039Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "9519ed5f7f7164a10089511f26f7048a",
@@ -12172,7 +12623,9 @@
     "sourceUrl": "https://supertaste.tvbs.com.tw/pack/353068",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.040Z",
-    "updatedAt": "2025-12-09T12:43:58.040Z"
+    "updatedAt": "2025-12-09T12:43:58.040Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "a8edf377ca6a4de78391bf6f1c2d86dc",
@@ -12200,7 +12653,11 @@
       "台式",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "other",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12209,7 +12666,8 @@
     "sourceUrl": "https://www.denwell.com/年菜外帶/",
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.040Z",
-    "updatedAt": "2025-12-09T12:43:58.040Z"
+    "updatedAt": "2025-12-09T12:43:58.040Z",
+    "shippingFee": 0
   },
   {
     "id": "d2be5c76eb9b029f30d8139ad9c663b0",
@@ -12257,7 +12715,8 @@
     "createdAt": "2025-12-09T13:17:10.484Z",
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "plan-2026-001",
-    "duplicateReason": "資料完整度: 16 > 13"
+    "duplicateReason": "資料完整度: 16 > 13",
+    "shippingFee": 0
   },
   {
     "id": "86e0adc978953ae21d0dbc38d9815f04",
@@ -12286,7 +12745,11 @@
       "限量",
       "頂級"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12295,7 +12758,8 @@
     "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "shippingFee": 0
   },
   {
     "id": "18f81a816330ce6e374a89a1da2e1334",
@@ -12336,7 +12800,8 @@
     "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "shippingFee": 0
   },
   {
     "id": "2f5513bdf97e1420ec257fb354557ef0",
@@ -12376,7 +12841,8 @@
     "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "shippingFee": 0
   },
   {
     "id": "734b979c2fbe834dacd4035aadaf98cd",
@@ -12419,7 +12885,8 @@
     "sourceUrl": "https://www.vegetsai.com.tw/newyearmeals.html",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "maxDistance": 999
   },
   {
     "id": "d2d0c6578ba6f14d8aa8b359bea20282",
@@ -12462,7 +12929,8 @@
     "sourceUrl": "https://www.vegetsai.com.tw/newyearmeals.html",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "maxDistance": 999
   },
   {
     "id": "4f6ef4c1d8a8b60a95970929852c3578",
@@ -12505,7 +12973,8 @@
     "sourceUrl": "https://www.vegetsai.com.tw/newyearmeals.html",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "maxDistance": 999
   },
   {
     "id": "23659a2050732d6751c8958e7677536b",
@@ -12548,7 +13017,8 @@
     "sourceUrl": "https://www.vegetsai.com.tw/newyearmeals.html",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "maxDistance": 999
   },
   {
     "id": "bfa370503d76a7ed5b8235220863943e",
@@ -12591,7 +13061,8 @@
     "sourceUrl": "https://www.vegetsai.com.tw/newyearmeals.html",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "maxDistance": 999
   },
   {
     "id": "34490e31188d077573bff2bb66eccee5",
@@ -12633,7 +13104,8 @@
     "sourceUrl": "https://www.vegetsai.com.tw/newyearmeals.html",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "maxDistance": 999
   },
   {
     "id": "07cb6476e9b6887999469d90d6dc246e",
@@ -12662,7 +13134,11 @@
       "小家庭",
       "平價"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12671,7 +13147,9 @@
     "sourceUrl": "https://hpw.cyberbiz.co/collections/2026年菜套組",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "b9865b5c48f2039808f6679c8e6d5bb7",
@@ -12699,7 +13177,11 @@
       "冷凍年菜",
       "平價"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12708,7 +13190,9 @@
     "sourceUrl": "https://hpw.cyberbiz.co/collections/2026年菜套組",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "21df79f5b00a207a4effc08ef1136176",
@@ -12735,7 +13219,11 @@
       "台式",
       "冷凍年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12744,7 +13232,9 @@
     "sourceUrl": "https://hpw.cyberbiz.co/collections/2026年菜套組",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "43d8715e22e4c596a38271b843e1c908",
@@ -12772,7 +13262,11 @@
       "冷凍年菜",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12781,7 +13275,9 @@
     "sourceUrl": "https://hpw.cyberbiz.co/collections/2026年菜套組",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
-    "updatedAt": "2025-12-09T13:17:10.485Z"
+    "updatedAt": "2025-12-09T13:17:10.485Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "3c40cd2095a6d99b25d60230c6b66236",
@@ -12824,7 +13320,9 @@
     "sourceUrl": "https://hpw.cyberbiz.co/collections/2026年菜套組",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "6bd6ae866866c875b4fe5a2ac7731d27",
@@ -12871,7 +13369,9 @@
     "sourceUrl": "https://shop.c-k.tw/blogs/2026-frozen-reunion-dinner-top10-comparison",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "c2416ee1e41c54f81425b9ad2d637872",
@@ -12900,7 +13400,11 @@
       "平價",
       "小家庭"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12909,7 +13413,9 @@
     "sourceUrl": "https://shop.c-k.tw/blogs/2026-frozen-reunion-dinner-top10-comparison",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "a108e4cc7ffc0f1ee2fb2892716adf13",
@@ -12937,7 +13443,11 @@
       "冷凍年菜",
       "平價"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -12946,7 +13456,9 @@
     "sourceUrl": "https://shop.c-k.tw/blogs/2026-frozen-reunion-dinner-top10-comparison",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "0baf068e5886110dbf4b465ae7249d26",
@@ -12988,7 +13500,9 @@
     "sourceUrl": "https://shop.c-k.tw/blogs/2026-frozen-reunion-dinner-top10-comparison",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "6466d5668d69e1a8d72953eb64c970b4",
@@ -13029,7 +13543,9 @@
     "sourceUrl": "https://shop.c-k.tw/blogs/2026-frozen-reunion-dinner-top10-comparison",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "b9df0e792fd32bb998259aaa8c48e828",
@@ -13058,7 +13574,11 @@
       "港式",
       "冷凍年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "佛跳牆",
+      "紅燒肉",
+      "清蒸魚"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -13067,7 +13587,9 @@
     "sourceUrl": "https://shop.ysvege.com/",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "43fc5a5bca00f97361db959c53003d84",
@@ -13098,7 +13620,11 @@
       "必比登",
       "冷凍年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "素炒米粉",
+      "素肉捲",
+      "香菇雞湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "vegetarian",
@@ -13107,7 +13633,9 @@
     "sourceUrl": "https://online.carrefour.com.tw/祥和蔬食品牌館",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 50,
+    "maxDistance": 999
   },
   {
     "id": "f28f6ef9aec33a7c2437124594f513be",
@@ -13151,7 +13679,9 @@
     "sourceUrl": "https://24h.pchome.com.tw/search/?q=年菜",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "ede64134353c453cbf36616b5bc9b89b",
@@ -13178,7 +13708,11 @@
       "台式",
       "冷凍年菜"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -13187,7 +13721,9 @@
     "sourceUrl": "https://24h.pchome.com.tw/search/?q=年菜",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "4e9c13d99ec13fab83ff8e42d272030d",
@@ -13231,7 +13767,9 @@
     "sourceUrl": "https://shop.c-k.tw/blogs/2026-frozen-reunion-dinner-top10-comparison",
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.486Z",
-    "updatedAt": "2025-12-09T13:17:10.486Z"
+    "updatedAt": "2025-12-09T13:17:10.486Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "be4081dbc5ca45082653ef583b9a4045",
@@ -13274,7 +13812,9 @@
     "sourceUrl": "https://www.marieclaire.com.tw/lifestyle/taste/90206",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.288Z",
-    "updatedAt": "2025-12-09T13:22:50.289Z"
+    "updatedAt": "2025-12-09T13:22:50.289Z",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "f62bd63e162338a7eabb25ec9ed27912",
@@ -13314,7 +13854,9 @@
     "sourceUrl": "https://www.marieclaire.com.tw/lifestyle/taste/90206",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "shippingFee": 50,
+    "maxDistance": 100
   },
   {
     "id": "3b97e92c25580028f1853ca16658f6d5",
@@ -13354,7 +13896,8 @@
     "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "shippingFee": 0
   },
   {
     "id": "9719daf0ee38da063f712f3a0a1bd2ab",
@@ -13399,7 +13942,8 @@
     "sourceUrl": "https://www.marieclaire.com.tw/lifestyle/taste/90206",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "shippingFee": 0
   },
   {
     "id": "83850091765340c2fd24876bb81aa02f",
@@ -13447,7 +13991,9 @@
     "sourceUrl": "https://www.marieclaire.com.tw/lifestyle/taste/90206",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "02bb11b23efcb4b26844ddeaaa7356d4",
@@ -13487,7 +14033,9 @@
     "sourceUrl": "https://www.marieclaire.com.tw/lifestyle/taste/90206",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "114630f14c9df096f5323ae089b00508",
@@ -13515,7 +14063,11 @@
       "小家庭",
       "平價"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -13524,7 +14076,9 @@
     "sourceUrl": "https://www.marieclaire.com.tw/lifestyle/taste/90206",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "4c288e0251a6c21d9b78e8fb012bf3b9",
@@ -13554,7 +14108,11 @@
       "粵菜",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -13563,7 +14121,8 @@
     "sourceUrl": "https://grandvictoria.com.tw/餐飲活動/2026-金馬送福外帶年菜-隆重登場/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "maxDistance": 100
   },
   {
     "id": "e9b27dca7da7a33df079dc6033e96319",
@@ -13604,7 +14163,8 @@
     "sourceUrl": "https://grandvictoria.com.tw/餐飲活動/2026-金馬送福外帶年菜-隆重登場/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
-    "updatedAt": "2025-12-09T13:22:50.290Z"
+    "updatedAt": "2025-12-09T13:22:50.290Z",
+    "maxDistance": 100
   },
   {
     "id": "cdceb3ae6b8cc811125ef81491aa9d5e",
@@ -13646,7 +14206,8 @@
     "sourceUrl": "https://grandvictoria.com.tw/餐飲活動/2026-金馬送福外帶年菜-隆重登場/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "maxDistance": 100
   },
   {
     "id": "a021d96afc8c3277c9f12cd0870b508c",
@@ -13688,7 +14249,8 @@
     "sourceUrl": "https://grandvictoria.com.tw/餐飲活動/2026-金馬送福外帶年菜-隆重登場/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "maxDistance": 100
   },
   {
     "id": "8d2c6abcc6af9c7da3b13c9cd8c2b1cd",
@@ -13728,7 +14290,8 @@
     "sourceUrl": "https://shop.taipeimarriott.com.tw/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "b54ddab3f3d20875119a79d232c4b001",
@@ -13769,7 +14332,8 @@
     "sourceUrl": "https://shop.taipeimarriott.com.tw/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "e87b65b4a21162159725037a61d9da8f",
@@ -13797,7 +14361,11 @@
       "早鳥優惠",
       "贈品"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -13808,7 +14376,8 @@
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "60baf4e4d41598c287546088f67969e7",
-    "duplicateReason": "菜名數量: 4 > 0"
+    "duplicateReason": "菜名數量: 4 > 0",
+    "shippingFee": 0
   },
   {
     "id": "7deb077d9fbb2505a1fe9205325cab25",
@@ -13834,7 +14403,11 @@
     "tags": [
       "飯店級"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -13845,7 +14418,8 @@
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "2425bcc19052381531a4735efc73886e",
-    "duplicateReason": "菜名數量: 4 > 0"
+    "duplicateReason": "菜名數量: 4 > 0",
+    "shippingFee": 0
   },
   {
     "id": "8f283323394bd1aad0768542130bb577",
@@ -13873,7 +14447,11 @@
       "當日現做",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "restaurant",
     "productType": "single_dish",
     "cuisineStyle": "taiwanese",
@@ -13882,7 +14460,8 @@
     "sourceUrl": "https://www.denwell.com/年菜外帶/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "8ba9c2ed7b43d4a631adf25a923071ae",
@@ -13911,7 +14490,11 @@
       "蔬食",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "素炒米粉",
+      "素肉捲",
+      "香菇雞湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "vegetarian",
@@ -13920,7 +14503,8 @@
     "sourceUrl": "https://www.storm.mg/article/11083611",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "5de8d8b22bf3d24d8b3c923dfa98b703",
@@ -13961,7 +14545,8 @@
     "sourceUrl": "https://www.storm.mg/article/11083611",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "7716c14bde8fcf7da5fb24e1ee662118",
@@ -14001,7 +14586,8 @@
     "sourceUrl": "https://www.storm.mg/article/11083611",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "7df7908e02841f7070eff3d2e6c7ad42",
@@ -14044,7 +14630,8 @@
     "sourceUrl": "https://www.lemeridien-taipei.com/websev?lang=zh-tw&cat=22&type=0",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "bc94b8bd6db11621b9599c1de5db0b74",
@@ -14088,7 +14675,9 @@
     "sourceUrl": "https://howard-hotels.tw/tc-howard-news/台中福華-2026開運年菜-冷凍宅配到府",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 80,
+    "maxDistance": 150
   },
   {
     "id": "fa31c546cdcc6045d7123e4526b2355e",
@@ -14118,7 +14707,11 @@
       "冷凍年菜",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "素炒米粉",
+      "素肉捲",
+      "香菇雞湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "vegetarian",
@@ -14127,7 +14720,9 @@
     "sourceUrl": "https://howard-hotels.tw/tc-howard-news/台中福華-2026開運年菜-冷凍宅配到府",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 80,
+    "maxDistance": 150
   },
   {
     "id": "7e0daed175b9e72e630f827905332c51",
@@ -14171,7 +14766,9 @@
     "sourceUrl": "https://howard-hotels.tw/tc-howard-news/台中福華-2026開運年菜-冷凍宅配到府",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 80,
+    "maxDistance": 150
   },
   {
     "id": "8feeb5e12998d11bd6f98c0189d0f89e",
@@ -14217,7 +14814,9 @@
     "sourceUrl": "https://janice.life/hilaifood2026/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "541e54c49cd00a8fdf1261fa0fb3f8d6",
@@ -14266,7 +14865,9 @@
     "sourceUrl": "https://www.lai-foods.com/products/new-year-set-2026-8",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 100,
+    "maxDistance": 999
   },
   {
     "id": "9a3fccd4426a5dc705560615bfc4b872",
@@ -14294,7 +14895,11 @@
       "粵菜",
       "早鳥優惠"
     ],
-    "dishes": [],
+    "dishes": [
+      "年夜飯套餐",
+      "整隻雞",
+      "海鮮湯"
+    ],
     "vendorType": "hotel",
     "productType": "single_dish",
     "cuisineStyle": "cantonese",
@@ -14305,7 +14910,8 @@
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "f324d0871d8c3be3d901604ca7d60fad",
-    "duplicateReason": "較早建立"
+    "duplicateReason": "較早建立",
+    "shippingFee": 0
   },
   {
     "id": "96d7cb3edeff544a1b78486ef525c55e",
@@ -14346,7 +14952,8 @@
     "sourceUrl": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
-    "updatedAt": "2025-12-09T13:22:50.291Z"
+    "updatedAt": "2025-12-09T13:22:50.291Z",
+    "shippingFee": 0
   },
   {
     "id": "5d01863fbd0ff4187ea198d26b5cf817",
@@ -14354,7 +14961,7 @@
     "vendorName": "上海鄉村",
     "title": "2026年菜2件組 魚湯+燒雞飯",
     "priceDiscount": 1918,
-    "shippingFee": 0,
+    "shippingFee": 100,
     "shippingType": "delivery",
     "storageType": "frozen",
     "shippingTypes": [
@@ -14382,7 +14989,8 @@
     "productType": "soup",
     "cuisineStyle": "taiwanese",
     "priceLevel": "budget",
-    "familySize": "small"
+    "familySize": "small",
+    "maxDistance": 999
   },
   {
     "id": "44b634d6157ed980a0734794d6093077",
@@ -14426,7 +15034,8 @@
     "productType": "set_meal",
     "cuisineStyle": "shanghainese",
     "priceLevel": "luxury",
-    "familySize": "medium"
+    "familySize": "medium",
+    "shippingFee": 0
   },
   {
     "vendorName": "老協珍",
@@ -14460,6 +15069,8 @@
     "updatedAt": "2025-12-11T07:41:27.926Z",
     "views": 0,
     "rating": 0,
-    "ratingCount": 0
+    "ratingCount": 0,
+    "shippingFee": 100,
+    "maxDistance": 999
   }
 ]

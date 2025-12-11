@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
 const isProduction = process.env.NODE_ENV === 'production';
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] || 'food';
 
 const nextConfig: NextConfig = {
-  // GitHub Pages 靜態匯出
-  output: isProduction ? 'export' : undefined,
+  // GitHub Pages 靜態匯出 - 僅在 GitHub Actions 中啟用
+  // 本地開發保持動態模式以支援 API 路由
+  output: isGitHubActions ? 'export' : undefined,
 
   // GitHub Pages base path (例如: /food)
   basePath: isProduction ? `/${repoName}` : '',

@@ -1,0 +1,4771 @@
+{
+  "timestamp": "2025-12-11T08:07:21.337Z",
+  "summary": {
+    "shippingFeeUpdated": 309,
+    "maxDistanceUpdated": 154,
+    "dishesUpdated": 88,
+    "totalUpdated": 551
+  },
+  "updates": [
+    {
+      "planId": "plan-2026-001",
+      "type": "shippingFee",
+      "vendor": "彭園會館",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan-2026-002",
+      "type": "shippingFee",
+      "vendor": "典華",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan-2026-003",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7szsf3rc2yj_1",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sm98ncd92j_2",
+      "type": "shippingFee",
+      "vendor": "台北寒舍艾美酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s4twd1mf6w_3",
+      "type": "shippingFee",
+      "vendor": "台北新板希爾頓酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sonypz7nei_4",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7sfu8i4mnqy_5",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7svkebr6fal_6",
+      "type": "shippingFee",
+      "vendor": "彭園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7snhfc84ff0_7",
+      "type": "shippingFee",
+      "vendor": "彭園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7szmsrnf9u2_8",
+      "type": "shippingFee",
+      "vendor": "漢來巨蛋宴會廳",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7sj5ur582dq_9",
+      "type": "shippingFee",
+      "vendor": "福園台菜海鮮餐廳",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7s29f0adtsj_10",
+      "type": "shippingFee",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7somnjw2qj7_11",
+      "type": "shippingFee",
+      "vendor": "王品",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sxohslm2wr_12",
+      "type": "shippingFee",
+      "vendor": "Costco大成",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7s6d7y574fp_13",
+      "type": "shippingFee",
+      "vendor": "台酒",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sm1b29ulxz_14",
+      "type": "shippingFee",
+      "vendor": "台酒",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sed16j33mh_15",
+      "type": "shippingFee",
+      "vendor": "台酒X潮港城",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7ss75mpztwr_16",
+      "type": "shippingFee",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7se5zntq17u_17",
+      "type": "shippingFee",
+      "vendor": "祥和蔬食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7s7vdfc3evx_18",
+      "type": "shippingFee",
+      "vendor": "典華",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7slglxwk82d_19",
+      "type": "shippingFee",
+      "vendor": "山海樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7say6ydp5af_20",
+      "type": "shippingFee",
+      "vendor": "山海樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sys8wo79og_21",
+      "type": "shippingFee",
+      "vendor": "山海樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7shk1n8ffpr_22",
+      "type": "shippingFee",
+      "vendor": "全國大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s62tzee4nf_23",
+      "type": "shippingFee",
+      "vendor": "全國麗園大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7siqwdomu61_24",
+      "type": "shippingFee",
+      "vendor": "鄧師傅",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7shrtxmemwu_25",
+      "type": "shippingFee",
+      "vendor": "逸湘齋",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7su3mx0myrq_26",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7s6uqaklke7_27",
+      "type": "shippingFee",
+      "vendor": "卜蜂",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7smu425qjf4_28",
+      "type": "shippingFee",
+      "vendor": "大成",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7s288mm0769_29",
+      "type": "shippingFee",
+      "vendor": "三合院港式飲茶",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7soobow3mxn_30",
+      "type": "shippingFee",
+      "vendor": "裕元花園酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sa9d8p38vk_31",
+      "type": "shippingFee",
+      "vendor": "台北士林萬麗酒店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7serbdya4ef_32",
+      "type": "shippingFee",
+      "vendor": "台北六福萬怡酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sjbky30z0p_33",
+      "type": "shippingFee",
+      "vendor": "板橋凱撒大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sq0snerrmg_34",
+      "type": "shippingFee",
+      "vendor": "潮港城",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7snaga3u5hk_35",
+      "type": "shippingFee",
+      "vendor": "台北喜來登",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7syvfc2q4zn_36",
+      "type": "shippingFee",
+      "vendor": "台北喜來登桃山",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7szel88ihe3_37",
+      "type": "shippingFee",
+      "vendor": "台北萬豪酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7stcgpu3v5k_38",
+      "type": "shippingFee",
+      "vendor": "台北遠東香格里拉香宮",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7stxfzbvx0u_39",
+      "type": "shippingFee",
+      "vendor": "誠品行旅聚聚樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s0y6o66ms1_40",
+      "type": "shippingFee",
+      "vendor": "福容大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s4es79b32t_41",
+      "type": "shippingFee",
+      "vendor": "福爾摩沙遊艇酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7siadgvvvti_42",
+      "type": "shippingFee",
+      "vendor": "高雄日航酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ej2rzn0x35o_0",
+      "type": "shippingFee",
+      "vendor": "白金花園酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8eklspjh40xr_1",
+      "type": "shippingFee",
+      "vendor": "大直維多麗亞酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek3f6qkukk9_2",
+      "type": "shippingFee",
+      "vendor": "炒湘湘",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekq315usv9c_3",
+      "type": "shippingFee",
+      "vendor": "王品",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekyislocxcn_5",
+      "type": "shippingFee",
+      "vendor": "青葉台菜",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekcll4e7ixj_6",
+      "type": "shippingFee",
+      "vendor": "養心茶樓",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekyu3deysa1_7",
+      "type": "shippingFee",
+      "vendor": "遇上素蔬食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ek8eemybccm_8",
+      "type": "shippingFee",
+      "vendor": "台北凱達大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek8opevoh9r_9",
+      "type": "shippingFee",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ek67hn44uzh_10",
+      "type": "shippingFee",
+      "vendor": "點水樓",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ek0a5m26oje_11",
+      "type": "shippingFee",
+      "vendor": "真的好海鮮餐廳",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ekt5q16pfay_12",
+      "type": "shippingFee",
+      "vendor": "紅豆食府",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekb0x9p4du0_13",
+      "type": "shippingFee",
+      "vendor": "糖朝",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ek02coxu169_14",
+      "type": "shippingFee",
+      "vendor": "金蓬萊",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8eknu63lanf4_15",
+      "type": "shippingFee",
+      "vendor": "台南晶英酒店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8eky54zc5qcd_16",
+      "type": "shippingFee",
+      "vendor": "華泰王子大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek3kvv8w0zr_17",
+      "type": "shippingFee",
+      "vendor": "台中林酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek9qn7hf83m_18",
+      "type": "shippingFee",
+      "vendor": "高雄翰品酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ekgb0upfn3d_19",
+      "type": "shippingFee",
+      "vendor": "漁季水產",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekr1mid9q15_20",
+      "type": "shippingFee",
+      "vendor": "正官庄",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekbpyudm5sh_21",
+      "type": "shippingFee",
+      "vendor": "芳葉國際美食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf5a0gnsenz_0",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfqu6chpswm_1",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfwpsxipfhu_2",
+      "type": "shippingFee",
+      "vendor": "廚鮮食代",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf49phqhpr6_3",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfha8rgkjfd_4",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf1v99lexnc_5",
+      "type": "shippingFee",
+      "vendor": "松竹園",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcfwmkd7y7ei_6",
+      "type": "shippingFee",
+      "vendor": "台北晶華酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf122kfdjpl_7",
+      "type": "shippingFee",
+      "vendor": "台北喜來登比薩屋",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf93hou939m_8",
+      "type": "shippingFee",
+      "vendor": "7-ELEVEN",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfbh4mp6mur_9",
+      "type": "shippingFee",
+      "vendor": "全家便利商店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfu3adts3uj_10",
+      "type": "shippingFee",
+      "vendor": "萊爾富",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf75dlyjl82_11",
+      "type": "shippingFee",
+      "vendor": "萊爾富",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfu1zjt7juv_12",
+      "type": "shippingFee",
+      "vendor": "台北國泰萬怡酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfdrqzr8n1p_13",
+      "type": "shippingFee",
+      "vendor": "家樂福",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcfebmwomfsq_14",
+      "type": "shippingFee",
+      "vendor": "全聯",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf4mczei725_15",
+      "type": "shippingFee",
+      "vendor": "Costco好市多",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfvlb8yyuxt_16",
+      "type": "shippingFee",
+      "vendor": "台北W飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfte7qfpi5x_17",
+      "type": "shippingFee",
+      "vendor": "台北文華東方酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfk63ahwsnr_18",
+      "type": "shippingFee",
+      "vendor": "美福大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf12dlkgc8v_19",
+      "type": "shippingFee",
+      "vendor": "高雄漢來大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcft534qi8tp_20",
+      "type": "shippingFee",
+      "vendor": "新竹老爺酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf39pifl8bl_21",
+      "type": "shippingFee",
+      "vendor": "嘉義耐斯王子大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfcx2ap6zey_22",
+      "type": "shippingFee",
+      "vendor": "花蓮遠雄悅來大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf0xkjbu9h5_23",
+      "type": "shippingFee",
+      "vendor": "阿基師觀光工廠",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf0gp62ztbi_24",
+      "type": "shippingFee",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcfbtl75qjkz_25",
+      "type": "shippingFee",
+      "vendor": "度小月",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfv6zm7oxp1_26",
+      "type": "shippingFee",
+      "vendor": "富霸王豬腳",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf83nrv6f3f_27",
+      "type": "shippingFee",
+      "vendor": "阿舍乾麵",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfdt0s7rpjc_28",
+      "type": "shippingFee",
+      "vendor": "福記",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf7mt76nw8q_29",
+      "type": "shippingFee",
+      "vendor": "義美",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfbtrgy7o1e_30",
+      "type": "shippingFee",
+      "vendor": "裕珍馨",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf61a023559_31",
+      "type": "shippingFee",
+      "vendor": "郭元益",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf140n6u3cw_32",
+      "type": "shippingFee",
+      "vendor": "金格",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf3v2jq57oy_33",
+      "type": "shippingFee",
+      "vendor": "林聰明沙鍋魚頭",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf26eotrjg9_34",
+      "type": "shippingFee",
+      "vendor": "周氏蝦捲",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "5077f310f7b7a29ffa1e80cdb035e297",
+      "type": "shippingFee",
+      "vendor": "桃園國際機場凱悅酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "a8299d4c4d35caee131887054bfc61c4",
+      "type": "shippingFee",
+      "vendor": "桃園國際機場凱悅酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "545cdd2489d34d382156fe4abb86619e",
+      "type": "shippingFee",
+      "vendor": "桃園國際機場凱悅酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "8d085134608f0cf7c7a0d75275995e19",
+      "type": "shippingFee",
+      "vendor": "桃園國際機場凱悅酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2425bcc19052381531a4735efc73886e",
+      "type": "shippingFee",
+      "vendor": "板橋凱撒大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "60baf4e4d41598c287546088f67969e7",
+      "type": "shippingFee",
+      "vendor": "板橋凱撒大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "033ed61b7535ab42f66bd1d26f99e6e6",
+      "type": "shippingFee",
+      "vendor": "台北新板希爾頓酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "f324d0871d8c3be3d901604ca7d60fad",
+      "type": "shippingFee",
+      "vendor": "台北六福萬怡酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "baf8e556f43bcd7ab4ed73030ce5d985",
+      "type": "shippingFee",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "05d7bd0b37ceadf8a493d3702ae997ff",
+      "type": "shippingFee",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "b9a1d55be921c863b47c4ee827ed0a67",
+      "type": "shippingFee",
+      "vendor": "漢來美食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "e35ac43a5fc058dfcf8416d003d39807",
+      "type": "shippingFee",
+      "vendor": "漢來巨蛋宴會廳",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "128673926b6ee2b44e1de09f1530ccc2",
+      "type": "shippingFee",
+      "vendor": "大直維多麗亞酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "23d60becb339e432ef695cea8be8f317",
+      "type": "shippingFee",
+      "vendor": "典華",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d4a8418f615e4cc767cedd2854953646",
+      "type": "shippingFee",
+      "vendor": "全國麗園大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "007d5c85230b9a12508710039cb4a8cb",
+      "type": "shippingFee",
+      "vendor": "THE LIN 林酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "5b3952a202f7ed80c5080415baa6dc45",
+      "type": "shippingFee",
+      "vendor": "THE LIN 林酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "0111c93e3bd37be1229ae4cb3c729e01",
+      "type": "shippingFee",
+      "vendor": "日月千禧酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "3475ee98f26440a47075f427113568a9",
+      "type": "shippingFee",
+      "vendor": "日月千禧酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "8d054e696169747e563546ab184ff3f5",
+      "type": "shippingFee",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "ea44ba37eb74bc61a8b74a50204cee65",
+      "type": "shippingFee",
+      "vendor": "祥和蔬食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "9524d71911792f42ba7c06260bac0fc4",
+      "type": "shippingFee",
+      "vendor": "潮港城",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d9af24b3236f0a80bc0c380ca698a091",
+      "type": "shippingFee",
+      "vendor": "炒湘湘",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "6605cd6b89bfaf0d01b6d601a6dd8834",
+      "type": "shippingFee",
+      "vendor": "高雄圓山大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d53ac061237b5ad4bee26c4436578f67",
+      "type": "shippingFee",
+      "vendor": "卜蜂食品",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "815b2263cf6507fe4bc01d6188d086b8",
+      "type": "shippingFee",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "4af494975f49af655d321bcfd21b778a",
+      "type": "shippingFee",
+      "vendor": "佳佳食品",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "d4466459e2fd8fdbb9068a91e526cd1f",
+      "type": "shippingFee",
+      "vendor": "晶華酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "e38992f15c78d8bc48fe8a7f2b8c3cd5",
+      "type": "shippingFee",
+      "vendor": "台北寒舍艾美酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "7c261810592af0642495dab914b8a054",
+      "type": "shippingFee",
+      "vendor": "台北喜來登-桃山日本料理",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "f5e977f54fb0b9a5913a545aa3584ce9",
+      "type": "shippingFee",
+      "vendor": "台北喜來登",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "6d36c63e6a90d0d584a0dab93baa2917",
+      "type": "shippingFee",
+      "vendor": "雙月食品社",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "5394148c117a1fa3417053a8cf312e9f",
+      "type": "shippingFee",
+      "vendor": "福容大飯店-高雄店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "55b219f930065e4988722bdbfcd1dd9c",
+      "type": "shippingFee",
+      "vendor": "福容大飯店-高雄店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "cb32227f92acd9d90438baf00c814219",
+      "type": "shippingFee",
+      "vendor": "全聯-溫國智主廚x北港蔡三代",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "3fa5000db432c926e2bf7c75048e7795",
+      "type": "shippingFee",
+      "vendor": "全聯-橘焱胡同x錦霞樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "80438200ebf40a2316520e79914a16f9",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "2c71067c32db4d2295a3f601e0b272c3",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "4a60cb70b3c87c652c5f28f31ed0e468",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "10c99a295ebaeed46cb185e88fe945fc",
+      "type": "shippingFee",
+      "vendor": "全聯-六福",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "fcbf81b377d58410f21d2f9794075390",
+      "type": "shippingFee",
+      "vendor": "全聯-喜來登辰園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "bc7b19af135eda90ce32ce429cb77081",
+      "type": "shippingFee",
+      "vendor": "全聯-喜來登辰園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "5c405743883ec4017ef03e39a9aee6cb",
+      "type": "shippingFee",
+      "vendor": "誠品行旅-聚聚樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "7948944f6c6f048e2fbc4f643bb90542",
+      "type": "shippingFee",
+      "vendor": "台北喜來登-請客樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "5564a9051038b20adf03f586df012ff2",
+      "type": "shippingFee",
+      "vendor": "台北萬豪酒店-欣葉鐘菜",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2a8549e2e7b7cfd45cb7d10d710a6385",
+      "type": "shippingFee",
+      "vendor": "台北新板希爾頓-青雅中餐廳",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "027cc376407e2782e38b90de2e414e29",
+      "type": "shippingFee",
+      "vendor": "福容大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "9ec610c60a5280186d0fbb1f4b6b236d",
+      "type": "shippingFee",
+      "vendor": "福容大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "818371238ca05b901ced0f764d967072",
+      "type": "shippingFee",
+      "vendor": "彭園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "33d588badd8a4c9d107c647f4bcb8313",
+      "type": "shippingFee",
+      "vendor": "彭園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "b511ab3489d54ff36882bd19ae3350c9",
+      "type": "shippingFee",
+      "vendor": "彭園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "13178ff28d10cb063d0c67a3b7536927",
+      "type": "shippingFee",
+      "vendor": "彭園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "aef15751ee9f1d60a3205620d5298d27",
+      "type": "shippingFee",
+      "vendor": "彭園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "276d7bb16ba2fa1da54e1db0f91b2e3a",
+      "type": "shippingFee",
+      "vendor": "Costco好市多-大成",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "d29a3e31dbfb0669b8a40c86726b44ed",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "0d13d44945305e9c73c16b2dd8e43b1a",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "590a0e95183c8e398cd48e65ba02bb5e",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "3102209ccecd3f75a753bd760323ccd0",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "b6c7aec3fc9d8c8437ac8997efc020da",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "92923c49fd32b603810badc5c8f2f8de",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "5ffd8b1235af8a926e423fdee9a38e95",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "05f75f07c44429df69eb88013adb0156",
+      "type": "shippingFee",
+      "vendor": "7-ELEVEN-刁民酸菜魚",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "f90eb80d465ad1b6cc95411120c71781",
+      "type": "shippingFee",
+      "vendor": "全家-石二鍋",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "a416c7f2c6327e8a2a1f5606ee5cf95b",
+      "type": "shippingFee",
+      "vendor": "朱記餡餅粥店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "c8810bdb56265499ab5cc12a7868575f",
+      "type": "shippingFee",
+      "vendor": "高雄圓山大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "16703bda62d457066f384a62969abde4",
+      "type": "shippingFee",
+      "vendor": "義大皇家酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "42002f747cfcc8b62dcd442d0717bcd3",
+      "type": "shippingFee",
+      "vendor": "義大皇家酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "11a3e5d82ac0122cf106672ccb3af961",
+      "type": "shippingFee",
+      "vendor": "高雄福容大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "8776fe6004606606267a3363e490517d",
+      "type": "shippingFee",
+      "vendor": "台中全國大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "4091984f3a8e9099f1809aa00dab4bb6",
+      "type": "shippingFee",
+      "vendor": "養心茶樓",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "327d86860f29affbb2a2200714aca5b0",
+      "type": "shippingFee",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "3369d55533595ad2fff18b9aa47ebbc9",
+      "type": "shippingFee",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "d1e284737ed264690defefe96b7e18e6",
+      "type": "shippingFee",
+      "vendor": "台北新板希爾頓酒店-青雅",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "62904c542ef68f5af5e5a491f5fb9cef",
+      "type": "shippingFee",
+      "vendor": "台北花園大酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "4cce4e942a6eb58f3f31a809833af2e8",
+      "type": "shippingFee",
+      "vendor": "台北六福萬怡酒店-粵亮",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d13c5751bb48e9c2a8e808f2744ed225",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "723af7d9bc2f860e5ebd5dce75ad0de7",
+      "type": "shippingFee",
+      "vendor": "長春食素名人館",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "c5973867595cfbc1f6c6cda3eda5b707",
+      "type": "shippingFee",
+      "vendor": "台北遠東香格里拉-香宮",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "a98381f135b99ef993e9efe8db446b0d",
+      "type": "shippingFee",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "0c5be3ec439a3f265229938fc46291e2",
+      "type": "shippingFee",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "986dfa5ff67d6f5a4eaa9055194e7eb1",
+      "type": "shippingFee",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "112ba042793d2c43876c51997da5b751",
+      "type": "shippingFee",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "8ac8210863ecc60ba9a2a061b8941385",
+      "type": "shippingFee",
+      "vendor": "漢來巨蛋宴會廳",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "7387c7f447826be8c4a251ab448347cc",
+      "type": "shippingFee",
+      "vendor": "遠東香格里拉-香宮",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "1dba7349d22578b23ce8cf483d080047",
+      "type": "shippingFee",
+      "vendor": "全國大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "0ab81060c0cbe324164ab3a01676a3e4",
+      "type": "shippingFee",
+      "vendor": "裕元花園酒店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "6d3d1aa8011f6468a2587657dceaf5e1",
+      "type": "shippingFee",
+      "vendor": "寒軒國際大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "14825c4336bce30a89acec713ec45378",
+      "type": "shippingFee",
+      "vendor": "台南晶英酒店-晶英軒",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2fdc74fe59a11a3beb037a460e8fcd12",
+      "type": "shippingFee",
+      "vendor": "台中長榮桂冠酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "ba417893ce898c436b164baec571830b",
+      "type": "shippingFee",
+      "vendor": "高雄福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "e78066ef745ae882eedad43a57d2a9d0",
+      "type": "shippingFee",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "eee6fb8e1fe01fca08b89a671c2d9b59",
+      "type": "shippingFee",
+      "vendor": "台南大億麗緻酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "ba4fe353f8f49ca02d3643491f278f37",
+      "type": "shippingFee",
+      "vendor": "高雄國賓大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "ace02afa2aa9c67ff5414689fa760613",
+      "type": "shippingFee",
+      "vendor": "瓦城泰統",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "1987525721657f9cde131d1700e568ef",
+      "type": "shippingFee",
+      "vendor": "瓦城泰統",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "696e2a4c18981d1cc39fc7d76a50f0fe",
+      "type": "shippingFee",
+      "vendor": "王品享鴨",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "a9422490a0dad83073b8caa903966eeb",
+      "type": "shippingFee",
+      "vendor": "王品丰禾日麗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "71f099988eb5548b89e852262369ff44",
+      "type": "shippingFee",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "f9bb96a023aef52c445b25d9c7cdd7a4",
+      "type": "shippingFee",
+      "vendor": "台北寒舍艾美酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "f53a23d7eefb7b08a46fa7cdee4b9cf8",
+      "type": "shippingFee",
+      "vendor": "台北寒舍艾美酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2ec38c2dfa490d8a5b0c24474cb9e7c9",
+      "type": "shippingFee",
+      "vendor": "鬍鬚張",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "14dfb9f02b419e1f1bd6d13ad00a9d03",
+      "type": "shippingFee",
+      "vendor": "晶華酒店-晶華軒",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "8eca69c7198b767d1a1f58e0063bc945",
+      "type": "shippingFee",
+      "vendor": "W酒店-紫艷",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "452b205f80cfc529d2ad94cf2ae83eb9",
+      "type": "shippingFee",
+      "vendor": "台北東方文華-雅閣",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d3cd12fb329aef72246e15b08d018748",
+      "type": "shippingFee",
+      "vendor": "點水樓",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "14cd35ec587c3dc36fd49f133540bdfa",
+      "type": "shippingFee",
+      "vendor": "紅豆食府",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "38a2bb8a5f73f6a8195b2a43bce4a77e",
+      "type": "shippingFee",
+      "vendor": "儂來餐廳",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "56a22cbb9ec9af8b5443678a08611617",
+      "type": "shippingFee",
+      "vendor": "福爾摩沙遊艇酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "286316d9aeb0dee0befd1e3324fc2370",
+      "type": "shippingFee",
+      "vendor": "白金花園酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "ba3749c2a0f2264af26a328d16a86200",
+      "type": "shippingFee",
+      "vendor": "大直維多麗亞酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "24d746afc27a9a62a8b9a84d2b4038fe",
+      "type": "shippingFee",
+      "vendor": "台北新板希爾頓酒店-青雅",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "80e24f6488957d6e2126a36009f3139f",
+      "type": "shippingFee",
+      "vendor": "台北萬豪酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "cfe782579b00572694eff894a05536d4",
+      "type": "shippingFee",
+      "vendor": "誠品行旅-聚聚樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "6d20908d46dfb8909f6a2991e3309e9c",
+      "type": "shippingFee",
+      "vendor": "台北六福萬怡酒店-粵亮",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2f7df7e80d18a043e48d18331d4be576",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店-江南春",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "3ef014c4e2fc253b6bdbf7309df67b61",
+      "type": "shippingFee",
+      "vendor": "台北士林萬麗酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2db28a61aa176368fc3fc52078c80f30",
+      "type": "shippingFee",
+      "vendor": "板橋凱撒大飯店-家宴",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "60ab22cee174dccffb393b5483631140",
+      "type": "shippingFee",
+      "vendor": "板橋凱撒大飯店-家宴",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "7d8455048f81804bf27588432005cc84",
+      "type": "shippingFee",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "8dfc08751a674f82572ec6fb6a2a71c4",
+      "type": "shippingFee",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "bff3d311fe87761e91dd7f056d91c45d",
+      "type": "shippingFee",
+      "vendor": "台中富信大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2d26dc1936528f0cf9bf418f34c86a5b",
+      "type": "shippingFee",
+      "vendor": "台北寒舍艾美酒店-宴會廳",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "b1cfaa59744ad69924ee38c8e1588fdd",
+      "type": "shippingFee",
+      "vendor": "台北寒舍艾美酒店-寒舍食譜",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "fc36a96faa869b5d72e05fa284aa2825",
+      "type": "shippingFee",
+      "vendor": "台北喜來登大飯店-請客樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "3aca7492b3726538d740e989262d0b95",
+      "type": "shippingFee",
+      "vendor": "台北喜來登大飯店-辰園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "f294a4dea5c729923fa58fd563ea59d6",
+      "type": "shippingFee",
+      "vendor": "台北喜來登大飯店-桃山",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "cf2f438630efd9ab21a820729c370062",
+      "type": "shippingFee",
+      "vendor": "台北喜來登大飯店-SUKHOTHAI",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "49bf6a1db46d87ebe3177cbb51ddb94e",
+      "type": "shippingFee",
+      "vendor": "桃園國際機場凱悅酒店-味坊",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "58c0eaf93ef1bdcbd52438c473459bb0",
+      "type": "shippingFee",
+      "vendor": "炒湘湘",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "b79c4e24ef9abf97b5f88e81c0a8bd49",
+      "type": "shippingFee",
+      "vendor": "瓦城",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "30e4aae10cb0b2c4b1ab81db25761e26",
+      "type": "shippingFee",
+      "vendor": "瓦城",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "f09452f0877ed638839fd1451ed9ab43",
+      "type": "shippingFee",
+      "vendor": "時時香",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "67d7f5d8112da3ef97cce6871df0941f",
+      "type": "shippingFee",
+      "vendor": "時時香",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "59682d260aa047a2089f3eb75f26696a",
+      "type": "shippingFee",
+      "vendor": "1010湘",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "31b2aa9241649e5de088a462a8bd3b2f",
+      "type": "shippingFee",
+      "vendor": "1010湘",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "dfe252ae7fdbff83391594bec56b7495",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "def1759131a8cfc72ad8bac5fc28e39f",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店-蓬萊邨",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "63ad02cfeb73088f208127421887cd06",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店-蓬萊邨",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "43e8ef8907097b64d2db87db7210b2e3",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店-珍珠坊",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "33602da1e07acadbbf9aa53b8ec9571f",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店-麗香苑",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "12e04fc56cfa9d830416346a7f3ff0bc",
+      "type": "shippingFee",
+      "vendor": "福容大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "3c1f17b28e9f8f8d2fa44f8d12f17907",
+      "type": "shippingFee",
+      "vendor": "福容大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "611206df7bcdcd6215ed55690c3655d7",
+      "type": "shippingFee",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "3b28cc4148692850696e9b43832d7556",
+      "type": "shippingFee",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "a6d6ba273e8f634b8ee290d1764308dc",
+      "type": "shippingFee",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "7c899e3b187280ef48d3c998d947627e",
+      "type": "shippingFee",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "25859c00a0c4fe1a7b610bda3d1ac9e7",
+      "type": "shippingFee",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "335626ca583b500bf1e3081178a30104",
+      "type": "shippingFee",
+      "vendor": "山海樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "a9213fc9bae5e8a3b2f5bb8448cf3fa5",
+      "type": "shippingFee",
+      "vendor": "全聯-寒舍",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "815fbaecbb07e3c16bc2839acb34f43c",
+      "type": "shippingFee",
+      "vendor": "全聯-寒舍",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "3780ca815ba6a1c59c3fc7cb93c238eb",
+      "type": "shippingFee",
+      "vendor": "全聯-寒舍",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "88a44c8c9457e73d67a89f7f7829cc21",
+      "type": "shippingFee",
+      "vendor": "全聯-六福",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "5a39e292a0a1447a85a1dd36a0c94127",
+      "type": "shippingFee",
+      "vendor": "全聯-京老舖",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "dd57f913b05d681833fbebf3dd52d595",
+      "type": "shippingFee",
+      "vendor": "全聯-辰園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "b851f928fcde5fb5ccbd5fc20d69a0dd",
+      "type": "shippingFee",
+      "vendor": "全聯-辰園",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "bab0d401fe0fb5ac9aa861b09702f27d",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "663aac5758df698deef648cffd1adf9c",
+      "type": "shippingFee",
+      "vendor": "7-ELEVEN-海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "931768157a1281977c78265d1574fba2",
+      "type": "shippingFee",
+      "vendor": "全家-水蛙師",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "11efce51348231adb4b786a33ce797be",
+      "type": "shippingFee",
+      "vendor": "大潤發-橘焱胡同X錦霞樓",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d9815113a32ff1315abab06771556c60",
+      "type": "shippingFee",
+      "vendor": "大潤發-阿嬤ㄟ辦桌菜",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d32ac2171b1838494f94a641ae94ecd1",
+      "type": "shippingFee",
+      "vendor": "家樂福-老協珍X寶可夢",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "9519ed5f7f7164a10089511f26f7048a",
+      "type": "shippingFee",
+      "vendor": "家樂福-老協珍X寶可夢",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "a8edf377ca6a4de78391bf6f1c2d86dc",
+      "type": "shippingFee",
+      "vendor": "典華",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "d2be5c76eb9b029f30d8139ad9c663b0",
+      "type": "shippingFee",
+      "vendor": "彭園會館",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "86e0adc978953ae21d0dbc38d9815f04",
+      "type": "shippingFee",
+      "vendor": "彭園會館",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "18f81a816330ce6e374a89a1da2e1334",
+      "type": "shippingFee",
+      "vendor": "彭園會館",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "2f5513bdf97e1420ec257fb354557ef0",
+      "type": "shippingFee",
+      "vendor": "彭園會館",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "07cb6476e9b6887999469d90d6dc246e",
+      "type": "shippingFee",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "b9865b5c48f2039808f6679c8e6d5bb7",
+      "type": "shippingFee",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "21df79f5b00a207a4effc08ef1136176",
+      "type": "shippingFee",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "43d8715e22e4c596a38271b843e1c908",
+      "type": "shippingFee",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "3c40cd2095a6d99b25d60230c6b66236",
+      "type": "shippingFee",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "6bd6ae866866c875b4fe5a2ac7731d27",
+      "type": "shippingFee",
+      "vendor": "全國麗園大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "c2416ee1e41c54f81425b9ad2d637872",
+      "type": "shippingFee",
+      "vendor": "卜蜂食品",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "a108e4cc7ffc0f1ee2fb2892716adf13",
+      "type": "shippingFee",
+      "vendor": "佳佳",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "0baf068e5886110dbf4b465ae7249d26",
+      "type": "shippingFee",
+      "vendor": "晶華酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "6466d5668d69e1a8d72953eb64c970b4",
+      "type": "shippingFee",
+      "vendor": "雙月食品社",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "b9df0e792fd32bb998259aaa8c48e828",
+      "type": "shippingFee",
+      "vendor": "養心茶樓",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "43fc5a5bca00f97361db959c53003d84",
+      "type": "shippingFee",
+      "vendor": "祥和蔬食",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "f28f6ef9aec33a7c2437124594f513be",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "ede64134353c453cbf36616b5bc9b89b",
+      "type": "shippingFee",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "4e9c13d99ec13fab83ff8e42d272030d",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "be4081dbc5ca45082653ef583b9a4045",
+      "type": "shippingFee",
+      "vendor": "礁溪老爺酒店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "f62bd63e162338a7eabb25ec9ed27912",
+      "type": "shippingFee",
+      "vendor": "礁溪老爺酒店",
+      "oldValue": null,
+      "newValue": 50,
+      "reason": "根據 shippingType: both"
+    },
+    {
+      "planId": "3b97e92c25580028f1853ca16658f6d5",
+      "type": "shippingFee",
+      "vendor": "台北喜來登",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "9719daf0ee38da063f712f3a0a1bd2ab",
+      "type": "shippingFee",
+      "vendor": "炒湘湘",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "83850091765340c2fd24876bb81aa02f",
+      "type": "shippingFee",
+      "vendor": "王品集團",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "02bb11b23efcb4b26844ddeaaa7356d4",
+      "type": "shippingFee",
+      "vendor": "王品集團",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "114630f14c9df096f5323ae089b00508",
+      "type": "shippingFee",
+      "vendor": "王品集團",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "8d2c6abcc6af9c7da3b13c9cd8c2b1cd",
+      "type": "shippingFee",
+      "vendor": "台北萬豪酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "b54ddab3f3d20875119a79d232c4b001",
+      "type": "shippingFee",
+      "vendor": "台北萬豪酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "e87b65b4a21162159725037a61d9da8f",
+      "type": "shippingFee",
+      "vendor": "板橋凱撒大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "7deb077d9fbb2505a1fe9205325cab25",
+      "type": "shippingFee",
+      "vendor": "板橋凱撒大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "8f283323394bd1aad0768542130bb577",
+      "type": "shippingFee",
+      "vendor": "典華幸福機構",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "8ba9c2ed7b43d4a631adf25a923071ae",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "5de8d8b22bf3d24d8b3c923dfa98b703",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "7716c14bde8fcf7da5fb24e1ee662118",
+      "type": "shippingFee",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "7df7908e02841f7070eff3d2e6c7ad42",
+      "type": "shippingFee",
+      "vendor": "台北寒舍艾美酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "bc94b8bd6db11621b9599c1de5db0b74",
+      "type": "shippingFee",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": 80,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "fa31c546cdcc6045d7123e4526b2355e",
+      "type": "shippingFee",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": 80,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "7e0daed175b9e72e630f827905332c51",
+      "type": "shippingFee",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": 80,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "8feeb5e12998d11bd6f98c0189d0f89e",
+      "type": "shippingFee",
+      "vendor": "漢來美食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "541e54c49cd00a8fdf1261fa0fb3f8d6",
+      "type": "shippingFee",
+      "vendor": "漢來美食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "9a3fccd4426a5dc705560615bfc4b872",
+      "type": "shippingFee",
+      "vendor": "台北六福萬怡酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "96d7cb3edeff544a1b78486ef525c55e",
+      "type": "shippingFee",
+      "vendor": "桃園國際機場凱悅酒店",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "5d01863fbd0ff4187ea198d26b5cf817",
+      "type": "shippingFee",
+      "vendor": "上海鄉村",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "44b634d6157ed980a0734794d6093077",
+      "type": "shippingFee",
+      "vendor": "THE上海",
+      "oldValue": null,
+      "newValue": 0,
+      "reason": "根據 shippingType: pickup"
+    },
+    {
+      "planId": "plan_1765438887924_0",
+      "type": "shippingFee",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 shippingType: delivery"
+    },
+    {
+      "planId": "plan-2026-003",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7szsf3rc2yj_1",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sonypz7nei_4",
+      "type": "maxDistance",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7sfu8i4mnqy_5",
+      "type": "maxDistance",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7szmsrnf9u2_8",
+      "type": "maxDistance",
+      "vendor": "漢來巨蛋宴會廳",
+      "oldValue": null,
+      "newValue": 200,
+      "reason": "根據 region: south, shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7sj5ur582dq_9",
+      "type": "maxDistance",
+      "vendor": "福園台菜海鮮餐廳",
+      "oldValue": null,
+      "newValue": 200,
+      "reason": "根據 region: south, shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7s29f0adtsj_10",
+      "type": "maxDistance",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7somnjw2qj7_11",
+      "type": "maxDistance",
+      "vendor": "王品",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sxohslm2wr_12",
+      "type": "maxDistance",
+      "vendor": "Costco大成",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7s6d7y574fp_13",
+      "type": "maxDistance",
+      "vendor": "台酒",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sm1b29ulxz_14",
+      "type": "maxDistance",
+      "vendor": "台酒",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sed16j33mh_15",
+      "type": "maxDistance",
+      "vendor": "台酒X潮港城",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7ss75mpztwr_16",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7se5zntq17u_17",
+      "type": "maxDistance",
+      "vendor": "祥和蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7s62tzee4nf_23",
+      "type": "maxDistance",
+      "vendor": "全國麗園大飯店",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7siqwdomu61_24",
+      "type": "maxDistance",
+      "vendor": "鄧師傅",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7shrtxmemwu_25",
+      "type": "maxDistance",
+      "vendor": "逸湘齋",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7su3mx0myrq_26",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7s6uqaklke7_27",
+      "type": "maxDistance",
+      "vendor": "卜蜂",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7smu425qjf4_28",
+      "type": "maxDistance",
+      "vendor": "大成",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixrwo7sa9d8p38vk_31",
+      "type": "maxDistance",
+      "vendor": "台北士林萬麗酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "plan_mixrwo7sq0snerrmg_34",
+      "type": "maxDistance",
+      "vendor": "潮港城",
+      "oldValue": null,
+      "newValue": 150,
+      "reason": "根據 region: central, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ek3f6qkukk9_2",
+      "type": "maxDistance",
+      "vendor": "炒湘湘",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekq315usv9c_3",
+      "type": "maxDistance",
+      "vendor": "王品",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekg2box2l9b_4",
+      "type": "maxDistance",
+      "vendor": "禪廚蔬食餐廳",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ekyislocxcn_5",
+      "type": "maxDistance",
+      "vendor": "青葉台菜",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekcll4e7ixj_6",
+      "type": "maxDistance",
+      "vendor": "養心茶樓",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekyu3deysa1_7",
+      "type": "maxDistance",
+      "vendor": "遇上素蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ek8opevoh9r_9",
+      "type": "maxDistance",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ek67hn44uzh_10",
+      "type": "maxDistance",
+      "vendor": "點水樓",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ekt5q16pfay_12",
+      "type": "maxDistance",
+      "vendor": "紅豆食府",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekb0x9p4du0_13",
+      "type": "maxDistance",
+      "vendor": "糖朝",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8eknu63lanf4_15",
+      "type": "maxDistance",
+      "vendor": "台南晶英酒店",
+      "oldValue": null,
+      "newValue": 200,
+      "reason": "根據 region: south, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsl8ekgb0upfn3d_19",
+      "type": "maxDistance",
+      "vendor": "漁季水產",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekr1mid9q15_20",
+      "type": "maxDistance",
+      "vendor": "正官庄",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsl8ekbpyudm5sh_21",
+      "type": "maxDistance",
+      "vendor": "芳葉國際美食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf5a0gnsenz_0",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfqu6chpswm_1",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfwpsxipfhu_2",
+      "type": "maxDistance",
+      "vendor": "廚鮮食代",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf49phqhpr6_3",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfha8rgkjfd_4",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf1v99lexnc_5",
+      "type": "maxDistance",
+      "vendor": "松竹園",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcfdrqzr8n1p_13",
+      "type": "maxDistance",
+      "vendor": "家樂福",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcf12dlkgc8v_19",
+      "type": "maxDistance",
+      "vendor": "高雄漢來大飯店",
+      "oldValue": null,
+      "newValue": 200,
+      "reason": "根據 region: south, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcf0xkjbu9h5_23",
+      "type": "maxDistance",
+      "vendor": "阿基師觀光工廠",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf0gp62ztbi_24",
+      "type": "maxDistance",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "plan_mixsowcfbtl75qjkz_25",
+      "type": "maxDistance",
+      "vendor": "度小月",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfv6zm7oxp1_26",
+      "type": "maxDistance",
+      "vendor": "富霸王豬腳",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf83nrv6f3f_27",
+      "type": "maxDistance",
+      "vendor": "阿舍乾麵",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfdt0s7rpjc_28",
+      "type": "maxDistance",
+      "vendor": "福記",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf7mt76nw8q_29",
+      "type": "maxDistance",
+      "vendor": "義美",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcfbtrgy7o1e_30",
+      "type": "maxDistance",
+      "vendor": "裕珍馨",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf61a023559_31",
+      "type": "maxDistance",
+      "vendor": "郭元益",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf140n6u3cw_32",
+      "type": "maxDistance",
+      "vendor": "金格",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf3v2jq57oy_33",
+      "type": "maxDistance",
+      "vendor": "林聰明沙鍋魚頭",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_mixsowcf26eotrjg9_34",
+      "type": "maxDistance",
+      "vendor": "周氏蝦捲",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "b9a1d55be921c863b47c4ee827ed0a67",
+      "type": "maxDistance",
+      "vendor": "漢來美食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "8d054e696169747e563546ab184ff3f5",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "ea44ba37eb74bc61a8b74a50204cee65",
+      "type": "maxDistance",
+      "vendor": "祥和蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "d9af24b3236f0a80bc0c380ca698a091",
+      "type": "maxDistance",
+      "vendor": "炒湘湘",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "8fbac2f0931bc3c101b01d96542f5946",
+      "type": "maxDistance",
+      "vendor": "漢來大飯店-福園台菜",
+      "oldValue": null,
+      "newValue": 200,
+      "reason": "根據 region: south, shippingType: both"
+    },
+    {
+      "planId": "d53ac061237b5ad4bee26c4436578f67",
+      "type": "maxDistance",
+      "vendor": "卜蜂食品",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "815b2263cf6507fe4bc01d6188d086b8",
+      "type": "maxDistance",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "4af494975f49af655d321bcfd21b778a",
+      "type": "maxDistance",
+      "vendor": "佳佳食品",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "d4466459e2fd8fdbb9068a91e526cd1f",
+      "type": "maxDistance",
+      "vendor": "晶華酒店",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "6d36c63e6a90d0d584a0dab93baa2917",
+      "type": "maxDistance",
+      "vendor": "雙月食品社",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "80438200ebf40a2316520e79914a16f9",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "2c71067c32db4d2295a3f601e0b272c3",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "4a60cb70b3c87c652c5f28f31ed0e468",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "276d7bb16ba2fa1da54e1db0f91b2e3a",
+      "type": "maxDistance",
+      "vendor": "Costco好市多-大成",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "d29a3e31dbfb0669b8a40c86726b44ed",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "0d13d44945305e9c73c16b2dd8e43b1a",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "590a0e95183c8e398cd48e65ba02bb5e",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "3102209ccecd3f75a753bd760323ccd0",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "b6c7aec3fc9d8c8437ac8997efc020da",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "92923c49fd32b603810badc5c8f2f8de",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "5ffd8b1235af8a926e423fdee9a38e95",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "a416c7f2c6327e8a2a1f5606ee5cf95b",
+      "type": "maxDistance",
+      "vendor": "朱記餡餅粥店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "4091984f3a8e9099f1809aa00dab4bb6",
+      "type": "maxDistance",
+      "vendor": "養心茶樓",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "327d86860f29affbb2a2200714aca5b0",
+      "type": "maxDistance",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "3369d55533595ad2fff18b9aa47ebbc9",
+      "type": "maxDistance",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "a98381f135b99ef993e9efe8db446b0d",
+      "type": "maxDistance",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "0c5be3ec439a3f265229938fc46291e2",
+      "type": "maxDistance",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "986dfa5ff67d6f5a4eaa9055194e7eb1",
+      "type": "maxDistance",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "112ba042793d2c43876c51997da5b751",
+      "type": "maxDistance",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": 200,
+      "reason": "根據 region: south, shippingType: both"
+    },
+    {
+      "planId": "8ac8210863ecc60ba9a2a061b8941385",
+      "type": "maxDistance",
+      "vendor": "漢來巨蛋宴會廳",
+      "oldValue": null,
+      "newValue": 200,
+      "reason": "根據 region: south, shippingType: both"
+    },
+    {
+      "planId": "0ab81060c0cbe324164ab3a01676a3e4",
+      "type": "maxDistance",
+      "vendor": "裕元花園酒店",
+      "oldValue": null,
+      "newValue": 150,
+      "reason": "根據 region: central, shippingType: both"
+    },
+    {
+      "planId": "ace02afa2aa9c67ff5414689fa760613",
+      "type": "maxDistance",
+      "vendor": "瓦城泰統",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "1987525721657f9cde131d1700e568ef",
+      "type": "maxDistance",
+      "vendor": "瓦城泰統",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "696e2a4c18981d1cc39fc7d76a50f0fe",
+      "type": "maxDistance",
+      "vendor": "王品享鴨",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "a9422490a0dad83073b8caa903966eeb",
+      "type": "maxDistance",
+      "vendor": "王品丰禾日麗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "71f099988eb5548b89e852262369ff44",
+      "type": "maxDistance",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "2ec38c2dfa490d8a5b0c24474cb9e7c9",
+      "type": "maxDistance",
+      "vendor": "鬍鬚張",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "d3cd12fb329aef72246e15b08d018748",
+      "type": "maxDistance",
+      "vendor": "點水樓",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "14cd35ec587c3dc36fd49f133540bdfa",
+      "type": "maxDistance",
+      "vendor": "紅豆食府",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "b79c4e24ef9abf97b5f88e81c0a8bd49",
+      "type": "maxDistance",
+      "vendor": "瓦城",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "30e4aae10cb0b2c4b1ab81db25761e26",
+      "type": "maxDistance",
+      "vendor": "瓦城",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "f09452f0877ed638839fd1451ed9ab43",
+      "type": "maxDistance",
+      "vendor": "時時香",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "67d7f5d8112da3ef97cce6871df0941f",
+      "type": "maxDistance",
+      "vendor": "時時香",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "59682d260aa047a2089f3eb75f26696a",
+      "type": "maxDistance",
+      "vendor": "1010湘",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "31b2aa9241649e5de088a462a8bd3b2f",
+      "type": "maxDistance",
+      "vendor": "1010湘",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "dfe252ae7fdbff83391594bec56b7495",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "611206df7bcdcd6215ed55690c3655d7",
+      "type": "maxDistance",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "3b28cc4148692850696e9b43832d7556",
+      "type": "maxDistance",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "a6d6ba273e8f634b8ee290d1764308dc",
+      "type": "maxDistance",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "7c899e3b187280ef48d3c998d947627e",
+      "type": "maxDistance",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "25859c00a0c4fe1a7b610bda3d1ac9e7",
+      "type": "maxDistance",
+      "vendor": "台北圓山大飯店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "0b101e9345a2fa49d345595a514db09c",
+      "type": "maxDistance",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "6d54155cbb4f4eb216d5bc4eb102f412",
+      "type": "maxDistance",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "3815c3fb47ca8c54d26deddf2cce90ec",
+      "type": "maxDistance",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "51774f1672ac736ba597b9a6937eb29c",
+      "type": "maxDistance",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "4d301b6f5a88294c123c866fd4794f77",
+      "type": "maxDistance",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "bab0d401fe0fb5ac9aa861b09702f27d",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "663aac5758df698deef648cffd1adf9c",
+      "type": "maxDistance",
+      "vendor": "7-ELEVEN-海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "931768157a1281977c78265d1574fba2",
+      "type": "maxDistance",
+      "vendor": "全家-水蛙師",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "d32ac2171b1838494f94a641ae94ecd1",
+      "type": "maxDistance",
+      "vendor": "家樂福-老協珍X寶可夢",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "9519ed5f7f7164a10089511f26f7048a",
+      "type": "maxDistance",
+      "vendor": "家樂福-老協珍X寶可夢",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "734b979c2fbe834dacd4035aadaf98cd",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "d2d0c6578ba6f14d8aa8b359bea20282",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "4f6ef4c1d8a8b60a95970929852c3578",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "23659a2050732d6751c8958e7677536b",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "bfa370503d76a7ed5b8235220863943e",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "34490e31188d077573bff2bb66eccee5",
+      "type": "maxDistance",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "07cb6476e9b6887999469d90d6dc246e",
+      "type": "maxDistance",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "b9865b5c48f2039808f6679c8e6d5bb7",
+      "type": "maxDistance",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "21df79f5b00a207a4effc08ef1136176",
+      "type": "maxDistance",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "43d8715e22e4c596a38271b843e1c908",
+      "type": "maxDistance",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "3c40cd2095a6d99b25d60230c6b66236",
+      "type": "maxDistance",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "6bd6ae866866c875b4fe5a2ac7731d27",
+      "type": "maxDistance",
+      "vendor": "全國麗園大飯店",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "c2416ee1e41c54f81425b9ad2d637872",
+      "type": "maxDistance",
+      "vendor": "卜蜂食品",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "a108e4cc7ffc0f1ee2fb2892716adf13",
+      "type": "maxDistance",
+      "vendor": "佳佳",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "0baf068e5886110dbf4b465ae7249d26",
+      "type": "maxDistance",
+      "vendor": "晶華酒店",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "6466d5668d69e1a8d72953eb64c970b4",
+      "type": "maxDistance",
+      "vendor": "雙月食品社",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "b9df0e792fd32bb998259aaa8c48e828",
+      "type": "maxDistance",
+      "vendor": "養心茶樓",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "43fc5a5bca00f97361db959c53003d84",
+      "type": "maxDistance",
+      "vendor": "祥和蔬食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: both"
+    },
+    {
+      "planId": "f28f6ef9aec33a7c2437124594f513be",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "ede64134353c453cbf36616b5bc9b89b",
+      "type": "maxDistance",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "4e9c13d99ec13fab83ff8e42d272030d",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "be4081dbc5ca45082653ef583b9a4045",
+      "type": "maxDistance",
+      "vendor": "礁溪老爺酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "f62bd63e162338a7eabb25ec9ed27912",
+      "type": "maxDistance",
+      "vendor": "礁溪老爺酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "83850091765340c2fd24876bb81aa02f",
+      "type": "maxDistance",
+      "vendor": "王品集團",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "02bb11b23efcb4b26844ddeaaa7356d4",
+      "type": "maxDistance",
+      "vendor": "王品集團",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "114630f14c9df096f5323ae089b00508",
+      "type": "maxDistance",
+      "vendor": "王品集團",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "4c288e0251a6c21d9b78e8fb012bf3b9",
+      "type": "maxDistance",
+      "vendor": "維多麗亞酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "e9b27dca7da7a33df079dc6033e96319",
+      "type": "maxDistance",
+      "vendor": "維多麗亞酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "cdceb3ae6b8cc811125ef81491aa9d5e",
+      "type": "maxDistance",
+      "vendor": "維多麗亞酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "a021d96afc8c3277c9f12cd0870b508c",
+      "type": "maxDistance",
+      "vendor": "維多麗亞酒店",
+      "oldValue": null,
+      "newValue": 100,
+      "reason": "根據 region: north, shippingType: both"
+    },
+    {
+      "planId": "bc94b8bd6db11621b9599c1de5db0b74",
+      "type": "maxDistance",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": 150,
+      "reason": "根據 region: central, shippingType: delivery"
+    },
+    {
+      "planId": "fa31c546cdcc6045d7123e4526b2355e",
+      "type": "maxDistance",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": 150,
+      "reason": "根據 region: central, shippingType: delivery"
+    },
+    {
+      "planId": "7e0daed175b9e72e630f827905332c51",
+      "type": "maxDistance",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": 150,
+      "reason": "根據 region: central, shippingType: delivery"
+    },
+    {
+      "planId": "8feeb5e12998d11bd6f98c0189d0f89e",
+      "type": "maxDistance",
+      "vendor": "漢來美食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "541e54c49cd00a8fdf1261fa0fb3f8d6",
+      "type": "maxDistance",
+      "vendor": "漢來美食",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "5d01863fbd0ff4187ea198d26b5cf817",
+      "type": "maxDistance",
+      "vendor": "上海鄉村",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "plan_1765438887924_0",
+      "type": "maxDistance",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": 999,
+      "reason": "根據 region: nationwide, shippingType: delivery"
+    },
+    {
+      "planId": "f324d0871d8c3be3d901604ca7d60fad",
+      "type": "dishes",
+      "vendor": "台北六福萬怡酒店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠"
+    },
+    {
+      "planId": "baf8e556f43bcd7ab4ed73030ce5d985",
+      "type": "dishes",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式"
+    },
+    {
+      "planId": "05d7bd0b37ceadf8a493d3702ae997ff",
+      "type": "dishes",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式"
+    },
+    {
+      "planId": "b9a1d55be921c863b47c4ee827ed0a67",
+      "type": "dishes",
+      "vendor": "漢來美食",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 粵式, 冷凍年菜, 宅配, 免運"
+    },
+    {
+      "planId": "e35ac43a5fc058dfcf8416d003d39807",
+      "type": "dishes",
+      "vendor": "漢來巨蛋宴會廳",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 辦桌, 早鳥優惠, 免運"
+    },
+    {
+      "planId": "128673926b6ee2b44e1de09f1530ccc2",
+      "type": "dishes",
+      "vendor": "大直維多麗亞酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 小家庭, 早鳥優惠"
+    },
+    {
+      "planId": "23d60becb339e432ef695cea8be8f317",
+      "type": "dishes",
+      "vendor": "典華",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 宴會廳, 台式, 早鳥優惠"
+    },
+    {
+      "planId": "d4a8418f615e4cc767cedd2854953646",
+      "type": "dishes",
+      "vendor": "全國麗園大飯店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 現煮, 高CP值"
+    },
+    {
+      "planId": "007d5c85230b9a12508710039cb4a8cb",
+      "type": "dishes",
+      "vendor": "THE LIN 林酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 除夕圍爐, 早鳥優惠"
+    },
+    {
+      "planId": "5b3952a202f7ed80c5080415baa6dc45",
+      "type": "dishes",
+      "vendor": "THE LIN 林酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 除夕圍爐, 早鳥優惠, 頂級"
+    },
+    {
+      "planId": "0111c93e3bd37be1229ae4cb3c729e01",
+      "type": "dishes",
+      "vendor": "日月千禧酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 除夕圍爐"
+    },
+    {
+      "planId": "3475ee98f26440a47075f427113568a9",
+      "type": "dishes",
+      "vendor": "日月千禧酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 除夕圍爐, 頂級"
+    },
+    {
+      "planId": "8d054e696169747e563546ab184ff3f5",
+      "type": "dishes",
+      "vendor": "蔡老師蔬食",
+      "oldValue": null,
+      "newValue": [
+        "素炒米粉",
+        "素肉捲",
+        "香菇雞湯"
+      ],
+      "reason": "根據標籤自動生成: 素食, 全素, 手工, 限量, 早鳥優惠"
+    },
+    {
+      "planId": "9524d71911792f42ba7c06260bac0fc4",
+      "type": "dishes",
+      "vendor": "潮港城",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 宴會廳, 除夕圍爐, 辦桌, 早鳥優惠"
+    },
+    {
+      "planId": "d53ac061237b5ad4bee26c4436578f67",
+      "type": "dishes",
+      "vendor": "卜蜂食品",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 冷凍年菜, 平價, 高CP值, 宅配"
+    },
+    {
+      "planId": "815b2263cf6507fe4bc01d6188d086b8",
+      "type": "dishes",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 冷凍年菜, 平價, 大份量, 小家庭, 免運"
+    },
+    {
+      "planId": "4af494975f49af655d321bcfd21b778a",
+      "type": "dishes",
+      "vendor": "佳佳食品",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 冷凍年菜, 古早味, 傳統, 平價, 免運"
+    },
+    {
+      "planId": "d4466459e2fd8fdbb9068a91e526cd1f",
+      "type": "dishes",
+      "vendor": "晶華酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 冷凍年菜, 頂級, 五星, 免運"
+    },
+    {
+      "planId": "7c261810592af0642495dab914b8a054",
+      "type": "dishes",
+      "vendor": "台北喜來登-桃山日本料理",
+      "oldValue": null,
+      "newValue": [
+        "壽司拼盤",
+        "握壽司",
+        "生魚片"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 日式, 御節料理"
+    },
+    {
+      "planId": "f5e977f54fb0b9a5913a545aa3584ce9",
+      "type": "dishes",
+      "vendor": "台北喜來登",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 火鍋, 海陸"
+    },
+    {
+      "planId": "6d36c63e6a90d0d584a0dab93baa2917",
+      "type": "dishes",
+      "vendor": "雙月食品社",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 養生, 藥膳, 健康, 冷凍年菜, 免運"
+    },
+    {
+      "planId": "10c99a295ebaeed46cb185e88fe945fc",
+      "type": "dishes",
+      "vendor": "全聯-六福",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 量販, 全聯, 平價, 冷凍年菜, 免運"
+    },
+    {
+      "planId": "5c405743883ec4017ef03e39a9aee6cb",
+      "type": "dishes",
+      "vendor": "誠品行旅-聚聚樓",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 限量, 早鳥優惠"
+    },
+    {
+      "planId": "5564a9051038b20adf03f586df012ff2",
+      "type": "dishes",
+      "vendor": "台北萬豪酒店-欣葉鐘菜",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 米其林, 欣葉, 台菜, 免運"
+    },
+    {
+      "planId": "9ec610c60a5280186d0fbb1f4b6b236d",
+      "type": "dishes",
+      "vendor": "福容大飯店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 小家庭"
+    },
+    {
+      "planId": "92923c49fd32b603810badc5c8f2f8de",
+      "type": "dishes",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 老協珍, 聯名, 限定, 冷凍年菜, 免運"
+    },
+    {
+      "planId": "5ffd8b1235af8a926e423fdee9a38e95",
+      "type": "dishes",
+      "vendor": "老協珍",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 老協珍, 聯名, 限定, 冷凍年菜, 免運"
+    },
+    {
+      "planId": "f90eb80d465ad1b6cc95411120c71781",
+      "type": "dishes",
+      "vendor": "全家-石二鍋",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 便利商店, 全家, 火鍋, 王品"
+    },
+    {
+      "planId": "a416c7f2c6327e8a2a1f5606ee5cf95b",
+      "type": "dishes",
+      "vendor": "朱記餡餅粥店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 餐廳, 北方菜, 冷凍年菜"
+    },
+    {
+      "planId": "c8810bdb56265499ab5cc12a7868575f",
+      "type": "dishes",
+      "vendor": "高雄圓山大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 粵式, 早鳥優惠, 除夕圍爐"
+    },
+    {
+      "planId": "16703bda62d457066f384a62969abde4",
+      "type": "dishes",
+      "vendor": "義大皇家酒店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠, 小家庭"
+    },
+    {
+      "planId": "42002f747cfcc8b62dcd442d0717bcd3",
+      "type": "dishes",
+      "vendor": "義大皇家酒店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠, 頂級"
+    },
+    {
+      "planId": "327d86860f29affbb2a2200714aca5b0",
+      "type": "dishes",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜, 免運"
+    },
+    {
+      "planId": "3369d55533595ad2fff18b9aa47ebbc9",
+      "type": "dishes",
+      "vendor": "欣葉",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜, 小家庭, 免運"
+    },
+    {
+      "planId": "d1e284737ed264690defefe96b7e18e6",
+      "type": "dishes",
+      "vendor": "台北新板希爾頓酒店-青雅",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠, 頂級"
+    },
+    {
+      "planId": "62904c542ef68f5af5e5a491f5fb9cef",
+      "type": "dishes",
+      "vendor": "台北花園大酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 常溫年菜"
+    },
+    {
+      "planId": "4cce4e942a6eb58f3f31a809833af2e8",
+      "type": "dishes",
+      "vendor": "台北六福萬怡酒店-粵亮",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠"
+    },
+    {
+      "planId": "d13c5751bb48e9c2a8e808f2744ed225",
+      "type": "dishes",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 粵式, 早鳥優惠, 老字號"
+    },
+    {
+      "planId": "723af7d9bc2f860e5ebd5dce75ad0de7",
+      "type": "dishes",
+      "vendor": "長春食素名人館",
+      "oldValue": null,
+      "newValue": [
+        "素炒米粉",
+        "素肉捲",
+        "香菇雞湯"
+      ],
+      "reason": "根據標籤自動生成: 素食, 老字號, 多國料理"
+    },
+    {
+      "planId": "112ba042793d2c43876c51997da5b751",
+      "type": "dishes",
+      "vendor": "漢來大飯店-福園",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 米其林, 台式, 限量, 除夕圍爐, 免運"
+    },
+    {
+      "planId": "8ac8210863ecc60ba9a2a061b8941385",
+      "type": "dishes",
+      "vendor": "漢來巨蛋宴會廳",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 早鳥優惠, 除夕圍爐, 免運"
+    },
+    {
+      "planId": "0ab81060c0cbe324164ab3a01676a3e4",
+      "type": "dishes",
+      "vendor": "裕元花園酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 冷凍年菜"
+    },
+    {
+      "planId": "6d3d1aa8011f6468a2587657dceaf5e1",
+      "type": "dishes",
+      "vendor": "寒軒國際大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 老字號"
+    },
+    {
+      "planId": "14825c4336bce30a89acec713ec45378",
+      "type": "dishes",
+      "vendor": "台南晶英酒店-晶英軒",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 頂級"
+    },
+    {
+      "planId": "2fdc74fe59a11a3beb037a460e8fcd12",
+      "type": "dishes",
+      "vendor": "台中長榮桂冠酒店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 粵式, 冷凍年菜"
+    },
+    {
+      "planId": "ba417893ce898c436b164baec571830b",
+      "type": "dishes",
+      "vendor": "高雄福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 老字號"
+    },
+    {
+      "planId": "e78066ef745ae882eedad43a57d2a9d0",
+      "type": "dishes",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 老字號"
+    },
+    {
+      "planId": "eee6fb8e1fe01fca08b89a671c2d9b59",
+      "type": "dishes",
+      "vendor": "台南大億麗緻酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 在地風味"
+    },
+    {
+      "planId": "ba4fe353f8f49ca02d3643491f278f37",
+      "type": "dishes",
+      "vendor": "高雄國賓大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 頂級"
+    },
+    {
+      "planId": "ace02afa2aa9c67ff5414689fa760613",
+      "type": "dishes",
+      "vendor": "瓦城泰統",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 泰式, 冷凍年菜, 小家庭, 免運"
+    },
+    {
+      "planId": "1987525721657f9cde131d1700e568ef",
+      "type": "dishes",
+      "vendor": "瓦城泰統",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 泰式, 冷凍年菜, 免運"
+    },
+    {
+      "planId": "696e2a4c18981d1cc39fc7d76a50f0fe",
+      "type": "dishes",
+      "vendor": "王品享鴨",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 王品, 冷凍年菜, 烤鴨, 免運"
+    },
+    {
+      "planId": "a9422490a0dad83073b8caa903966eeb",
+      "type": "dishes",
+      "vendor": "王品丰禾日麗",
+      "oldValue": null,
+      "newValue": [
+        "壽司拼盤",
+        "握壽司",
+        "生魚片"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 王品, 冷凍年菜, 日式, 台式, 免運"
+    },
+    {
+      "planId": "71f099988eb5548b89e852262369ff44",
+      "type": "dishes",
+      "vendor": "鼎泰豐",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 米其林, 冷凍年菜, 免運, 台式"
+    },
+    {
+      "planId": "f9bb96a023aef52c445b25d9c7cdd7a4",
+      "type": "dishes",
+      "vendor": "台北寒舍艾美酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 頂級, 常溫年菜, 早鳥優惠"
+    },
+    {
+      "planId": "f53a23d7eefb7b08a46fa7cdee4b9cf8",
+      "type": "dishes",
+      "vendor": "台北寒舍艾美酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 西式, 頂級, 早鳥優惠"
+    },
+    {
+      "planId": "14dfb9f02b419e1f1bd6d13ad00a9d03",
+      "type": "dishes",
+      "vendor": "晶華酒店-晶華軒",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 頂級, 早鳥優惠"
+    },
+    {
+      "planId": "8eca69c7198b767d1a1f58e0063bc945",
+      "type": "dishes",
+      "vendor": "W酒店-紫艷",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 潮州, 頂級, 早鳥優惠"
+    },
+    {
+      "planId": "452b205f80cfc529d2ad94cf2ae83eb9",
+      "type": "dishes",
+      "vendor": "台北東方文華-雅閣",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 米其林, 頂級"
+    },
+    {
+      "planId": "d3cd12fb329aef72246e15b08d018748",
+      "type": "dishes",
+      "vendor": "點水樓",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 上海菜, 冷凍年菜, 免運"
+    },
+    {
+      "planId": "14cd35ec587c3dc36fd49f133540bdfa",
+      "type": "dishes",
+      "vendor": "紅豆食府",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 上海菜, 冷凍年菜, 老字號, 免運"
+    },
+    {
+      "planId": "38a2bb8a5f73f6a8195b2a43bce4a77e",
+      "type": "dishes",
+      "vendor": "儂來餐廳",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 上海菜, 老字號"
+    },
+    {
+      "planId": "6d20908d46dfb8909f6a2991e3309e9c",
+      "type": "dishes",
+      "vendor": "台北六福萬怡酒店-粵亮",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠"
+    },
+    {
+      "planId": "2f7df7e80d18a043e48d18331d4be576",
+      "type": "dishes",
+      "vendor": "台北福華大飯店-江南春",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 上海菜, 早鳥優惠, 老字號"
+    },
+    {
+      "planId": "3ef014c4e2fc253b6bdbf7309df67b61",
+      "type": "dishes",
+      "vendor": "台北士林萬麗酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 台式, 早鳥優惠, 常溫年菜"
+    },
+    {
+      "planId": "7d8455048f81804bf27588432005cc84",
+      "type": "dishes",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠"
+    },
+    {
+      "planId": "8dfc08751a674f82572ec6fb6a2a71c4",
+      "type": "dishes",
+      "vendor": "新竹福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵式, 早鳥優惠, 頂級"
+    },
+    {
+      "planId": "88a44c8c9457e73d67a89f7f7829cc21",
+      "type": "dishes",
+      "vendor": "全聯-六福",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 超市, 飯店聯名, 冷凍年菜, 限量, 小家庭"
+    },
+    {
+      "planId": "d9815113a32ff1315abab06771556c60",
+      "type": "dishes",
+      "vendor": "大潤發-阿嬤ㄟ辦桌菜",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 量販, 台式, 冷凍年菜, 早鳥優惠, 大家庭"
+    },
+    {
+      "planId": "a8edf377ca6a4de78391bf6f1c2d86dc",
+      "type": "dishes",
+      "vendor": "典華",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 婚宴會館, 台式, 早鳥優惠"
+    },
+    {
+      "planId": "86e0adc978953ae21d0dbc38d9815f04",
+      "type": "dishes",
+      "vendor": "彭園會館",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 餐廳, 台式, 限量, 頂級"
+    },
+    {
+      "planId": "07cb6476e9b6887999469d90d6dc246e",
+      "type": "dishes",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜, 小家庭, 平價"
+    },
+    {
+      "planId": "b9865b5c48f2039808f6679c8e6d5bb7",
+      "type": "dishes",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜, 平價"
+    },
+    {
+      "planId": "21df79f5b00a207a4effc08ef1136176",
+      "type": "dishes",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜"
+    },
+    {
+      "planId": "43d8715e22e4c596a38271b843e1c908",
+      "type": "dishes",
+      "vendor": "海霸王",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜, 早鳥優惠"
+    },
+    {
+      "planId": "c2416ee1e41c54f81425b9ad2d637872",
+      "type": "dishes",
+      "vendor": "卜蜂食品",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜, 平價, 小家庭"
+    },
+    {
+      "planId": "a108e4cc7ffc0f1ee2fb2892716adf13",
+      "type": "dishes",
+      "vendor": "佳佳",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜, 平價"
+    },
+    {
+      "planId": "b9df0e792fd32bb998259aaa8c48e828",
+      "type": "dishes",
+      "vendor": "養心茶樓",
+      "oldValue": null,
+      "newValue": [
+        "佛跳牆",
+        "紅燒肉",
+        "清蒸魚"
+      ],
+      "reason": "根據標籤自動生成: 素食, 蔬食, 港式, 冷凍年菜"
+    },
+    {
+      "planId": "43fc5a5bca00f97361db959c53003d84",
+      "type": "dishes",
+      "vendor": "祥和蔬食",
+      "oldValue": null,
+      "newValue": [
+        "素炒米粉",
+        "素肉捲",
+        "香菇雞湯"
+      ],
+      "reason": "根據標籤自動生成: 素食, 蔬食, 米其林, 必比登, 冷凍年菜"
+    },
+    {
+      "planId": "ede64134353c453cbf36616b5bc9b89b",
+      "type": "dishes",
+      "vendor": "呷七碗",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 台式, 冷凍年菜"
+    },
+    {
+      "planId": "114630f14c9df096f5323ae089b00508",
+      "type": "dishes",
+      "vendor": "王品集團",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 品牌, 冷凍年菜, 小家庭, 平價"
+    },
+    {
+      "planId": "4c288e0251a6c21d9b78e8fb012bf3b9",
+      "type": "dishes",
+      "vendor": "維多麗亞酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵菜, 早鳥優惠"
+    },
+    {
+      "planId": "e87b65b4a21162159725037a61d9da8f",
+      "type": "dishes",
+      "vendor": "板橋凱撒大飯店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 早鳥優惠, 贈品"
+    },
+    {
+      "planId": "7deb077d9fbb2505a1fe9205325cab25",
+      "type": "dishes",
+      "vendor": "板橋凱撒大飯店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級"
+    },
+    {
+      "planId": "8f283323394bd1aad0768542130bb577",
+      "type": "dishes",
+      "vendor": "典華幸福機構",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 餐廳, 當日現做, 早鳥優惠"
+    },
+    {
+      "planId": "8ba9c2ed7b43d4a631adf25a923071ae",
+      "type": "dishes",
+      "vendor": "台北福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "素炒米粉",
+        "素肉捲",
+        "香菇雞湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 素食, 蔬食, 早鳥優惠"
+    },
+    {
+      "planId": "fa31c546cdcc6045d7123e4526b2355e",
+      "type": "dishes",
+      "vendor": "台中福華大飯店",
+      "oldValue": null,
+      "newValue": [
+        "素炒米粉",
+        "素肉捲",
+        "香菇雞湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 素食, 全素, 冷凍年菜, 早鳥優惠"
+    },
+    {
+      "planId": "9a3fccd4426a5dc705560615bfc4b872",
+      "type": "dishes",
+      "vendor": "台北六福萬怡酒店",
+      "oldValue": null,
+      "newValue": [
+        "年夜飯套餐",
+        "整隻雞",
+        "海鮮湯"
+      ],
+      "reason": "根據標籤自動生成: 飯店級, 粵菜, 早鳥優惠"
+    }
+  ]
+}
