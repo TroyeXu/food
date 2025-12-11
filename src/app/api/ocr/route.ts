@@ -5,6 +5,7 @@ import path from 'path';
 import fs from 'fs/promises';
 import os from 'os';
 
+export const dynamic = 'force-dynamic';
 const execAsync = promisify(exec);
 
 interface OCRResult {

@@ -120,7 +120,7 @@ import type { ScraperJob, ScraperJobStatus, ScraperLogEntry, Plan, PriceHistory,
 import { format } from 'date-fns';
 import { zhTW } from 'date-fns/locale';
 
-const statusConfig: Record<ScraperJobStatus, { label: string; color: 'default' | 'primary' | 'success' | 'error' | 'warning'; icon: React.ReactNode }> = {
+const statusConfig: Record<ScraperJobStatus, { label: string; color: 'default' | 'primary' | 'success' | 'error' | 'warning'; icon?: React.ReactElement }> = {
   pending: { label: '等待中', color: 'default', icon: <Clock size={14} /> },
   running: { label: '執行中', color: 'primary', icon: <Loader size={14} className="animate-spin" /> },
   success: { label: '成功', color: 'success', icon: <CheckCircle size={14} /> },

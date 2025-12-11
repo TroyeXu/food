@@ -269,12 +269,12 @@ function parseSingleItem(parsed: Record<string, unknown>): Partial<Plan> | null 
       orderDeadline: isValidDate(parsed.orderDeadline) ? parsed.orderDeadline : undefined,
       fulfillStart: isValidDate(parsed.fulfillStart) ? parsed.fulfillStart : undefined,
       fulfillEnd: isValidDate(parsed.fulfillEnd) ? parsed.fulfillEnd : undefined,
-      region: parsed.region || undefined,
-      city: parsed.city || undefined,
-      address: parsed.address || undefined,
+      region: (parsed.region as any) || undefined,
+      city: (parsed.city as any) || undefined,
+      address: (parsed.address as any) || undefined,
       tags: Array.isArray(parsed.tags) ? parsed.tags.filter((t: unknown) => typeof t === 'string') : [],
       dishes: Array.isArray(parsed.dishes) ? parsed.dishes.filter((d: unknown) => typeof d === 'string') : [],
-      imageUrl: parsed.imageUrl || undefined,
+      imageUrl: (parsed.imageUrl as any) || undefined,
     };
 
     // 保留視覺分析特有欄位

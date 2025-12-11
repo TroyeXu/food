@@ -6,6 +6,7 @@ import path from 'path';
 import os from 'os';
 import { parseAIResponse } from '@/lib/aiPrompt';
 
+export const dynamic = 'force-dynamic';
 const execAsync = promisify(exec);
 
 type CLITool = 'claude' | 'gemini';
