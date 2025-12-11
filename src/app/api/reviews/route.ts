@@ -195,8 +195,12 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const planId = searchParams.get('planId');
     const sort = (searchParams.get('sort') || 'recent') as string;
-    const limit = parseInt(searchParams.get('limit') || '10');
-    const offset = parseInt(searchParams.get('offset') || '0');
+
+    // 安全的數字解析，防止 NaN
+    const limitStr = searchParams.get('limit');
+    const offsetStr = searchParams.get('offset');
+    const limit = Math.min(Math.max(parseInt(limitStr || '10', 10) || 10, 1), 100);
+    const offset = Math.max(parseInt(offsetStr || '0', 10) || 0, 0);
 
     const db = await initReviewsDb();
     const statsDb = await initReviewStatsDb();

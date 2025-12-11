@@ -21,11 +21,40 @@ export const dynamic = 'force-dynamic';
 
 const isDevelopment = process.env.NODE_ENV === 'development';
 
-// 簡易管理員驗證（實際應用應使用 JWT 或 session）
+// 安全的管理員驗證（使用 timing-safe 比較防止時間攻擊）
 function isAdmin(request: NextRequest): boolean {
   const adminKey = request.headers.get('X-Admin-Key');
-  const expectedKey = process.env.ADMIN_API_KEY || 'dev-admin-key';
-  return adminKey === expectedKey;
+  const expectedKey = process.env.ADMIN_API_KEY;
+
+  // 在生產環境必須設置 ADMIN_API_KEY
+  if (!expectedKey) {
+    if (isDevelopment) {
+      // 開發環境允許使用預設密鑰
+      return adminKey === 'dev-admin-key';
+    }
+    console.error('[Security] ADMIN_API_KEY not set in production');
+    return false;
+  }
+
+  if (!adminKey) {
+    return false;
+  }
+
+  // 使用 timing-safe 比較防止時間攻擊
+  try {
+    const adminBuffer = Buffer.from(adminKey);
+    const expectedBuffer = Buffer.from(expectedKey);
+
+    if (adminBuffer.length !== expectedBuffer.length) {
+      return false;
+    }
+
+    // 使用 crypto.timingSafeEqual 進行常數時間比較
+    const crypto = require('crypto');
+    return crypto.timingSafeEqual(adminBuffer, expectedBuffer);
+  } catch {
+    return false;
+  }
 }
 
 // 條件性地導入 Prisma
@@ -150,8 +179,11 @@ export async function GET(request: NextRequest) {
 
     const { searchParams } = new URL(request.url);
     const status = searchParams.get('status') || 'pending';
-    const limit = parseInt(searchParams.get('limit') || '50');
-    const offset = parseInt(searchParams.get('offset') || '0');
+    // 安全的數字解析，防止 NaN
+    const limitStr = searchParams.get('limit');
+    const offsetStr = searchParams.get('offset');
+    const limit = Math.min(Math.max(parseInt(limitStr || '50', 10) || 50, 1), 200);
+    const offset = Math.max(parseInt(offsetStr || '0', 10) || 0, 0);
     const autoModerate = searchParams.get('autoModerate') !== 'false';
 
     const db = await initReviewsDb();

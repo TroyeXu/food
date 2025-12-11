@@ -268,3 +268,59 @@ export function createSuccessResponse<T>(data: T, statusCode: number = 200) {
     },
   });
 }
+
+/**
+ * 安全的 JSON 解析
+ */
+export function safeJsonParse<T>(
+  jsonString: string,
+  defaultValue: T
+): { data: T; error: null } | { data: T; error: Error } {
+  try {
+    const parsed = JSON.parse(jsonString);
+    return { data: parsed as T, error: null };
+  } catch (error) {
+    console.error('[JSON Parse Error]', error);
+    return { data: defaultValue, error: error instanceof Error ? error : new Error('JSON parse failed') };
+  }
+}
+
+/**
+ * 安全的數字解析
+ */
+export function safeParseInt(
+  value: string | null | undefined,
+  defaultValue: number,
+  min?: number,
+  max?: number
+): number {
+  if (!value) return defaultValue;
+
+  const parsed = parseInt(value, 10);
+  if (isNaN(parsed)) return defaultValue;
+
+  if (min !== undefined && parsed < min) return min;
+  if (max !== undefined && parsed > max) return max;
+
+  return parsed;
+}
+
+/**
+ * 安全的浮點數解析
+ */
+export function safeParseFloat(
+  value: string | null | undefined,
+  defaultValue: number,
+  min?: number,
+  max?: number
+): number {
+  if (!value) return defaultValue;
+
+  const parsed = parseFloat(value);
+  if (isNaN(parsed)) return defaultValue;
+
+  if (min !== undefined && parsed < min) return min;
+  if (max !== undefined && parsed > max) return max;
+
+  return parsed;
+}
