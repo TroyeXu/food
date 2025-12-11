@@ -11,6 +11,9 @@ import {
   Heart,
   MapPin,
   Phone,
+  Clock,
+  ShoppingCart,
+  ExternalLink,
 } from 'lucide-react';
 import type { Plan } from '@/types';
 import { usePlanStore } from '@/stores/planStore';
@@ -45,6 +48,41 @@ export default function PlanListItem({ plan, onViewDetail }: PlanListItemProps) 
     return plan.storageType === 'frozen' ? '冷凍' : plan.storageType === 'chilled' ? '冷藏' : '常溫';
   };
 
+  // 計算訂購截止日距今天數
+  const getDeadlineInfo = () => {
+    if (!plan.orderDeadline) return null;
+    const deadline = new Date(plan.orderDeadline);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    deadline.setHours(0, 0, 0, 0);
+    const diffDays = Math.ceil((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+    if (diffDays < 0) return { text: '已截止', color: 'text-gray-400', urgent: false };
+    if (diffDays === 0) return { text: '今天截止', color: 'text-red-600', urgent: true };
+    if (diffDays <= 3) return { text: `剩${diffDays}天`, color: 'text-red-500', urgent: true };
+    if (diffDays <= 7) return { text: `剩${diffDays}天`, color: 'text-orange-500', urgent: false };
+    return null; // 超過7天不顯示
+  };
+
+  const deadlineInfo = getDeadlineInfo();
+
+  // 根據 vendorType 取得預設圖示和背景
+  const getDefaultImage = () => {
+    const vendorType = plan.vendorType || 'other';
+    const configs: Record<string, { emoji: string; bgClass: string }> = {
+      hotel: { emoji: '🏨', bgClass: 'from-purple-100 to-pink-100' },
+      restaurant: { emoji: '🍽️', bgClass: 'from-orange-100 to-red-100' },
+      brand: { emoji: '🎁', bgClass: 'from-blue-100 to-cyan-100' },
+      vegetarian: { emoji: '🥬', bgClass: 'from-green-100 to-lime-100' },
+      convenience: { emoji: '🏪', bgClass: 'from-yellow-100 to-orange-100' },
+      hypermarket: { emoji: '🛒', bgClass: 'from-indigo-100 to-purple-100' },
+      other: { emoji: '🧧', bgClass: 'from-red-50 to-orange-50' },
+    };
+    return configs[vendorType] || configs.other;
+  };
+
+  const defaultImage = getDefaultImage();
+
   return (
     <div
       className={`flex items-center gap-2 sm:gap-3 bg-[var(--card-bg)] rounded-lg border p-2 sm:p-3 transition-all hover:shadow-md cursor-pointer w-full max-w-full overflow-hidden ${
@@ -53,11 +91,13 @@ export default function PlanListItem({ plan, onViewDetail }: PlanListItemProps) 
       onClick={() => onViewDetail?.(plan)}
     >
       {/* 圖片 */}
-      <div className="w-14 h-14 sm:w-20 sm:h-20 flex-shrink-0 rounded-lg overflow-hidden bg-gray-100">
+      <div className={`w-14 h-14 sm:w-20 sm:h-20 flex-shrink-0 rounded-lg overflow-hidden bg-gradient-to-br ${defaultImage.bgClass}`}>
         {plan.imageUrl ? (
           <img src={plan.imageUrl} alt={plan.title} className="w-full h-full object-cover" />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-[var(--muted)] text-xs">無圖</div>
+          <div className="w-full h-full flex items-center justify-center">
+            <span className="text-2xl sm:text-3xl">{defaultImage.emoji}</span>
+          </div>
         )}
       </div>
 
@@ -113,19 +153,27 @@ export default function PlanListItem({ plan, onViewDetail }: PlanListItemProps) 
           )}
         </div>
 
-        {/* 標籤 */}
-        {plan.tags.length > 0 && (
-          <div className="flex gap-1 mt-1">
-            {plan.tags.slice(0, 2).map((tag) => (
-              <span key={tag} className="px-1.5 py-0.5 text-[9px] bg-[#c41e3a]/10 text-[#c41e3a] rounded">
-                {tag}
-              </span>
-            ))}
-            {plan.tags.length > 2 && (
-              <span className="text-[9px] text-[var(--muted)]">+{plan.tags.length - 2}</span>
-            )}
-          </div>
-        )}
+        {/* 標籤 + 截止日期 */}
+        <div className="flex items-center gap-2 mt-1">
+          {plan.tags.length > 0 && (
+            <div className="flex gap-1">
+              {plan.tags.slice(0, 2).map((tag) => (
+                <span key={tag} className="px-1.5 py-0.5 text-[9px] bg-[#c41e3a]/10 text-[#c41e3a] rounded">
+                  {tag}
+                </span>
+              ))}
+              {plan.tags.length > 2 && (
+                <span className="text-[9px] text-[var(--muted)]">+{plan.tags.length - 2}</span>
+              )}
+            </div>
+          )}
+          {deadlineInfo && (
+            <span className={`flex items-center gap-0.5 text-[9px] font-medium ${deadlineInfo.color} ${deadlineInfo.urgent ? 'animate-pulse' : ''}`}>
+              <Clock className="w-3 h-3" />
+              {deadlineInfo.text}
+            </span>
+          )}
+        </div>
       </div>
 
       {/* 價格 + 操作按鈕 */}
@@ -166,6 +214,18 @@ export default function PlanListItem({ plan, onViewDetail }: PlanListItemProps) 
           >
             {isSelected ? <CheckSquare className="w-4 h-4" /> : <Square className="w-4 h-4" />}
           </button>
+          {plan.sourceUrl && (
+            <a
+              href={plan.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="p-1.5 rounded-lg bg-gradient-to-r from-[#c41e3a] to-[#ff6b6b] text-white hover:opacity-90 transition-opacity"
+              title="前往訂購"
+            >
+              <ShoppingCart className="w-4 h-4" />
+            </a>
+          )}
         </div>
       </div>
     </div>

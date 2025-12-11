@@ -8,10 +8,11 @@ const FIRECRAWL_API_KEY = process.env.FIRECRAWL_API_KEY;
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { url, mode = 'full', service = 'jina' } = body as {
+    const { url, mode = 'full', service = 'jina', apiKey } = body as {
       url: string;
       mode?: 'full' | 'compact';
       service?: ScraperService;
+      apiKey?: string;
     };
 
     if (!url) {
@@ -31,10 +32,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 檢查 API Key
-    if (service === 'firecrawl' && !FIRECRAWL_API_KEY) {
+    // 使用傳入的 API Key 或環境變數
+    const effectiveJinaKey = apiKey || JINA_API_KEY;
+    const effectiveFirecrawlKey = apiKey || FIRECRAWL_API_KEY;
+
+    // 檢查 API Key（Firecrawl 必須有）
+    if (service === 'firecrawl' && !effectiveFirecrawlKey) {
       return NextResponse.json(
-        { error: 'Firecrawl API Key 未設定，請在 .env.local 中設定 FIRECRAWL_API_KEY' },
+        { error: 'Firecrawl 需要 API Key' },
         { status: 400 }
       );
     }
@@ -44,8 +49,8 @@ export async function POST(request: NextRequest) {
     // 使用選擇的服務爬取
     const scraped = await fetchWebpage(url, {
       service,
-      jinaApiKey: JINA_API_KEY,
-      firecrawlApiKey: FIRECRAWL_API_KEY,
+      jinaApiKey: effectiveJinaKey,
+      firecrawlApiKey: effectiveFirecrawlKey,
     });
 
     // 提取關鍵資訊提示
@@ -90,6 +95,10 @@ export async function POST(request: NextRequest) {
  */
 export async function GET() {
   const services = {
+    local: {
+      available: true, // 本地爬取總是可用，優先使用
+      hasApiKey: true, // 不需要 API Key
+    },
     jina: {
       available: true, // Jina 可以不用 API Key（有 rate limit）
       hasApiKey: !!JINA_API_KEY,
@@ -97,10 +106,6 @@ export async function GET() {
     firecrawl: {
       available: !!FIRECRAWL_API_KEY,
       hasApiKey: !!FIRECRAWL_API_KEY,
-    },
-    local: {
-      available: true, // 本地爬取總是可用
-      hasApiKey: true, // 不需要 API Key
     },
     crawl4ai: {
       available: true, // Python 環境設定好就可用
@@ -114,6 +119,6 @@ export async function GET() {
 
   return NextResponse.json({
     services,
-    default: FIRECRAWL_API_KEY ? 'firecrawl' : 'jina',
+    default: 'local', // 預設使用本地爬取，避免 API 額度問題
   });
 }

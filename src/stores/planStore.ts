@@ -95,6 +95,7 @@ interface PlanStore {
   batchUpdateStatus: (ids: string[], status: Plan['status']) => Promise<void>;
   batchDelete: (ids: string[]) => Promise<void>;
   clearAllData: () => Promise<void>;
+  reloadFromJson: () => Promise<void>;
 
   // 計算屬性方法
   getFilteredPlans: () => Plan[];
@@ -159,6 +160,29 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
       } else {
         // 開發環境：從 IndexedDB 讀取
         plans = await getAllPlans();
+
+        // 如果 IndexedDB 是空的，從 JSON 載入初始資料
+        if (plans.length === 0) {
+          try {
+            const res = await fetch('/data/plans.json');
+            const data = await res.json();
+            if (Array.isArray(data) && data.length > 0) {
+              // 轉換日期並寫入 IndexedDB
+              for (const p of data) {
+                const plan = {
+                  ...p,
+                  createdAt: new Date(p.createdAt),
+                  updatedAt: new Date(p.updatedAt),
+                };
+                await db.plans.put(plan);
+              }
+              plans = await getAllPlans();
+              console.log(`已從 plans.json 載入 ${plans.length} 筆資料到 IndexedDB`);
+            }
+          } catch (e) {
+            console.log('無法從 plans.json 載入初始資料:', e);
+          }
+        }
       }
 
       set({ plans, isLoading: false });
@@ -297,6 +321,42 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
       });
     } catch (error) {
       set({ error: (error as Error).message });
+      throw error;
+    }
+  },
+
+  reloadFromJson: async () => {
+    try {
+      set({ isLoading: true });
+      // 先清空 IndexedDB
+      await clearAllData();
+
+      // 從 JSON 重新載入
+      const res = await fetch('/data/plans.json');
+      const data = await res.json();
+
+      if (Array.isArray(data) && data.length > 0) {
+        // 轉換日期並寫入 IndexedDB
+        for (const p of data) {
+          const plan = {
+            ...p,
+            createdAt: new Date(p.createdAt),
+            updatedAt: new Date(p.updatedAt),
+          };
+          await db.plans.put(plan);
+        }
+        const plans = await getAllPlans();
+        set({
+          plans,
+          isLoading: false,
+          comparisonIds: [],
+        });
+        console.log(`已從 plans.json 重新載入 ${plans.length} 筆資料`);
+      } else {
+        set({ plans: [], isLoading: false });
+      }
+    } catch (error) {
+      set({ error: (error as Error).message, isLoading: false });
       throw error;
     }
   },
@@ -623,16 +683,41 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
       filtered = filtered.filter((p) => p.servingsMin <= filters.servingsMax!);
     }
 
-    // 配送方式
-    if (filters.shippingType && filters.shippingType !== 'all') {
+    // 配送方式（支援多選）
+    if (filters.shippingTypes && filters.shippingTypes.length > 0) {
+      // 多選模式：方案需符合任一選中的配送方式
+      filtered = filtered.filter((p) => {
+        // 取得方案的配送方式陣列
+        const planShippingTypes = (p as { shippingTypes?: string[] }).shippingTypes ||
+          (p.shippingType === 'both' ? ['delivery', 'pickup'] : [p.shippingType]);
+        // 檢查是否有任一符合
+        return filters.shippingTypes!.some((st) => planShippingTypes.includes(st));
+      });
+    } else if (filters.shippingType && filters.shippingType !== 'all') {
+      // 向後相容：單選模式
       filtered = filtered.filter(
         (p) => p.shippingType === filters.shippingType || p.shippingType === 'both'
       );
     }
 
-    // 儲存方式
-    if (filters.storageType && filters.storageType !== 'all') {
+    // 儲存方式（支援多選）
+    if (filters.storageTypes && filters.storageTypes.length > 0) {
+      // 多選模式：方案需符合任一選中的保存方式
+      filtered = filtered.filter((p) => {
+        // 取得方案的保存方式陣列
+        const planStorageTypes = (p as { storageTypes?: string[] }).storageTypes ||
+          (p.storageType ? [p.storageType] : ['frozen']);
+        // 檢查是否有任一符合
+        return filters.storageTypes!.some((st) => planStorageTypes.includes(st));
+      });
+    } else if (filters.storageType && filters.storageType !== 'all') {
+      // 向後相容：單選模式
       filtered = filtered.filter((p) => p.storageType === filters.storageType);
+    }
+
+    // 運費篩選
+    if (filters.shippingFee === 'free') {
+      filtered = filtered.filter((p) => p.shippingFee === 0 || p.tags?.includes('免運'));
     }
 
     // 地區篩選
@@ -700,6 +785,32 @@ export const usePlanStore = create<PlanStore>((set, get) => ({
         const end = p.fulfillEnd || '2100-12-31';
         return target >= start && target <= end;
       });
+    }
+
+    // ====== 新增分類篩選 ======
+    // 廠商類型
+    if (filters.vendorType && filters.vendorType !== 'all') {
+      filtered = filtered.filter((p) => p.vendorType === filters.vendorType);
+    }
+
+    // 產品類型
+    if (filters.productType && filters.productType !== 'all') {
+      filtered = filtered.filter((p) => p.productType === filters.productType);
+    }
+
+    // 料理風格
+    if (filters.cuisineStyle && filters.cuisineStyle !== 'all') {
+      filtered = filtered.filter((p) => p.cuisineStyle === filters.cuisineStyle);
+    }
+
+    // 價格等級
+    if (filters.priceLevel && filters.priceLevel !== 'all') {
+      filtered = filtered.filter((p) => p.priceLevel === filters.priceLevel);
+    }
+
+    // 家庭規模
+    if (filters.familySize && filters.familySize !== 'all') {
+      filtered = filtered.filter((p) => p.familySize === filters.familySize);
     }
 
     // 排序

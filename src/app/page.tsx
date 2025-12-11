@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, Settings, ChevronDown } from 'lucide-react';
+import { Menu, Settings, ChevronDown, Store } from 'lucide-react';
 import { usePlanStore } from '@/stores/planStore';
 import { seedMockData } from '@/lib/mockData';
 import FilterSidebar from '@/components/FilterSidebar';
@@ -11,6 +11,11 @@ import ConsumerToolbar from '@/components/ConsumerToolbar';
 import PlanDetailModal from '@/components/PlanDetailModal';
 import FestiveBackground from '@/components/FestiveBackground';
 import QuickFilters from '@/components/QuickFilters';
+import QuickWizard from '@/components/QuickWizard';
+import SmartRecommend from '@/components/SmartRecommend';
+import MobileFilterBar from '@/components/MobileFilterBar';
+import VendorList from '@/components/VendorList';
+import SortDropdown from '@/components/SortDropdown';
 import type { Plan } from '@/types';
 
 export default function Home() {
@@ -19,6 +24,7 @@ export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isInitialized, setIsInitialized] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<Plan | null>(null);
+  const [isVendorListOpen, setIsVendorListOpen] = useState(false);
 
   const handleViewDetail = (plan: Plan) => {
     setSelectedPlan(plan);
@@ -33,17 +39,6 @@ export default function Home() {
     init();
   }, [loadPlans]);
 
-  // 不再自動填充假資料
-  // useEffect(() => {
-  //   const checkAndSeed = async () => {
-  //     if (isInitialized && plans.length === 0) {
-  //       await seedMockData(addPlan);
-  //       await loadPlans();
-  //     }
-  //   };
-  //   checkAndSeed();
-  // }, [isInitialized, plans.length, addPlan, loadPlans]);
-
   // 確保消費者只看到已上架的
   useEffect(() => {
     if (filters.onlyPublished !== true) {
@@ -56,33 +51,48 @@ export default function Home() {
       {/* 過年背景裝飾 */}
       <FestiveBackground />
 
-      {/* Consumer Toolbar */}
-      <ConsumerToolbar />
+      {/* Consumer Toolbar - 只在桌面版顯示 */}
+      <div className="hidden lg:block">
+        <ConsumerToolbar />
+      </div>
 
-      {/* 快速篩選 */}
-      <QuickFilters />
+      {/* 手機版：精簡的篩選列 */}
+      <div className="lg:hidden">
+        <MobileFilterBar onOpenVendorList={() => setIsVendorListOpen(true)} />
+      </div>
 
-      {/* 滾動到底部按鈕 - 固定在右下角 */}
-      <button
-        onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
-        className="fixed bottom-20 right-4 z-30 p-3 bg-[#c41e3a] text-white rounded-full shadow-lg hover:bg-[#a01830] transition-all hover:scale-110"
-        title="滾動到底部"
-      >
-        <ChevronDown className="w-5 h-5" />
-      </button>
+      {/* 桌面版：智慧推薦區塊 */}
+      <div className="hidden lg:block">
+        <SmartRecommend />
+      </div>
+
+      {/* 桌面版：快速篩選 + 排序 + 廠商列表 */}
+      <div className="hidden lg:block">
+        <QuickFilters />
+        {/* 排序與廠商入口 */}
+        <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between border-b border-gray-100">
+          <button
+            onClick={() => setIsVendorListOpen(true)}
+            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-red-300 hover:bg-red-50 transition-all text-sm"
+          >
+            <Store className="w-4 h-4 text-red-600" />
+            <span className="font-medium text-gray-700">廠商總覽</span>
+          </button>
+          <SortDropdown />
+        </div>
+      </div>
+
+      {/* 快速找年菜精靈按鈕 */}
+      <div className="fixed bottom-20 right-4 z-40 lg:bottom-4 lg:right-20">
+        <QuickWizard />
+      </div>
 
       {/* Main content */}
       <div className="flex">
-        {/* Mobile sidebar toggle */}
-        <button
-          onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-          className="fixed bottom-20 left-4 z-30 lg:hidden p-3 bg-[var(--primary)] text-white rounded-full shadow-lg"
-        >
-          <Menu className="w-5 h-5" />
-        </button>
-
-        {/* Filter sidebar */}
-        <FilterSidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+        {/* 桌面版：側邊篩選欄 */}
+        <div className="hidden lg:block">
+          <FilterSidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+        </div>
 
         {/* Plan list */}
         <main
@@ -94,10 +104,10 @@ export default function Home() {
         </main>
       </div>
 
-      {/* Admin link - small button in corner */}
+      {/* Admin link - 桌面版右下角，手機版左下角避免與 QuickWizard 重疊 */}
       <a
         href="/admin"
-        className="fixed bottom-4 right-4 p-2 bg-[var(--card-bg)] border border-[var(--border)] rounded-full shadow-lg text-[var(--muted)] hover:text-[var(--foreground)] transition-colors z-30"
+        className="fixed bottom-4 left-4 lg:left-auto lg:right-4 p-2 bg-[var(--card-bg)] border border-[var(--border)] rounded-full shadow-lg text-[var(--muted)] hover:text-[var(--foreground)] transition-colors z-30"
         title="管理後台"
       >
         <Settings className="w-5 h-5" />
@@ -106,7 +116,6 @@ export default function Home() {
       {/* Compare modal */}
       <CompareModal />
 
-
       {/* Plan Detail Modal */}
       {selectedPlan && (
         <PlanDetailModal
@@ -114,6 +123,12 @@ export default function Home() {
           onClose={() => setSelectedPlan(null)}
         />
       )}
+
+      {/* Vendor List Modal */}
+      <VendorList
+        isOpen={isVendorListOpen}
+        onClose={() => setIsVendorListOpen(false)}
+      />
     </div>
   );
 }

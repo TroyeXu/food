@@ -1,0 +1,66 @@
+# 2026 年菜爬取清單 - 台灣本地網站
+# 已排除非台灣年菜相關網站
+
+# 桃園凱悅酒店
+https://www.hyattregencytaoyuan.tw/tw/news-detail/2026/
+
+# 福容大飯店
+https://www.fullon-hotels.com.tw/sk/tw/news-detail/1897/
+
+# 兄弟大飯店
+https://www.brotherhotel.com.tw/?p=6646
+
+# 台中金典酒店
+https://www.splendor-taichung.com.tw/zh/news/index/104
+
+# 漢來美食
+https://www.hilai-foods.com/news-tag/外帶年菜
+
+# 裕元花園酒店
+https://windsorinlife.com/pages/裕元花園酒店-2026年菜-1
+
+# 呷七碗
+https://www.1212baskets.com/collections/呷七碗-經典年菜
+
+# 漢來大飯店
+https://www.lai-foods.com/categories/hilai-arena-takeout
+https://www.lai-foods.com/categories/fuyun-takeout
+
+# 雙囍餐廳
+https://www.serenity.com.tw/products/newyearset2
+
+# 晶華麗晶集團
+https://shop.silkshotelgroup.com/RT
+
+# 大成食品
+https://dachanfoods.com.tw/zh-TW/collections/2026年菜單品甜品點心
+
+# 逸湘齋
+https://www.ckcchao.com/newyear2026
+
+# 先合元
+https://www.senheyuan.com/collections/2026年團圓外帶年菜
+
+# 台北國賓
+https://www.ambassador-hotels.com/tc/taipei
+
+# 台北萬豪
+https://www.marriott.com/hotels/travel/tpetw-taipei-marriott-hotel/
+
+# 台北君悅
+https://www.hyatt.com/grand-hyatt/en-US/taigh-grand-hyatt-taipei
+
+# 美麗華大飯店
+https://www.miramargarden.com.tw/
+
+# 福新花園酒店
+https://www.fushin-hotel.com.tw/
+
+# 新竹福華
+https://hsinchu.howard-hotels.com.tw/
+
+# 瑞穗溫泉酒店
+https://www.springresort.com.tw/
+
+# 日航高雄
+https://www.okura-nikko.com/zh-hant/taiwan/kaohsiung/hotel-nikko-kaohsiung/

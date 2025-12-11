@@ -1,0 +1,182 @@
+[
+  {
+    "vendorName": "老協珍",
+    "title": "龍蝦鮑魚干貝佛跳牆",
+    "description": "選用新鮮龍蝦，搭配頂級鮑魚、黑玉烏參、北海道干貝等珍品，細火慢熬出濃厚高湯",
+    "priceDiscount": 0,
+    "shippingType": "delivery",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "region": "nationwide",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "龍蝦鮑魚干貝佛跳牆",
+      "頂級花膠螺頭雞湯",
+      "私房封肉刈包",
+      "烏參牛腩煲",
+      "櫻花蝦干貝飯",
+      "富貴甜芋泥"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E5%BB%A3%E5%91%8A-bazzar-%E5%B9%B4%E8%8F%9C-%E9%BE%8D%E8%9D%A6%E9%AE%91%E9%AD%9A%E4%BD%9B%E8%B7%B3%E7%89%86-1200x800-1-69288e49e46a9.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北寒舍艾美酒店",
+    "title": "宴會廳常溫外帶年菜套餐",
+    "description": "由宴會廳主掌7道式的常溫外帶年菜套餐，適合四人享用",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 4,
+    "servingsMax": 4,
+    "orderDeadline": "2026-01-31",
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "龍馬精神開運集",
+      "魚子醬金牌掛爐鴨",
+      "老港味糯米炒蟹",
+      "豐年滿盅醃篤鮮",
+      "紅袍燒椒肉鬆龍虎斑"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B63-%E5%8F%B0%E5%8C%97%E5%AF%92%E8%88%8D%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97%E5%AF%92%E8%88%8D%E9%A3%9F%E8%AD%9C%E5%B9%B4%E8%8F%9C%E5%A4%96%E8%B3%A3-%E9%A6%AC%E8%BA%8D%E8%BF%8E%E6%98%A5%E4%BD%9B%E8%B7%B3%E7%89%86-%E5%BD%A2%E8%B1%A1%E7%85%A7-69288dbbf3fa7.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北寒舍艾美酒店",
+    "title": "寒舍食譜年菜-五福臨門闔家歡",
+    "description": "由行政主廚吳銘儒領軍，以粵式手藝打造滋補又雅緻的年節饗宴",
+    "priceDiscount": 0,
+    "shippingType": "delivery",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "orderDeadline": "2026-02-13",
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "潮式滷水拼",
+      "蠔汁糯米炒膏蟹",
+      "龍蝦鮑魚沙律",
+      "翡翠稻草西施牛",
+      "馬躍迎春佛跳牆",
+      "八寶迎財布袋雞"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B61-%E5%8F%B0%E5%8C%97%E5%AF%92%E8%88%8D%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97%E5%AF%92%E8%88%8D%E9%A3%9F%E8%AD%9C-%E9%A7%BF%E8%BA%8D%E8%B1%90%E5%B9%B4-%E5%B9%B4%E8%8F%9C%E5%A4%96%E8%B3%A3%E5%BD%A2%E8%B1%A1%E7%85%A7-69288df048aad.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-請客樓",
+    "title": "極品御璽六人海陸盛宴",
+    "description": "米其林一星中餐廳請客樓推出的六人套餐，展現星級餐廳的年節儀式感",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "台式",
+      "粵式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "請客五福集",
+      "御品佛跳牆",
+      "青椒汁時鮮魚",
+      "黑蒜無骨牛",
+      "干貝麻油雞煨飯",
+      "紅豆藜麥鬆糕"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B6-1-69288b99bf279.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-辰園",
+    "title": "祥雲瑞彩六人粵宴",
+    "description": "以人氣粵菜鋪陳年味層次，展現粵式燒味魅力",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "鴻運燒味拼",
+      "蟲草醬皇蒸龍蝦",
+      "松茸菌瑤柱花膠燉土雞",
+      "干貝蟹肉娃娃菜",
+      "極品鮑魚珍珠雞",
+      "椰香奶皇捲"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B6-2-69288bc2f0086.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-桃山",
+    "title": "豪華海陸涮涮鍋",
+    "description": "選用日本佐賀A5和牛肋眼與台灣黑毛松阪豬，搭配頂級海鮮食材的奢華團圓火鍋",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "日式",
+      "海鮮"
+    ],
+    "dishes": [
+      "日本佐賀A5和牛肋眼",
+      "台灣黑毛松阪豬",
+      "朱龍蝦",
+      "鮑魚",
+      "北海道干貝",
+      "石斑魚"
+    ],
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-桃山",
+    "title": "御節年菜おせち料理三段重",
+    "description": "日本新年必吃的御節料理，以象徵福氣的三重木箱盛裝20款吉祥山珍海味",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "日式",
+      "海鮮"
+    ],
+    "dishes": [
+      "鹽烤帝王蟹腳",
+      "龍蝦柿種揚",
+      "澎湖明蝦",
+      "松葉蟹春捲",
+      "磯煮鮑魚",
+      "黑豆",
+      "銀杏"
+    ],
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  }
+]

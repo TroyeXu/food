@@ -1,0 +1,290 @@
+[
+  {
+    "vendorName": "典華",
+    "title": "飛雪迎春・錦馬獻瑞",
+    "description": "當日現煮、限量預售；主菜含佛跳牆、清蒸東星斑與脆皮雞，年味象徵齊全",
+    "priceOriginal": 10380,
+    "priceDiscount": 8280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-18",
+    "city": "台北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "團圓錦繡大拼盤",
+      "砂鍋翅裙佛跳牆",
+      "金蒜玉糕蒸鮮鮑",
+      "清蒸東星斑",
+      "紅酒蘑菇豬膝骨",
+      "蒜香脆皮雞"
+    ],
+    "imageUrl": "https://img.denwell.com/denwell/wp-content/uploads/2025/11/2026-%E5%B9%B4%E8%8F%9C%E5%A4%96%E5%B8%B6%E5%AE%A3%E5%82%B3-fb-1983x1322_20251112_32.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "彭園會館",
+    "title": "馬運亨通富貴組",
+    "description": "限量預購、當天現製；含鮑魚魚翅佛跳牆與經典吉祥菜",
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "湘菜",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "鮑魚魚翅佛跳牆",
+      "富貴烤雙方",
+      "花雕貴妃蝦",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕",
+      "臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://img.cloudimg.in/uploads/shops/16200/theme/c2/c203d2d9d2276dbfb71bcadeedded32e.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "彭園會館",
+    "title": "金馬富貴大發組",
+    "description": "限量預購、當天現製；含魚翅花膠土雞鍋與經典吉祥菜",
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "湘菜",
+      "海鮮"
+    ],
+    "dishes": [
+      "魚翅花膠土雞鍋",
+      "富貴烤雙方",
+      "花雕貴妃蝦",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕"
+    ],
+    "imageUrl": "https://img.cloudimg.in/uploads/shops/16200/theme/c2/c203d2d9d2276dbfb71bcadeedded32e.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "柒號洋樓",
+    "title": "駿馬迎春 6人外帶套組",
+    "description": "常溫出貨、回家覆熱即上桌；可搭單點擴充桌數",
+    "priceDiscount": 8888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-30",
+    "fulfillStart": "2026-02-02",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "江浙菜",
+      "海鮮"
+    ],
+    "dishes": [
+      "冷前菜拼盤",
+      "上海醉雞",
+      "小黃瓜魚肚",
+      "烏魚子",
+      "乾燒大虎蝦",
+      "紅燒蹄膀",
+      "清蒸龍虎斑",
+      "椒鹽大沙公",
+      "櫻花蝦油飯",
+      "鮑魚火烔雞湯"
+    ],
+    "imageUrl": "https://www.hcpt.com.tw/wp-content/uploads/2025/10/2026%E5%B9%B4%E8%8F%9C%E5%A4%96%E5%B8%B6-1200x800-1.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "漢來名人坊",
+    "title": "粵式外帶年菜",
+    "description": "富貴盆菜為招牌；另有白鯧、炸子雞、生炒臘味糯米飯等單品與禮盒",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "city": "台北",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "富貴盆菜",
+      "原條白鯧",
+      "蒜香椒鹽明蝦",
+      "生炒臘味糯米飯",
+      "脆皮炸子雞",
+      "紅燒和牛肉"
+    ],
+    "imageUrl": "https://admin.hilai-foods.com/storage/images/5224/conversions/1556_1763546413-large.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "山海樓",
+    "title": "好運亨通 六人春節合菜",
+    "description": "限除夕至初五自取；菜色經典耐吃",
+    "priceDiscount": 12800,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-02-06",
+    "fulfillStart": "2026-02-16",
+    "fulfillEnd": "2026-02-21",
+    "city": "台北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "山海豪華拼盤",
+      "蹄膀極品海鮮羹",
+      "五柳枝鮮魚",
+      "麻油雞米糕",
+      "山海佛跳牆",
+      "紅棗銀耳露"
+    ],
+    "imageUrl": "https://mountain-n-seahouse.oddle.me/_next/image?url=https%3A%2F%2Fucarecdn.com%2F1d5b9b14-73b6-4c69-a479-0f89d731f49c%2F%2F-%2Fresize%2Fx1000%2F&w=3840&q=75",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "凱撒大飯店（板橋家宴）",
+    "title": "外帶年菜六人組",
+    "description": "完整過敏原標示、多款單點可選；滿額贈保冷袋",
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "city": "新北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "台式花膠佛跳牆",
+      "醬爆粿條龍蝦",
+      "冰糖元寶燒鮑魚",
+      "金牌油醋龍虎斑",
+      "荷葉糯米雞",
+      "冠軍臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://shop.caesarpark.com.tw/product-detail/upload/product_item_b/tw_product_item_list_25j30_aktjgenqj5.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "凱撒大飯店（板橋家宴）",
+    "title": "外帶年菜八人組",
+    "description": "完整過敏原標示；另增薑蔥海參美人腿、上海八寶甜芋泥等",
+    "priceDiscount": 9888,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 8,
+    "servingsMax": 8,
+    "city": "新北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "台式花膠佛跳牆",
+      "醬爆粿條龍蝦",
+      "冰糖元寶燒鮑魚",
+      "金牌油醋龍虎斑",
+      "荷葉糯米雞",
+      "冠軍臘味蘿蔔糕",
+      "薑蔥海參美人腿",
+      "上海八寶甜芋泥"
+    ],
+    "imageUrl": "https://shop.caesarpark.com.tw/product-detail/upload/product_item_b/tw_product_item_list_25j30_aktjgenqj5.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "北平喜來順",
+    "title": "開運年菜 10人份",
+    "description": "除夕當日現做、備好三牲；適合傳統祭祀＋圍爐",
+    "priceOriginal": 8900,
+    "priceDiscount": 8600,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 10,
+    "servingsMax": 10,
+    "orderDeadline": "2025-12-31",
+    "fulfillStart": "2026-02-16",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "北方菜",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "芝麻豆沙鍋餅",
+      "黃金文昌魚",
+      "御品佛跳牆",
+      "櫻花蝦珍珠米糕",
+      "清蒸龍虎斑",
+      "養生藥膳大蝦",
+      "瑤柱娃娃菜",
+      "東北酸菜白肉鍋"
+    ],
+    "imageUrl": "https://shoplineimg.com/607e3365d8d2720021f7b5e1/691d71803e7a6d00180a88ea/800x.webp?source_format=jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "開飯川食堂",
+    "title": "馬到金來開運年菜組",
+    "description": "佛跳牆＋清蒸石斑＋川味佳餚同桌；門市或饗帶走平台下單",
+    "priceDiscount": 7288,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-02-01",
+    "fulfillStart": "2026-02-16",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "川菜",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "御品花膠佛跳牆",
+      "鴛鴦雙醬鹽焗雞",
+      "櫻蝦蒲燒鰻米糕",
+      "鴻運乾燒海大鮮",
+      "蟹黃獅子頭",
+      "瑞氣清蒸海石斑",
+      "鮮蔘珍珠鮑魚雞",
+      "金絲娃娃菜"
+    ],
+    "imageUrl": "https://www.kaifun.com.tw/storage/website/kv/kaifun20250430102406_Mobile-KV.jpeg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "description": "2026 年菜網址來源庫 - 只收集有效的產品頁 URL",
+  "lastUpdated": "2024-12-09",
+  "sources": [
+    {
+      "category": "五星飯店",
+      "urls": [
+        {
+          "url": "https://www.pengyuan.com.tw/news_detail/13",
+          "vendor": "彭園",
+          "note": "年菜預購頁"
+        },
+        {
+          "url": "https://www.lai-foods.com/categories/hilai-arena-takeout",
+          "vendor": "漢來巨蛋",
+          "note": "年菜外帶專區"
+        },
+        {
+          "url": "https://www.lai-foods.com/categories/fuyun-takeout",
+          "vendor": "福園台菜",
+          "note": "年菜外帶專區"
+        },
+        {
+          "url": "https://hotel-national.com.tw/zh/9383/",
+          "vendor": "全國大飯店",
+          "note": "年菜預購"
+        },
+        {
+          "url": "https://www.renaissancetaipei.com/2026",
+          "vendor": "士林萬麗",
+          "note": "2026年菜"
+        },
+        {
+          "url": "https://www.ckcchao.com/newyear2026",
+          "vendor": "潮港城",
+          "note": "新年專案"
+        }
+      ]
+    },
+    {
+      "category": "冷凍年菜品牌",
+      "urls": [
+        {
+          "url": "https://lxz.com.tw/Categories/Buddhasdelight",
+          "vendor": "老協珍",
+          "note": "佛跳牆系列"
+        },
+        {
+          "url": "https://lxz.com.tw/Categories/ChineseNewYearMainDishes",
+          "vendor": "老協珍",
+          "note": "經典年菜"
+        },
+        {
+          "url": "https://hpw.cyberbiz.co/collections/2026年菜套組",
+          "vendor": "海霸王",
+          "note": "年菜套組"
+        },
+        {
+          "url": "https://www.cpfoods.com.tw/products/newyearsfood01",
+          "vendor": "卜蜂",
+          "note": "年菜7件組"
+        },
+        {
+          "url": "https://dachanfoods.com.tw/zh-TW/collections/2026年菜單品甜品點心",
+          "vendor": "大成",
+          "note": "年菜單品"
+        }
+      ]
+    },
+    {
+      "category": "素食年菜",
+      "urls": [
+        {
+          "url": "https://www.vegetsai.com.tw/newyearmeals.html",
+          "vendor": "蔡老師蔬食",
+          "note": "全素年菜"
+        },
+        {
+          "url": "https://www.serenity.com.tw/products/newyearset2",
+          "vendor": "祥和蔬食",
+          "note": "素食套組"
+        },
+        {
+          "url": "https://shop.ysvege.com/collections/2025除夕年菜",
+          "vendor": "養心餐飲",
+          "note": "素食年菜"
+        }
+      ]
+    },
+    {
+      "category": "電商平台（具體產品頁）",
+      "note": "需要定期更新具體產品連結",
+      "urls": []
+    },
+    {
+      "category": "媒體整理文章",
+      "note": "適合用來發現新的年菜來源",
+      "urls": [
+        {
+          "url": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/",
+          "vendor": "Harper's BAZAAR",
+          "note": "2026年菜推薦整理"
+        },
+        {
+          "url": "https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/",
+          "vendor": "Women's Health",
+          "note": "2026年菜推薦"
+        },
+        {
+          "url": "https://www.myfeel-tw.com/media/new-year-dishes",
+          "vendor": "MYFEEL",
+          "note": "外帶年菜推薦"
+        }
+      ]
+    }
+  ],
+  "scrapeRules": {
+    "preferredServices": ["local", "jina"],
+    "requestDelay": 10000,
+    "maxRetries": 3,
+    "skipPatterns": [
+      "/search",
+      "keyword=",
+      "?q=",
+      "/category/$",
+      "/collections/$"
+    ]
+  }
+}

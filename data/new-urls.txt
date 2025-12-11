@@ -1,0 +1,16 @@
+# 2026 年菜新增網址清單
+# 從搜尋結果整理出尚未爬取的網址
+
+# 飯店年菜
+https://www.hyattregencytaoyuan.tw/tw/news-detail/2026/
+https://hotel-national.com.tw/en/9383/
+https://www.hilton.com/en/hotels/tpebphi-hilton-taipei-sinban/
+https://www.marriott.com/en-us/hotels/tpecl-courtyard-taipei/dining/
+https://www.maygo.tw/台中除夕圍爐餐廳/
+
+# 餐廳品牌
+https://www.marieclaire.com.tw/lifestyle/taste/90206
+https://www.elle.com/tw/life/hot-news/g63131774/2025-chinese-new-year-dishes/
+
+# 電商/量販
+https://online.carrefour.com.tw/en/frozen-foods/%E7%AF%80%E6%85%B6%E5%B0%88%E5%8D%80/2026%E5%B9%B4%E8%8F%9C%E5%A5%97%E7%B5%84%E9%A0%90%E8%B3%BC

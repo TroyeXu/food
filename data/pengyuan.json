@@ -1,0 +1,359 @@
+[
+  {
+    "vendorName": "彭園",
+    "title": "馬運亨通富貴組（鮑魚魚翅佛跳牆）",
+    "description": "頂級鮑魚魚翅佛跳牆為主軸，搭配五道精緻主菜，預購加贈彭園臘味蘿蔔糕",
+    "priceOriginal": 7530,
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "鮑魚魚翅佛跳牆",
+      "富貴烤雙方",
+      "花雕貴妃蝦",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕",
+      "彭園臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/upload/pictures/news/1904_%E5%B9%B4%E8%8F%9C970431_0_0.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "金馬富貴大發組（魚翅花膠土雞鍋）",
+    "description": "溫潤滋補的魚翅花膠土雞鍋，搭配五道精緻主菜，預購就送彭園湖南臘味蘿蔔糕",
+    "priceOriginal": 7530,
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "魚翅花膠土雞鍋",
+      "花雕貴妃蝦",
+      "富貴烤雙方",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕",
+      "彭園湖南臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%BD%AD%E5%9C%92%E5%B9%B4%E8%8F%9CDM%20A3%E6%AD%A3%E9%9D%A2_0.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "彭園魚翅花膠土雞鍋",
+    "description": "慢火熬煮鹿野土雞及老母雞原汁精華，搭配頂級花膠、干貝、魚翅、元蹄等食材",
+    "priceDiscount": 3280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "魚翅花膠土雞鍋"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%BD%AD%E5%9C%92%E9%AD%9A%E7%BF%85%E8%8A%B1%E8%86%A0%E5%9C%9F%E9%9B%9E%E9%8D%8B0916-048-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "鮑魚魚翅佛跳牆",
+    "description": "澳洲塔斯馬尼亞網鮑、精選魚翅、北海道干貝、冬菇、豬肚、大甲芋頭等十餘種素材，細火煨燉",
+    "priceDiscount": 3280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "鮑魚魚翅佛跳牆"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E9%AD%9A%E7%BF%85%E9%AE%91%E9%AD%9A%E4%BD%9B%E8%B7%B3%E7%89%860916-014-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "富貴烤雙方（6片）",
+    "description": "彭園創始名菜，手工精緻素方及鬆軟餅皮，特選濃郁火腿，經土窯文火烤製，佐桂花蜜",
+    "priceDiscount": 600,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "富貴烤雙方"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%AF%8C%E8%B2%B4%E9%9B%99%E6%96%B90916-081-3.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "花雕貴妃蝦（6隻）",
+    "description": "肉質飽滿富彈性的新鮮大蝦，以特調佐料及精選十餘種中藥材浸泡，冷食",
+    "priceDiscount": 720,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "花雕貴妃蝦"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E8%8A%B1%E9%9B%95%E8%B2%B4%E5%A6%83%E8%9D%A60916-114-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "蘇東坡扣肉",
+    "description": "特選CAS上等豬肉，以古法釀造醬油，經細火燜燉，口感軟嫩不油膩",
+    "priceDiscount": 680,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "蘇東坡扣肉"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E8%98%87%E6%9D%B1%E5%9D%A1%E6%89%A3%E8%82%890916-152-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "椒鹽黃金鯧",
+    "description": "低溫油炸成黃金琥珀色，肉質細膩富彈性，健康與美味結合的精緻料理",
+    "priceDiscount": 1380,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "椒鹽黃金鯧"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E6%A4%92%E9%B9%BD%E9%BB%83%E9%87%91%E9%AF%A70916-158-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "櫻花蝦米糕",
+    "description": "香Q糯米拌入台灣在地豬肉與豬油提香，加入阿根廷魷魚、蝦米與香菇慢火蒸製，鋪滿櫻花蝦",
+    "priceDiscount": 520,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "櫻花蝦米糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E6%AB%BB%E8%8A%B1%E8%9D%A6%E7%B1%B3%E7%B3%950916-176-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "燻味雙寶雞（半隻切盤）",
+    "description": "精選上等土雞，以特製香辛料搭配滷汁醃製，再以茶葉及香蔗燻烤，冷食",
+    "priceDiscount": 680,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "燻味雙寶雞"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E7%87%BB%E5%91%B3%E9%9B%99%E5%AF%B6%E9%9B%9E%20%E5%8D%8A%E9%9B%9E0916-263-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "燻味雙寶雞（全雞不切）",
+    "description": "精選上等土雞，以特製香辛料搭配滷汁醃製，再以茶葉及香蔗燻烤，全雞完整呈現象徵吉祥團圓",
+    "priceDiscount": 1280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "燻味雙寶雞"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E7%87%BB%E5%91%B3%E9%9B%99%E5%AF%B6%E9%9B%9E-%E5%85%A8%E9%9B%9E0916-302-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "彭園臘味蘿蔔糕",
+    "description": "嚴選白蘿蔔搭配湖南臘味，融入台灣在地食材與傳統工法製作，冷凍保存",
+    "priceDiscount": 350,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E6%B9%96%E5%8D%97%E8%87%98%E5%91%B3%E8%98%BF%E8%94%94%E7%B3%950916-206-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "富貴牛腩筋",
+    "description": "牛腩汆燙定型後使用獨門秘方、香料及牛大骨熬煮4~5小時，口感帶有豐富嚼勁",
+    "priceDiscount": 980,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "富貴牛腩筋"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%AF%8C%E8%B2%B4%E7%89%9B%E8%85%A9%E7%AD%8B0916-251-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "香煎羊小排（6支）",
+    "description": "頂級紐西蘭KIWI羊肩排，以紅酒及獨特香料搭配特調羊排醬汁醃製，文火香煎",
+    "priceDiscount": 1080,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "香煎羊小排"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E9%A6%99%E7%85%8E%E7%BE%8A%E5%B0%8F%E6%8E%920916-221-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "彭園御膳一品鍋",
+    "description": "彭園創始店限定，熬製八小時老母雞湯底，加入排翅、網鮑、干貝、松茸、花膠等頂級食材",
+    "priceOriginal": 20000,
+    "priceDiscount": 18800,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 10,
+    "servingsMax": 10,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "city": "台北市",
+    "address": "台北市林森北路380號2樓",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "彭園御膳一品鍋"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/2821_%E4%B8%80%E5%93%81%E9%8D%8B970.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  }
+]

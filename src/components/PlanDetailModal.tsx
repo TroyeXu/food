@@ -1,6 +1,6 @@
 'use client';
 
-import { X, Heart, ExternalLink, Truck, Package, Users, MapPin, Tag, ChevronLeft, ChevronRight, Phone } from 'lucide-react';
+import { X, Heart, ExternalLink, Truck, Package, Users, MapPin, Tag, ChevronLeft, ChevronRight, Phone, Clock, ShoppingCart } from 'lucide-react';
 import { useState } from 'react';
 import type { Plan } from '@/types';
 import { usePlanStore } from '@/stores/planStore';
@@ -42,6 +42,42 @@ export default function PlanDetailModal({ plan, onClose }: PlanDetailModalProps)
     unknown: '未知',
   };
 
+  // 計算訂購截止日距今天數
+  const getDeadlineInfo = () => {
+    if (!plan.orderDeadline) return null;
+    const deadline = new Date(plan.orderDeadline);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    deadline.setHours(0, 0, 0, 0);
+    const diffDays = Math.ceil((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+    if (diffDays < 0) return { text: '已截止', color: 'text-gray-400', bgColor: 'bg-gray-100', urgent: false, expired: true };
+    if (diffDays === 0) return { text: '今天截止！', color: 'text-red-600', bgColor: 'bg-red-50', urgent: true, expired: false };
+    if (diffDays <= 3) return { text: `僅剩 ${diffDays} 天`, color: 'text-red-500', bgColor: 'bg-red-50', urgent: true, expired: false };
+    if (diffDays <= 7) return { text: `剩餘 ${diffDays} 天`, color: 'text-orange-500', bgColor: 'bg-orange-50', urgent: false, expired: false };
+    const deadlineStr = `${deadline.getMonth() + 1}/${deadline.getDate()}`;
+    return { text: `截止日: ${deadlineStr}`, color: 'text-gray-600', bgColor: 'bg-gray-50', urgent: false, expired: false };
+  };
+
+  const deadlineInfo = getDeadlineInfo();
+
+  // 根據 vendorType 取得預設圖示和背景
+  const getDefaultImage = () => {
+    const vendorType = plan.vendorType || 'other';
+    const configs: Record<string, { emoji: string; bgClass: string; label: string }> = {
+      hotel: { emoji: '🏨', bgClass: 'from-purple-100 to-pink-100', label: '飯店年菜' },
+      restaurant: { emoji: '🍽️', bgClass: 'from-orange-100 to-red-100', label: '餐廳年菜' },
+      brand: { emoji: '🎁', bgClass: 'from-blue-100 to-cyan-100', label: '品牌年菜' },
+      vegetarian: { emoji: '🥬', bgClass: 'from-green-100 to-lime-100', label: '素食年菜' },
+      convenience: { emoji: '🏪', bgClass: 'from-yellow-100 to-orange-100', label: '超商年菜' },
+      hypermarket: { emoji: '🛒', bgClass: 'from-indigo-100 to-purple-100', label: '量販年菜' },
+      other: { emoji: '🧧', bgClass: 'from-red-50 to-orange-50', label: '精選年菜' },
+    };
+    return configs[vendorType] || configs.other;
+  };
+
+  const defaultImage = getDefaultImage();
+
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % allImages.length);
   };
@@ -82,42 +118,55 @@ export default function PlanDetailModal({ plan, onClose }: PlanDetailModalProps)
         {/* Content */}
         <div className="overflow-y-auto max-h-[calc(90vh-140px)]">
           {/* Image Gallery */}
-          {allImages.length > 0 && (
-            <div className="relative bg-[var(--background)]">
+          <div className={`relative bg-gradient-to-br ${defaultImage.bgClass}`}>
+            {allImages.length > 0 ? (
               <img
                 src={allImages[currentImageIndex]}
                 alt={plan.title}
                 className="w-full h-64 object-cover"
               />
-              {allImages.length > 1 && (
-                <>
-                  <button
-                    onClick={prevImage}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
-                  >
-                    <ChevronLeft className="w-5 h-5" />
-                  </button>
-                  <button
-                    onClick={nextImage}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
-                  >
-                    <ChevronRight className="w-5 h-5" />
-                  </button>
-                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
-                    {allImages.map((_, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => setCurrentImageIndex(idx)}
-                        className={`w-2 h-2 rounded-full transition-colors ${
-                          idx === currentImageIndex ? 'bg-white' : 'bg-white/50'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
-            </div>
-          )}
+            ) : (
+              <div className="w-full h-64 flex flex-col items-center justify-center relative">
+                {/* 裝飾性背景圖案 */}
+                <div className="absolute inset-0 opacity-10">
+                  <div className="absolute top-4 left-4 text-5xl">🧧</div>
+                  <div className="absolute bottom-4 right-4 text-5xl">🎊</div>
+                  <div className="absolute top-4 right-12 text-3xl">✨</div>
+                  <div className="absolute bottom-12 left-8 text-3xl">🎉</div>
+                </div>
+                <span className="text-7xl mb-3 relative z-10">{defaultImage.emoji}</span>
+                <span className="text-lg font-medium text-gray-600 relative z-10">{plan.vendorName}</span>
+                <span className="text-sm text-gray-400 mt-1 relative z-10">{defaultImage.label}</span>
+              </div>
+            )}
+            {allImages.length > 1 && (
+              <>
+                <button
+                  onClick={prevImage}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={nextImage}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white hover:bg-black/70"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+                <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+                  {allImages.map((_, idx) => (
+                    <button
+                      key={idx}
+                      onClick={() => setCurrentImageIndex(idx)}
+                      className={`w-2 h-2 rounded-full transition-colors ${
+                        idx === currentImageIndex ? 'bg-white' : 'bg-white/50'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
 
           <div className="p-6 space-y-6">
             {/* Vendor and Price */}
@@ -138,6 +187,13 @@ export default function PlanDetailModal({ plan, onClose }: PlanDetailModalProps)
                   <p className="text-sm text-[var(--muted)] mt-1">
                     運費: {plan.shippingFee === 0 ? '免運' : `$${plan.shippingFee}`}
                   </p>
+                )}
+                {/* 訂購截止日期 */}
+                {deadlineInfo && (
+                  <div className={`inline-flex items-center gap-1.5 mt-2 px-3 py-1.5 rounded-full text-sm font-medium ${deadlineInfo.bgColor} ${deadlineInfo.color} ${deadlineInfo.urgent ? 'animate-pulse' : ''}`}>
+                    <Clock className="w-4 h-4" />
+                    {deadlineInfo.text}
+                  </div>
                 )}
               </div>
               <div className="text-right">
@@ -297,10 +353,15 @@ export default function PlanDetailModal({ plan, onClose }: PlanDetailModalProps)
               href={plan.sourceUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-medium bg-[var(--primary)] text-white hover:bg-[var(--primary-hover)] transition-colors"
+              className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+                deadlineInfo?.expired
+                  ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                  : 'bg-gradient-to-r from-[#c41e3a] to-[#ff6b6b] text-white hover:opacity-90'
+              }`}
             >
-              <ExternalLink className="w-4 h-4" />
-              前往訂購
+              <ShoppingCart className="w-4 h-4" />
+              {deadlineInfo?.expired ? '已截止' : '立即訂購'}
+              <ExternalLink className="w-3.5 h-3.5" />
             </a>
           )}
         </div>

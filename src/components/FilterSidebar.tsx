@@ -18,15 +18,14 @@ const SERVING_RANGES = [
   { min: 10, max: undefined, label: '10 人以上' },
 ];
 
-const SHIPPING_OPTIONS: { value: ShippingType | 'all'; label: string }[] = [
-  { value: 'all', label: '全部' },
+const SHIPPING_OPTIONS: { value: ShippingType; label: string }[] = [
   { value: 'delivery', label: '宅配' },
   { value: 'pickup', label: '自取' },
 ];
 
-const STORAGE_OPTIONS: { value: StorageType | 'all'; label: string }[] = [
-  { value: 'all', label: '全部' },
+const STORAGE_OPTIONS: { value: StorageType; label: string }[] = [
   { value: 'frozen', label: '冷凍' },
+  { value: 'chilled', label: '冷藏' },
   { value: 'room_temp', label: '常溫' },
 ];
 
@@ -303,8 +302,9 @@ export default function FilterSidebar({ isOpen, onClose }: FilterSidebarProps) {
   const activeFilterCount = [
     filters.priceMin !== undefined || filters.priceMax !== undefined,
     filters.servingsMin !== undefined || filters.servingsMax !== undefined,
-    filters.shippingType && filters.shippingType !== 'all',
-    filters.storageType && filters.storageType !== 'all',
+    (filters.shippingTypes?.length || 0) > 0,
+    (filters.storageTypes?.length || 0) > 0,
+    filters.shippingFee === 'free',
     filters.region && filters.region !== 'all',
     filters.city && filters.city !== 'all',
     filters.district && filters.district !== 'all',
@@ -442,41 +442,75 @@ export default function FilterSidebar({ isOpen, onClose }: FilterSidebarProps) {
             </div>
           </CollapsibleSection>
 
-          {/* Shipping Type */}
+          {/* Shipping Type - 多選 */}
           <CollapsibleSection title="供應方式">
-            <div className="flex flex-wrap gap-2">
-              {SHIPPING_OPTIONS.map((opt) => (
-                <button
-                  key={opt.value}
-                  onClick={() => setFilters({ shippingType: opt.value })}
-                  className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
-                    filters.shippingType === opt.value
-                      ? 'bg-[var(--primary)] text-white'
-                      : 'bg-[var(--background)] border border-[var(--border)] hover:border-[var(--primary)]'
-                  }`}
-                >
-                  {opt.label}
-                </button>
-              ))}
+            <div className="space-y-2">
+              {SHIPPING_OPTIONS.map((opt) => {
+                const isSelected = filters.shippingTypes?.includes(opt.value) || false;
+                return (
+                  <label
+                    key={opt.value}
+                    className="flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={isSelected}
+                      onChange={() => {
+                        const current = filters.shippingTypes || [];
+                        if (isSelected) {
+                          setFilters({ shippingTypes: current.filter(t => t !== opt.value) });
+                        } else {
+                          setFilters({ shippingTypes: [...current, opt.value] });
+                        }
+                      }}
+                      className="rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)]"
+                    />
+                    <span className="text-sm">{opt.label}</span>
+                  </label>
+                );
+              })}
+              {/* 免運篩選 */}
+              <label className="flex items-center gap-2 cursor-pointer mt-3 pt-2 border-t border-[var(--border)]">
+                <input
+                  type="checkbox"
+                  checked={filters.shippingFee === 'free'}
+                  onChange={() => {
+                    setFilters({ shippingFee: filters.shippingFee === 'free' ? undefined : 'free' });
+                  }}
+                  className="rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)]"
+                />
+                <span className="text-sm">只顯示免運</span>
+              </label>
             </div>
           </CollapsibleSection>
 
-          {/* Storage Type */}
+          {/* Storage Type - 多選 */}
           <CollapsibleSection title="保存方式">
-            <div className="flex flex-wrap gap-2">
-              {STORAGE_OPTIONS.map((opt) => (
-                <button
-                  key={opt.value}
-                  onClick={() => setFilters({ storageType: opt.value })}
-                  className={`px-3 py-1.5 rounded-full text-sm transition-colors ${
-                    filters.storageType === opt.value
-                      ? 'bg-[var(--primary)] text-white'
-                      : 'bg-[var(--background)] border border-[var(--border)] hover:border-[var(--primary)]'
-                  }`}
-                >
-                  {opt.label}
-                </button>
-              ))}
+            <div className="space-y-2">
+              {STORAGE_OPTIONS.map((opt) => {
+                const isSelected = filters.storageTypes?.includes(opt.value) || false;
+                return (
+                  <label
+                    key={opt.value}
+                    className="flex items-center gap-2 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      checked={isSelected}
+                      onChange={() => {
+                        const current = filters.storageTypes || [];
+                        if (isSelected) {
+                          setFilters({ storageTypes: current.filter(t => t !== opt.value) });
+                        } else {
+                          setFilters({ storageTypes: [...current, opt.value] });
+                        }
+                      }}
+                      className="rounded border-[var(--border)] text-[var(--primary)] focus:ring-[var(--primary)]"
+                    />
+                    <span className="text-sm">{opt.label}</span>
+                  </label>
+                );
+              })}
             </div>
           </CollapsibleSection>
 

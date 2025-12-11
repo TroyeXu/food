@@ -1,0 +1,827 @@
+[
+  {
+    "vendorName": "彭園",
+    "title": "馬運亨通富貴組（鮑魚魚翅佛跳牆）",
+    "description": "頂級鮑魚魚翅佛跳牆為主軸，搭配五道精緻主菜，預購加贈彭園臘味蘿蔔糕",
+    "priceOriginal": 7530,
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "鮑魚魚翅佛跳牆",
+      "富貴烤雙方",
+      "花雕貴妃蝦",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕",
+      "彭園臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/upload/pictures/news/1904_%E5%B9%B4%E8%8F%9C970431_0_0.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "金馬富貴大發組（魚翅花膠土雞鍋）",
+    "description": "溫潤滋補的魚翅花膠土雞鍋，搭配五道精緻主菜，預購就送彭園湖南臘味蘿蔔糕",
+    "priceOriginal": 7530,
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "魚翅花膠土雞鍋",
+      "花雕貴妃蝦",
+      "富貴烤雙方",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕",
+      "彭園湖南臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%BD%AD%E5%9C%92%E5%B9%B4%E8%8F%9CDM%20A3%E6%AD%A3%E9%9D%A2_0.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "彭園魚翅花膠土雞鍋",
+    "description": "慢火熬煮鹿野土雞及老母雞原汁精華，搭配頂級花膠、干貝、魚翅、元蹄等食材",
+    "priceDiscount": 3280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "魚翅花膠土雞鍋"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%BD%AD%E5%9C%92%E9%AD%9A%E7%BF%85%E8%8A%B1%E8%86%A0%E5%9C%9F%E9%9B%9E%E9%8D%8B0916-048-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "鮑魚魚翅佛跳牆",
+    "description": "澳洲塔斯馬尼亞網鮑、精選魚翅、北海道干貝、冬菇、豬肚、大甲芋頭等十餘種素材，細火煨燉",
+    "priceDiscount": 3280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "鮑魚魚翅佛跳牆"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E9%AD%9A%E7%BF%85%E9%AE%91%E9%AD%9A%E4%BD%9B%E8%B7%B3%E7%89%860916-014-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "富貴烤雙方（6片）",
+    "description": "彭園創始名菜，手工精緻素方及鬆軟餅皮，特選濃郁火腿，經土窯文火烤製，佐桂花蜜",
+    "priceDiscount": 600,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "富貴烤雙方"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%AF%8C%E8%B2%B4%E9%9B%99%E6%96%B90916-081-3.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "花雕貴妃蝦（6隻）",
+    "description": "肉質飽滿富彈性的新鮮大蝦，以特調佐料及精選十餘種中藥材浸泡，冷食",
+    "priceDiscount": 720,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "花雕貴妃蝦"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E8%8A%B1%E9%9B%95%E8%B2%B4%E5%A6%83%E8%9D%A60916-114-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "蘇東坡扣肉",
+    "description": "特選CAS上等豬肉，以古法釀造醬油，經細火燜燉，口感軟嫩不油膩",
+    "priceDiscount": 680,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "蘇東坡扣肉"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E8%98%87%E6%9D%B1%E5%9D%A1%E6%89%A3%E8%82%890916-152-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "椒鹽黃金鯧",
+    "description": "低溫油炸成黃金琥珀色，肉質細膩富彈性，健康與美味結合的精緻料理",
+    "priceDiscount": 1380,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "椒鹽黃金鯧"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E6%A4%92%E9%B9%BD%E9%BB%83%E9%87%91%E9%AF%A70916-158-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "櫻花蝦米糕",
+    "description": "香Q糯米拌入台灣在地豬肉與豬油提香，加入阿根廷魷魚、蝦米與香菇慢火蒸製，鋪滿櫻花蝦",
+    "priceDiscount": 520,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "櫻花蝦米糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E6%AB%BB%E8%8A%B1%E8%9D%A6%E7%B1%B3%E7%B3%950916-176-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "燻味雙寶雞（半隻切盤）",
+    "description": "精選上等土雞，以特製香辛料搭配滷汁醃製，再以茶葉及香蔗燻烤，冷食",
+    "priceDiscount": 680,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "燻味雙寶雞"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E7%87%BB%E5%91%B3%E9%9B%99%E5%AF%B6%E9%9B%9E%20%E5%8D%8A%E9%9B%9E0916-263-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "燻味雙寶雞（全雞不切）",
+    "description": "精選上等土雞，以特製香辛料搭配滷汁醃製，再以茶葉及香蔗燻烤，全雞完整呈現象徵吉祥團圓",
+    "priceDiscount": 1280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "燻味雙寶雞"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E7%87%BB%E5%91%B3%E9%9B%99%E5%AF%B6%E9%9B%9E-%E5%85%A8%E9%9B%9E0916-302-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "彭園臘味蘿蔔糕",
+    "description": "嚴選白蘿蔔搭配湖南臘味，融入台灣在地食材與傳統工法製作，冷凍保存",
+    "priceDiscount": 350,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E6%B9%96%E5%8D%97%E8%87%98%E5%91%B3%E8%98%BF%E8%94%94%E7%B3%950916-206-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "富貴牛腩筋",
+    "description": "牛腩汆燙定型後使用獨門秘方、香料及牛大骨熬煮4~5小時，口感帶有豐富嚼勁",
+    "priceDiscount": 980,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "富貴牛腩筋"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E5%AF%8C%E8%B2%B4%E7%89%9B%E8%85%A9%E7%AD%8B0916-251-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "香煎羊小排（6支）",
+    "description": "頂級紐西蘭KIWI羊肩排，以紅酒及獨特香料搭配特調羊排醬汁醃製，文火香煎",
+    "priceDiscount": 1080,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "tags": [
+      "台式"
+    ],
+    "dishes": [
+      "香煎羊小排"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/%E9%A6%99%E7%85%8E%E7%BE%8A%E5%B0%8F%E6%8E%920916-221-2.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "彭園",
+    "title": "彭園御膳一品鍋",
+    "description": "彭園創始店限定，熬製八小時老母雞湯底，加入排翅、網鮑、干貝、松茸、花膠等頂級食材",
+    "priceOriginal": 20000,
+    "priceDiscount": 18800,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 10,
+    "servingsMax": 10,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "region": "north",
+    "city": "台北市",
+    "address": "台北市林森北路380號2樓",
+    "tags": [
+      "台式",
+      "海鮮"
+    ],
+    "dishes": [
+      "彭園御膳一品鍋"
+    ],
+    "imageUrl": "https://www.pengyuan.com.tw/public/upload/images/2821_%E4%B8%80%E5%93%81%E9%8D%8B970.jpg",
+    "sourceUrl": "https://www.pengyuan.com.tw/news_detail/13"
+  },
+  {
+    "vendorName": "典華",
+    "title": "飛雪迎春・錦馬獻瑞",
+    "description": "當日現煮、限量預售；主菜含佛跳牆、清蒸東星斑與脆皮雞，年味象徵齊全",
+    "priceOriginal": 10380,
+    "priceDiscount": 8280,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-18",
+    "city": "台北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "團圓錦繡大拼盤",
+      "砂鍋翅裙佛跳牆",
+      "金蒜玉糕蒸鮮鮑",
+      "清蒸東星斑",
+      "紅酒蘑菇豬膝骨",
+      "蒜香脆皮雞"
+    ],
+    "imageUrl": "https://img.denwell.com/denwell/wp-content/uploads/2025/11/2026-%E5%B9%B4%E8%8F%9C%E5%A4%96%E5%B8%B6%E5%AE%A3%E5%82%B3-fb-1983x1322_20251112_32.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "彭園會館",
+    "title": "馬運亨通富貴組",
+    "description": "限量預購、當天現製；含鮑魚魚翅佛跳牆與經典吉祥菜",
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "湘菜",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "鮑魚魚翅佛跳牆",
+      "富貴烤雙方",
+      "花雕貴妃蝦",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕",
+      "臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://img.cloudimg.in/uploads/shops/16200/theme/c2/c203d2d9d2276dbfb71bcadeedded32e.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "彭園會館",
+    "title": "金馬富貴大發組",
+    "description": "限量預購、當天現製；含魚翅花膠土雞鍋與經典吉祥菜",
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-25",
+    "fulfillStart": "2026-02-15",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "湘菜",
+      "海鮮"
+    ],
+    "dishes": [
+      "魚翅花膠土雞鍋",
+      "富貴烤雙方",
+      "花雕貴妃蝦",
+      "蘇東坡扣肉",
+      "椒鹽黃金鯧",
+      "櫻花蝦米糕"
+    ],
+    "imageUrl": "https://img.cloudimg.in/uploads/shops/16200/theme/c2/c203d2d9d2276dbfb71bcadeedded32e.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "柒號洋樓",
+    "title": "駿馬迎春 6人外帶套組",
+    "description": "常溫出貨、回家覆熱即上桌；可搭單點擴充桌數",
+    "priceDiscount": 8888,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-01-30",
+    "fulfillStart": "2026-02-02",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "江浙菜",
+      "海鮮"
+    ],
+    "dishes": [
+      "冷前菜拼盤",
+      "上海醉雞",
+      "小黃瓜魚肚",
+      "烏魚子",
+      "乾燒大虎蝦",
+      "紅燒蹄膀",
+      "清蒸龍虎斑",
+      "椒鹽大沙公",
+      "櫻花蝦油飯",
+      "鮑魚火烔雞湯"
+    ],
+    "imageUrl": "https://www.hcpt.com.tw/wp-content/uploads/2025/10/2026%E5%B9%B4%E8%8F%9C%E5%A4%96%E5%B8%B6-1200x800-1.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "漢來名人坊",
+    "title": "粵式外帶年菜",
+    "description": "富貴盆菜為招牌；另有白鯧、炸子雞、生炒臘味糯米飯等單品與禮盒",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "city": "台北",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "富貴盆菜",
+      "原條白鯧",
+      "蒜香椒鹽明蝦",
+      "生炒臘味糯米飯",
+      "脆皮炸子雞",
+      "紅燒和牛肉"
+    ],
+    "imageUrl": "https://admin.hilai-foods.com/storage/images/5224/conversions/1556_1763546413-large.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "山海樓",
+    "title": "好運亨通 六人春節合菜",
+    "description": "限除夕至初五自取；菜色經典耐吃",
+    "priceDiscount": 12800,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "orderDeadline": "2026-02-06",
+    "fulfillStart": "2026-02-16",
+    "fulfillEnd": "2026-02-21",
+    "city": "台北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "山海豪華拼盤",
+      "蹄膀極品海鮮羹",
+      "五柳枝鮮魚",
+      "麻油雞米糕",
+      "山海佛跳牆",
+      "紅棗銀耳露"
+    ],
+    "imageUrl": "https://mountain-n-seahouse.oddle.me/_next/image?url=https%3A%2F%2Fucarecdn.com%2F1d5b9b14-73b6-4c69-a479-0f89d731f49c%2F%2F-%2Fresize%2Fx1000%2F&w=3840&q=75",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "凱撒大飯店（板橋家宴）",
+    "title": "外帶年菜六人組",
+    "description": "完整過敏原標示、多款單點可選；滿額贈保冷袋",
+    "priceDiscount": 6888,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "city": "新北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "台式花膠佛跳牆",
+      "醬爆粿條龍蝦",
+      "冰糖元寶燒鮑魚",
+      "金牌油醋龍虎斑",
+      "荷葉糯米雞",
+      "冠軍臘味蘿蔔糕"
+    ],
+    "imageUrl": "https://shop.caesarpark.com.tw/product-detail/upload/product_item_b/tw_product_item_list_25j30_aktjgenqj5.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "凱撒大飯店（板橋家宴）",
+    "title": "外帶年菜八人組",
+    "description": "完整過敏原標示；另增薑蔥海參美人腿、上海八寶甜芋泥等",
+    "priceDiscount": 9888,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 8,
+    "servingsMax": 8,
+    "city": "新北",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "台式花膠佛跳牆",
+      "醬爆粿條龍蝦",
+      "冰糖元寶燒鮑魚",
+      "金牌油醋龍虎斑",
+      "荷葉糯米雞",
+      "冠軍臘味蘿蔔糕",
+      "薑蔥海參美人腿",
+      "上海八寶甜芋泥"
+    ],
+    "imageUrl": "https://shop.caesarpark.com.tw/product-detail/upload/product_item_b/tw_product_item_list_25j30_aktjgenqj5.jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "北平喜來順",
+    "title": "開運年菜 10人份",
+    "description": "除夕當日現做、備好三牲；適合傳統祭祀＋圍爐",
+    "priceOriginal": 8900,
+    "priceDiscount": 8600,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 10,
+    "servingsMax": 10,
+    "orderDeadline": "2025-12-31",
+    "fulfillStart": "2026-02-16",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "北方菜",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "芝麻豆沙鍋餅",
+      "黃金文昌魚",
+      "御品佛跳牆",
+      "櫻花蝦珍珠米糕",
+      "清蒸龍虎斑",
+      "養生藥膳大蝦",
+      "瑤柱娃娃菜",
+      "東北酸菜白肉鍋"
+    ],
+    "imageUrl": "https://shoplineimg.com/607e3365d8d2720021f7b5e1/691d71803e7a6d00180a88ea/800x.webp?source_format=jpg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "開飯川食堂",
+    "title": "馬到金來開運年菜組",
+    "description": "佛跳牆＋清蒸石斑＋川味佳餚同桌；門市或饗帶走平台下單",
+    "priceDiscount": 7288,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 6,
+    "servingsMax": 8,
+    "orderDeadline": "2026-02-01",
+    "fulfillStart": "2026-02-16",
+    "fulfillEnd": "2026-02-16",
+    "city": "台北",
+    "tags": [
+      "川菜",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "御品花膠佛跳牆",
+      "鴛鴦雙醬鹽焗雞",
+      "櫻蝦蒲燒鰻米糕",
+      "鴻運乾燒海大鮮",
+      "蟹黃獅子頭",
+      "瑞氣清蒸海石斑",
+      "鮮蔘珍珠鮑魚雞",
+      "金絲娃娃菜"
+    ],
+    "imageUrl": "https://www.kaifun.com.tw/storage/website/kv/kaifun20250430102406_Mobile-KV.jpeg",
+    "sourceUrl": "https://www.myfeel-tw.com/media/new-year-dishes"
+  },
+  {
+    "vendorName": "老協珍",
+    "title": "龍蝦鮑魚干貝佛跳牆",
+    "description": "選用新鮮龍蝦，搭配頂級鮑魚、黑玉烏參、北海道干貝等珍品，細火慢熬出濃厚高湯",
+    "priceDiscount": 0,
+    "shippingType": "delivery",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "region": "nationwide",
+    "tags": [
+      "台式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "龍蝦鮑魚干貝佛跳牆",
+      "頂級花膠螺頭雞湯",
+      "私房封肉刈包",
+      "烏參牛腩煲",
+      "櫻花蝦干貝飯",
+      "富貴甜芋泥"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E5%BB%A3%E5%91%8A-bazzar-%E5%B9%B4%E8%8F%9C-%E9%BE%8D%E8%9D%A6%E9%AE%91%E9%AD%9A%E4%BD%9B%E8%B7%B3%E7%89%86-1200x800-1-69288e49e46a9.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北寒舍艾美酒店",
+    "title": "宴會廳常溫外帶年菜套餐",
+    "description": "由宴會廳主掌7道式的常溫外帶年菜套餐，適合四人享用",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 4,
+    "servingsMax": 4,
+    "orderDeadline": "2026-01-31",
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "龍馬精神開運集",
+      "魚子醬金牌掛爐鴨",
+      "老港味糯米炒蟹",
+      "豐年滿盅醃篤鮮",
+      "紅袍燒椒肉鬆龍虎斑"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B63-%E5%8F%B0%E5%8C%97%E5%AF%92%E8%88%8D%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97%E5%AF%92%E8%88%8D%E9%A3%9F%E8%AD%9C%E5%B9%B4%E8%8F%9C%E5%A4%96%E8%B3%A3-%E9%A6%AC%E8%BA%8D%E8%BF%8E%E6%98%A5%E4%BD%9B%E8%B7%B3%E7%89%86-%E5%BD%A2%E8%B1%A1%E7%85%A7-69288dbbf3fa7.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北寒舍艾美酒店",
+    "title": "寒舍食譜年菜-五福臨門闔家歡",
+    "description": "由行政主廚吳銘儒領軍，以粵式手藝打造滋補又雅緻的年節饗宴",
+    "priceDiscount": 0,
+    "shippingType": "delivery",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "orderDeadline": "2026-02-13",
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "潮式滷水拼",
+      "蠔汁糯米炒膏蟹",
+      "龍蝦鮑魚沙律",
+      "翡翠稻草西施牛",
+      "馬躍迎春佛跳牆",
+      "八寶迎財布袋雞"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B61-%E5%8F%B0%E5%8C%97%E5%AF%92%E8%88%8D%E8%89%BE%E7%BE%8E%E9%85%92%E5%BA%97%E5%AF%92%E8%88%8D%E9%A3%9F%E8%AD%9C-%E9%A7%BF%E8%BA%8D%E8%B1%90%E5%B9%B4-%E5%B9%B4%E8%8F%9C%E5%A4%96%E8%B3%A3%E5%BD%A2%E8%B1%A1%E7%85%A7-69288df048aad.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-請客樓",
+    "title": "極品御璽六人海陸盛宴",
+    "description": "米其林一星中餐廳請客樓推出的六人套餐，展現星級餐廳的年節儀式感",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "台式",
+      "粵式",
+      "佛跳牆",
+      "海鮮"
+    ],
+    "dishes": [
+      "請客五福集",
+      "御品佛跳牆",
+      "青椒汁時鮮魚",
+      "黑蒜無骨牛",
+      "干貝麻油雞煨飯",
+      "紅豆藜麥鬆糕"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B6-1-69288b99bf279.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-辰園",
+    "title": "祥雲瑞彩六人粵宴",
+    "description": "以人氣粵菜鋪陳年味層次，展現粵式燒味魅力",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "room_temp",
+    "servingsMin": 6,
+    "servingsMax": 6,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "粵式",
+      "海鮮"
+    ],
+    "dishes": [
+      "鴻運燒味拼",
+      "蟲草醬皇蒸龍蝦",
+      "松茸菌瑤柱花膠燉土雞",
+      "干貝蟹肉娃娃菜",
+      "極品鮑魚珍珠雞",
+      "椰香奶皇捲"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/%E6%96%B0%E8%81%9E%E9%99%84%E4%BB%B6-2-69288bc2f0086.jpg",
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-桃山",
+    "title": "豪華海陸涮涮鍋",
+    "description": "選用日本佐賀A5和牛肋眼與台灣黑毛松阪豬，搭配頂級海鮮食材的奢華團圓火鍋",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "日式",
+      "海鮮"
+    ],
+    "dishes": [
+      "日本佐賀A5和牛肋眼",
+      "台灣黑毛松阪豬",
+      "朱龍蝦",
+      "鮑魚",
+      "北海道干貝",
+      "石斑魚"
+    ],
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  },
+  {
+    "vendorName": "台北喜來登大飯店-桃山",
+    "title": "御節年菜おせち料理三段重",
+    "description": "日本新年必吃的御節料理，以象徵福氣的三重木箱盛裝20款吉祥山珍海味",
+    "priceDiscount": 0,
+    "shippingType": "pickup",
+    "storageType": "frozen",
+    "servingsMin": 4,
+    "region": "north",
+    "city": "台北市",
+    "tags": [
+      "日式",
+      "海鮮"
+    ],
+    "dishes": [
+      "鹽烤帝王蟹腳",
+      "龍蝦柿種揚",
+      "澎湖明蝦",
+      "松葉蟹春捲",
+      "磯煮鮑魚",
+      "黑豆",
+      "銀杏"
+    ],
+    "sourceUrl": "https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/"
+  }
+]

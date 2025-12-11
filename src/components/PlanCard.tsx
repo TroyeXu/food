@@ -16,6 +16,8 @@ import {
   Heart,
   Phone,
   ExternalLink,
+  Clock,
+  ShoppingCart,
 } from 'lucide-react';
 import type { Plan } from '@/types';
 import { REGION_LABELS } from '@/types';
@@ -45,6 +47,41 @@ export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) 
   const pricePerPerson = Math.round(plan.priceDiscount / plan.servingsMin);
   const hasDiscount = plan.priceOriginal && plan.priceOriginal > plan.priceDiscount;
 
+  // 計算訂購截止日距今天數
+  const getDeadlineInfo = () => {
+    if (!plan.orderDeadline) return null;
+    const deadline = new Date(plan.orderDeadline);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    deadline.setHours(0, 0, 0, 0);
+    const diffDays = Math.ceil((deadline.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
+
+    if (diffDays < 0) return { text: '已截止', color: 'text-gray-400', urgent: false };
+    if (diffDays === 0) return { text: '今天截止', color: 'text-red-600', urgent: true };
+    if (diffDays <= 3) return { text: `剩 ${diffDays} 天`, color: 'text-red-500', urgent: true };
+    if (diffDays <= 7) return { text: `剩 ${diffDays} 天`, color: 'text-orange-500', urgent: false };
+    return { text: `${deadline.getMonth() + 1}/${deadline.getDate()} 前`, color: 'text-gray-500', urgent: false };
+  };
+
+  const deadlineInfo = getDeadlineInfo();
+
+  // 根據 vendorType 取得預設圖示和背景
+  const getDefaultImage = () => {
+    const vendorType = plan.vendorType || 'other';
+    const configs: Record<string, { emoji: string; bgClass: string; label: string }> = {
+      hotel: { emoji: '🏨', bgClass: 'from-purple-100 to-pink-100', label: '飯店年菜' },
+      restaurant: { emoji: '🍽️', bgClass: 'from-orange-100 to-red-100', label: '餐廳年菜' },
+      brand: { emoji: '🎁', bgClass: 'from-blue-100 to-cyan-100', label: '品牌年菜' },
+      vegetarian: { emoji: '🥬', bgClass: 'from-green-100 to-lime-100', label: '素食年菜' },
+      convenience: { emoji: '🏪', bgClass: 'from-yellow-100 to-orange-100', label: '超商年菜' },
+      hypermarket: { emoji: '🛒', bgClass: 'from-indigo-100 to-purple-100', label: '量販年菜' },
+      other: { emoji: '🧧', bgClass: 'from-red-50 to-orange-50', label: '精選年菜' },
+    };
+    return configs[vendorType] || configs.other;
+  };
+
+  const defaultImage = getDefaultImage();
+
   const getStatusBadge = () => {
     switch (plan.status) {
       case 'draft':
@@ -66,55 +103,55 @@ export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) 
     }
   };
 
+  // 取得配送方式（支援新舊欄位）
+  const shippingTypes = (plan as { shippingTypes?: string[] }).shippingTypes ||
+    (plan.shippingType === 'both' ? ['delivery', 'pickup'] : [plan.shippingType]);
+
   const getShippingIcon = () => {
-    switch (plan.shippingType) {
-      case 'delivery':
-        return <Truck className="w-4 h-4" />;
-      case 'pickup':
-        return <Store className="w-4 h-4" />;
-      case 'both':
-        return (
-          <>
-            <Truck className="w-4 h-4" />
-            <Store className="w-4 h-4" />
-          </>
-        );
+    const icons = [];
+    if (shippingTypes.includes('delivery')) {
+      icons.push(<Truck key="delivery" className="w-4 h-4" />);
     }
+    if (shippingTypes.includes('pickup')) {
+      icons.push(<Store key="pickup" className="w-4 h-4" />);
+    }
+    if (shippingTypes.includes('convenience')) {
+      icons.push(<Store key="convenience" className="w-4 h-4 text-green-500" />);
+    }
+    return icons.length > 0 ? <>{icons}</> : <Truck className="w-4 h-4" />;
   };
 
   const getShippingLabel = () => {
-    switch (plan.shippingType) {
-      case 'delivery':
-        return '宅配';
-      case 'pickup':
-        return '自取';
-      case 'both':
-        return '宅配/自取';
-    }
+    const labels = [];
+    if (shippingTypes.includes('delivery')) labels.push('宅配');
+    if (shippingTypes.includes('pickup')) labels.push('自取');
+    if (shippingTypes.includes('convenience')) labels.push('超取');
+    return labels.length > 0 ? labels.join('/') : '宅配';
   };
 
+  // 取得保存方式（支援新舊欄位）
+  const storageTypes = (plan as { storageTypes?: string[] }).storageTypes ||
+    (plan.storageType ? [plan.storageType] : []);
+
   const getStorageIcon = () => {
-    switch (plan.storageType) {
-      case 'frozen':
-        return <Snowflake className="w-4 h-4 text-blue-500" />;
-      case 'chilled':
-        return <Thermometer className="w-4 h-4 text-cyan-500" />;
-      default:
-        return null;
+    if (storageTypes.includes('frozen')) {
+      return <Snowflake className="w-4 h-4 text-blue-500" />;
     }
+    if (storageTypes.includes('chilled')) {
+      return <Thermometer className="w-4 h-4 text-cyan-500" />;
+    }
+    if (storageTypes.includes('room_temp')) {
+      return <Thermometer className="w-4 h-4 text-orange-500" />;
+    }
+    return null;
   };
 
   const getStorageLabel = () => {
-    switch (plan.storageType) {
-      case 'frozen':
-        return '冷凍';
-      case 'chilled':
-        return '冷藏';
-      case 'room_temp':
-        return '常溫';
-      default:
-        return '';
-    }
+    const labels = [];
+    if (storageTypes.includes('frozen')) labels.push('冷凍');
+    if (storageTypes.includes('chilled')) labels.push('冷藏');
+    if (storageTypes.includes('room_temp')) labels.push('常溫');
+    return labels.length > 0 ? labels.join('/') : '';
   };
 
   const handleDelete = async () => {
@@ -130,22 +167,43 @@ export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) 
       }`}
     >
       {/* Image */}
-      <div className="relative h-40 bg-gray-100 rounded-t-xl overflow-hidden">
+      <div className={`relative h-40 bg-gradient-to-br ${defaultImage.bgClass} rounded-t-xl overflow-hidden`}>
         {plan.imageUrl ? (
           <img
             src={plan.imageUrl}
             alt={plan.title}
             className="w-full h-full object-cover"
+            onError={(e) => {
+              // 圖片載入失敗時隱藏
+              e.currentTarget.style.display = 'none';
+            }}
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-[var(--muted)]">
-            無圖片
+          <div className="w-full h-full flex flex-col items-center justify-center relative">
+            {/* 裝飾性背景圖案 */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-2 left-2 text-4xl">🧧</div>
+              <div className="absolute bottom-2 right-2 text-4xl">🎊</div>
+              <div className="absolute top-2 right-8 text-2xl">✨</div>
+              <div className="absolute bottom-8 left-4 text-2xl">🎉</div>
+            </div>
+            <span className="text-5xl mb-2 relative z-10">{defaultImage.emoji}</span>
+            <span className="text-sm font-medium text-gray-600 relative z-10">{plan.vendorName}</span>
+            <span className="text-xs text-gray-400 mt-1 relative z-10">{defaultImage.label}</span>
           </div>
         )}
 
         {/* Status badge */}
         {editMode === 'edit' && (
           <div className="absolute top-2 left-2">{getStatusBadge()}</div>
+        )}
+
+        {/* Deadline badge - 左上角顯示截止日期 */}
+        {deadlineInfo && deadlineInfo.urgent && editMode !== 'edit' && (
+          <div className={`absolute top-2 left-2 flex items-center gap-1 px-2 py-1 rounded-full text-xs font-bold bg-white/95 shadow-md ${deadlineInfo.color}`}>
+            <Clock className="w-3 h-3" />
+            {deadlineInfo.text}
+          </div>
         )}
 
         {/* 右上角按鈕組：收藏 + 比對 */}
@@ -319,8 +377,8 @@ export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) 
             </span>
           </div>
 
-          {/* Edit mode actions */}
-          {editMode === 'edit' && (
+          {/* 訂購按鈕或編輯按鈕 */}
+          {editMode === 'edit' ? (
             <div className="flex items-center gap-1">
               <button
                 onClick={() => onEdit?.(plan)}
@@ -337,8 +395,27 @@ export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) 
                 <Trash2 className="w-4 h-4" />
               </button>
             </div>
-          )}
+          ) : plan.sourceUrl ? (
+            <a
+              href={plan.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="flex items-center gap-1 px-3 py-1.5 bg-gradient-to-r from-[#c41e3a] to-[#ff6b6b] text-white text-xs font-medium rounded-lg hover:opacity-90 transition-opacity shadow-md"
+            >
+              <ShoppingCart className="w-3.5 h-3.5" />
+              訂購
+            </a>
+          ) : null}
         </div>
+
+        {/* 非緊急的截止日期顯示在底部 */}
+        {deadlineInfo && !deadlineInfo.urgent && (
+          <div className={`mt-2 flex items-center gap-1 text-xs ${deadlineInfo.color}`}>
+            <Clock className="w-3 h-3" />
+            <span>訂購截止：{deadlineInfo.text}</span>
+          </div>
+        )}
 
       </div>
     </div>

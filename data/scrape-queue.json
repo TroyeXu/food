@@ -1,0 +1,187 @@
+{
+  "pending": [],
+  "processing": [],
+  "completed": [],
+  "failed": [
+    {
+      "id": "mixsa1ujipg7v",
+      "url": "https://www.pengyuan.com.tw/news_detail/13",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:29:34.171Z",
+      "retryCount": 0,
+      "error": "AI HTTP 500",
+      "failedAt": "2025-12-08T23:29:59.887Z"
+    },
+    {
+      "id": "mixsa2z2ygz9j",
+      "url": "https://lxz.com.tw/Categories/Buddhasdelight",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:29:35.630Z",
+      "retryCount": 0,
+      "error": "HTTP 500",
+      "failedAt": "2025-12-08T23:30:08.710Z"
+    },
+    {
+      "id": "mixsa5775fzvb",
+      "url": "https://hpw.cyberbiz.co/collections/2026年菜套組",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:29:38.515Z",
+      "retryCount": 0,
+      "error": "AI HTTP 500",
+      "failedAt": "2025-12-08T23:30:19.036Z"
+    },
+    {
+      "id": "mixseaxrlfxm4",
+      "url": "https://www.lai-foods.com/categories/hilai-arena-takeout",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:32:52.575Z",
+      "retryCount": 0,
+      "error": "HTTP 404",
+      "failedAt": "2025-12-09T12:20:01.551Z"
+    },
+    {
+      "id": "mixsec4ulvajh",
+      "url": "https://www.lai-foods.com/categories/fuyun-takeout",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:32:54.126Z",
+      "retryCount": 0,
+      "error": "HTTP 404",
+      "failedAt": "2025-12-09T12:20:04.556Z"
+    },
+    {
+      "id": "mixsed54swln7",
+      "url": "https://hotel-national.com.tw/zh/9383/",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:32:55.432Z",
+      "retryCount": 0,
+      "error": "fetch failed",
+      "failedAt": "2025-12-09T12:20:07.560Z"
+    },
+    {
+      "id": "mixsee7bjh7ra",
+      "url": "https://lxz.com.tw/Categories/ChineseNewYearMainDishes",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:32:56.807Z",
+      "retryCount": 0,
+      "error": "fetch failed",
+      "failedAt": "2025-12-09T12:20:18.301Z"
+    },
+    {
+      "id": "mixseflwv6f32",
+      "url": "https://www.cpfoods.com.tw/products/newyearsfood01",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:32:58.628Z",
+      "retryCount": 0,
+      "error": "fetch failed",
+      "failedAt": "2025-12-09T12:20:21.305Z"
+    },
+    {
+      "id": "mixseh0lhglr3",
+      "url": "https://dachanfoods.com.tw/zh-TW/collections/2026年菜單品甜品點心",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:33:00.453Z",
+      "retryCount": 0,
+      "error": "fetch failed",
+      "failedAt": "2025-12-09T12:20:24.308Z"
+    },
+    {
+      "id": "mixselzyhq093",
+      "url": "https://www.vegetsai.com.tw/newyearmeals.html",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:33:06.910Z",
+      "retryCount": 0,
+      "error": "HTTP 404",
+      "failedAt": "2025-12-09T13:25:16.287Z"
+    },
+    {
+      "id": "mixsem0z7k0d8",
+      "url": "https://www.serenity.com.tw/products/newyearset2",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:33:06.947Z",
+      "retryCount": 0,
+      "error": "HTTP 404",
+      "failedAt": "2025-12-09T13:25:19.361Z"
+    },
+    {
+      "id": "mixsem1zvm4qo",
+      "url": "https://shop.ysvege.com/collections/2025除夕年菜",
+      "priority": "normal",
+      "addedAt": "2025-12-08T23:33:06.983Z",
+      "retryCount": 0,
+      "error": "AI HTTP 500",
+      "failedAt": "2025-12-09T13:26:01.421Z"
+    },
+    {
+      "id": "miym4gzp4wpfv",
+      "url": "https://24h.pchome.com.tw/search/?q=年菜",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:25:02.341Z",
+      "retryCount": 0,
+      "error": "AI HTTP 500",
+      "failedAt": "2025-12-09T13:26:12.241Z"
+    },
+    {
+      "id": "miym4h1ivoi7h",
+      "url": "https://reallygoodseafood.com/categories/2026-年菜預購",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:25:02.406Z",
+      "retryCount": 0,
+      "error": "所有爬蟲服務都失敗",
+      "failedAt": "2025-12-09T13:30:13.292Z"
+    },
+    {
+      "id": "miymvsypu3wpz",
+      "url": "https://online.carrefour.com.tw/frozen-foods/節慶專區/2026年菜套組預購",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:46:17.569Z",
+      "retryCount": 0,
+      "error": "所有爬蟲服務都失敗",
+      "failedAt": "2025-12-09T13:49:05.120Z"
+    },
+    {
+      "id": "miyn0dicanief",
+      "url": "https://www.grand-hilai.com/tw/dining/new-year-dishes",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:49:50.820Z",
+      "retryCount": 0,
+      "error": "所有爬蟲服務都失敗",
+      "failedAt": "2025-12-09T13:53:05.546Z"
+    },
+    {
+      "id": "miyn0byyo95qm",
+      "url": "https://www.shangri-la.com/tc/taipei/shangrila/offers/dining/chinese-new-year/",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:49:48.826Z",
+      "retryCount": 0,
+      "error": "所有爬蟲服務都失敗",
+      "failedAt": "2025-12-09T14:06:02.800Z"
+    },
+    {
+      "id": "miyn0fjyky8lc",
+      "url": "https://www.silkshotelgroup.com/tc/promotion-detail.aspx?id=138",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:49:53.470Z",
+      "retryCount": 0,
+      "error": "所有爬蟲服務都失敗",
+      "failedAt": "2025-12-09T14:06:29.419Z"
+    },
+    {
+      "id": "miyn0h417sc1d",
+      "url": "https://www.merrybaking.com.tw/categories/2026-new-year",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:49:55.489Z",
+      "retryCount": 0,
+      "error": "所有爬蟲服務都失敗",
+      "failedAt": "2025-12-09T14:06:42.370Z"
+    },
+    {
+      "id": "miyn0ie98pyh5",
+      "url": "https://www.ambassador-hotels.com/tw/hsinchu/special/13",
+      "priority": "normal",
+      "addedAt": "2025-12-09T13:49:57.153Z",
+      "retryCount": 0,
+      "error": "所有爬蟲服務都失敗",
+      "failedAt": "2025-12-09T14:07:07.380Z"
+    }
+  ]
+}

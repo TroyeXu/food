@@ -1,0 +1,241 @@
+# 2026 年菜網址清單 - 共 100 筆
+# 可直接複製到爬蟲管理頁面的批次輸入框
+
+# === 綜合推薦文章 ===
+https://www.harpersbazaar.com/tw/life/food/a69563693/2026-chinese-new-year-cuisine/
+https://www.marieclaire.com.tw/lifestyle/taste/90206
+https://www.womenshealthmag.com/tw/food-nutrition/restaurant/g69037309/2026niantsai/
+https://www.myfeel-tw.com/media/new-year-dishes
+https://kuolife.com/taipei-newyear-meal/
+https://shop.c-k.tw/blogs/2026-全國麗園大飯店年菜/new-year-setliyuan-hotel-frozen-delivery
+
+# === 電商平台 ===
+https://online.carrefour.com.tw/en/frozen-foods/節慶專區/2026年菜套組預購
+https://24h.pchome.com.tw/search/?q=年菜組
+https://www.momoshop.com.tw/search/searchShop.jsp?keyword=年菜
+https://shopee.tw/blog/new-year-dish/
+https://www.buy123.com.tw/site/sku/2051721
+https://www.rakuten.com.tw/shop/lijinfood/product/000383/
+
+# === 台酒 ===
+https://eshop.ttl.com.tw/2026pre-yeardishes
+
+# === Costco ===
+https://www.costco.com.tw/Food-Dining/Frozen-Fresh-Food/New-Year-Dishes/Pre-OrderDachan-Yummy-Dots-Lunar-New-Year-6-Dishes-Set-20260130-Arrival/p/256888-0130
+https://www.costco.com.tw/c/hero-dachan
+
+# === 王品集團 ===
+https://wangmart.wowprime.com/collections/2026年滿食刻
+
+# === 老協珍 ===
+https://lxz.com.tw/Categories/Buddhasdelight
+https://lxz.com.tw/Categories/ChineseNewYearMainDishes
+
+# === 彭園 ===
+https://www.pengyuan.com.tw/news_detail/13
+https://pengyuan.waca.ec/
+
+# === 漢來 ===
+https://www.lai-foods.com/categories/hilai-arena-takeout
+https://www.lai-foods.com/categories/fuyun-takeout
+
+# === 素食年菜 ===
+https://shop.ysvege.com/collections/2025除夕年菜
+https://www.vegetsai.com.tw/newyearmeals.html
+https://www.serenity.com.tw/products/newyearset2
+
+# === 台北晶華 ===
+https://shop.silkshotelgroup.com/RT
+
+# === 海霸王 ===
+https://www.hpw.com.tw/
+https://hpw.cyberbiz.co/collections/2026年菜套組
+
+# === 鼎泰豐 ===
+https://www.dintaifung.tw/年菜系列
+https://www.dintaifung.com.tw/news_show.php?id=195
+
+# === 典華 ===
+https://www.denwell.com/年菜外帶/
+https://gathering.tw/ga_news/item/785-2026【除夕-初二】.html
+
+# === 山海樓 ===
+https://www.mountain-n-seahouse.com/zh-hant/dish_set/年菜外帶/
+
+# === 大成 ===
+https://dachanfoods.com.tw/zh-TW/collections/2026年菜單品甜品點心
+https://www.dachanfoods.com.tw/zh-TW
+
+# === 潮港城 ===
+https://www.ckcchao.com/newyear2026
+
+# === 高雄年菜 ===
+https://ihappy.tw/offers/tw-new-year/kaohsiung
+
+# === 台北士林萬麗 ===
+https://www.renaissancetaipei.com/2026
+
+# === 喜來登 ===
+https://www.sheratongrandtaipei.com/
+
+# === 福華 ===
+https://www.howard-hotels.com.tw/zh_CN/Promo/1303
+
+# === 全聯 ===
+https://www.pxmart.com.tw/about-us/news/全聯新聞/272
+
+# === 鄧師傅 ===
+https://www.chefteng.com/products
+
+# === 逸湘齋 ===
+https://www.stfoods.com.tw/product_list.php?level=yC
+
+# === 一之軒 ===
+https://www.ijysheng.com/
+
+# === 85度C ===
+https://www.85cafe.com/Product.php
+
+# === 卜蜂 ===
+https://www.cpfoods.com.tw/products/newyearsfood01
+
+# === 三合院港式飲茶 ===
+https://www.senheyuan.com/collections/2026年團圓外帶年菜
+
+# === 裕元花園 ===
+https://windsorinlife.com/pages/裕元花園酒店-2026年菜-1
+
+# === 呷七碗 ===
+https://www.1212baskets.com/collections/呷七碗-經典年菜
+
+# === 兄弟大飯店 ===
+https://www.brotherhotel.com.tw/?p=6646
+
+# === 美福 ===
+https://www.mayfullfinefoods.com/禮盒專區
+
+# === 全國大飯店 ===
+https://hotel-national.com.tw/en/9383/
+
+# === 果貿吳媽家 ===
+https://kafu.tw/mamawu/
+
+# === 南門市場 ===
+http://www.nanmenmarket.com/about.php?member_id=9
+
+# === 高雄日航 ===
+https://www.okura-nikko.com/zh-hant/taiwan/kaohsiung/hotel-nikko-kaohsiung/
+
+# === 台北萬豪 ===
+https://www.marriott.com/hotels/travel/tpetw-taipei-marriott-hotel/
+
+# === 台北六福萬怡 ===
+https://www.marriott.com/hotels/travel/tpect-courtyard-taipei/
+
+# === 板橋凱撒 ===
+https://www.caesarpark.com.tw/banqiao/
+
+# === 大直維多麗亞 ===
+https://www.grandvictoria.com.tw/
+
+# === 福爾摩沙遊艇 ===
+https://www.gloriamanor.com/
+
+# === 白金花園 ===
+https://www.grandblanc.com.tw/
+
+# === 綠舞觀光 ===
+https://www.dwresort.com.tw/
+
+# === 台北寒舍艾美 ===
+https://www.lemeridientaipei.com/
+
+# === 新竹福華 ===
+https://hsinchu.howard-hotels.com.tw/
+
+# === 富信大飯店 ===
+https://www.fushin-hotel.com.tw/
+
+# === 珍珠坊 ===
+https://www.howard-hotels.com.tw/zh_TW/Hotel/taipei/Restaurant/10001
+
+# === 蓬萊邨 ===
+https://www.howard-hotels.com.tw/zh_TW/Hotel/taipei/Restaurant/10002
+
+# === 台北遠東香格里拉 ===
+https://www.shangri-la.com/tc/taipei/fareasternplazashangrila/
+
+# === 香宮 ===
+https://www.shangri-la.com/tc/taipei/fareasternplazashangrila/dining/shang-palace/
+
+# === 上海醉月樓 ===
+https://www.shangri-la.com/tc/taipei/fareasternplazashangrila/dining/shanghai-pavilion/
+
+# === 誠品行旅聚聚樓 ===
+https://www.eslitehotel.com/
+
+# === 新莊典華 ===
+https://www.denwell.com/新莊/
+
+# === 台中潮港城 ===
+https://www.ckcchao.com/
+
+# === 宸軒園粵菜 ===
+https://travel366days.com/newtaipei-food/
+
+# === 國賓飯店 ===
+https://www.ambassador-hotels.com/tc/taipei
+
+# === 長榮桂冠 ===
+https://www.evergreen-hotels.com/
+
+# === 文華東方 ===
+https://www.mandarinoriental.com/en/taipei/songshan
+
+# === 欣葉台菜 ===
+https://www.shinyeh.com.tw/
+
+# === 紅豆食府 ===
+https://www.hungdou.com.tw/
+
+# === 萬有全 ===
+https://www.wanyouchuan.com.tw/
+
+# === 鬍鬚張 ===
+https://www.fmsc.com.tw/
+
+# === 義美 ===
+https://www.imei.com.tw/
+
+# === 桂冠 ===
+https://www.laurel.com.tw/
+
+# === 阿基師餐廳 ===
+https://www.chefacheng.com/
+
+# === 台北凱撒 ===
+https://taipei.caesarpark.com.tw/
+
+# === 君品酒店 ===
+https://www.pfrhtw.com/
+
+# === W酒店 ===
+https://www.marriott.com/hotels/travel/tpewh-w-taipei/
+
+# === 台北君悅 ===
+https://www.hyatt.com/grand-hyatt/en-US/taigh-grand-hyatt-taipei
+
+# === 美麗信酒店 ===
+https://www.miramargarden.com.tw/
+
+# === 台北花園酒店 ===
+https://www.taipeigarden.com.tw/
+
+# === 福容大飯店 ===
+https://www.fullon-hotels.com.tw/
+
+# === 日勝生加賀屋 ===
+https://www.kagaya.com.tw/
+
+# === 北投春天酒店 ===
+https://www.springresort.com.tw/

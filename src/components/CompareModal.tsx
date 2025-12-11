@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef } from 'react';
-import { X, Truck, Store, Snowflake, Thermometer, Calendar, Clock, Users, Check, Minus, MapPin, Printer, Share2, Trophy, Award } from 'lucide-react';
+import { X, Truck, Store, Snowflake, Thermometer, Calendar, Clock, Users, Check, Minus, MapPin, Printer, Share2, Trophy, Award, ShoppingCart, ExternalLink } from 'lucide-react';
 import { format, differenceInDays, parseISO } from 'date-fns';
 import { zhTW } from 'date-fns/locale';
 import { usePlanStore } from '@/stores/planStore';
@@ -469,6 +469,31 @@ export default function CompareModal() {
                 highlight={(plan) => plan.dishes.length === maxDishCount && maxDishCount > 0}
                 highlightClass="bg-orange-50"
               />
+
+              {/* Order Button Row */}
+              <tr className="border-b border-[var(--border)] bg-gradient-to-r from-red-50 to-orange-50">
+                <td className="py-4 px-4 text-sm font-medium text-[var(--secondary)] bg-[var(--background)] whitespace-nowrap">
+                  訂購連結
+                </td>
+                {plans.map((plan) => (
+                  <td key={plan.id} className="py-4 px-4">
+                    {plan.sourceUrl ? (
+                      <a
+                        href={plan.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#c41e3a] to-[#ff6b6b] text-white text-sm font-medium rounded-lg hover:opacity-90 transition-opacity shadow-md"
+                      >
+                        <ShoppingCart className="w-4 h-4" />
+                        立即訂購
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    ) : (
+                      <span className="text-[var(--muted)] text-sm">-</span>
+                    )}
+                  </td>
+                ))}
+              </tr>
             </tbody>
           </table>
         </div>
