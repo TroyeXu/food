@@ -8,8 +8,32 @@ import {
   checkRateLimit,
   sanitizeInput
 } from '@/lib/validations';
+import {
+  generateTraceId,
+  createSuccessResponse,
+  createErrorResponse,
+  ValidationError,
+  NotFoundError,
+  InternalError,
+} from '@/lib/errors';
 
 export const dynamic = 'force-dynamic';
+
+const isDevelopment = process.env.NODE_ENV === 'development';
+
+// 條件性地導入 Prisma（只在開發環境使用）
+let prismaCache: any = null;
+
+async function getPrisma() {
+  if (!isDevelopment) {
+    throw new Error('Prisma is not available in production mode');
+  }
+  if (!prismaCache) {
+    const { prisma: prismaClient } = await import('@/lib/prisma');
+    prismaCache = prismaClient;
+  }
+  return prismaCache;
+}
 
 const SHOPPING_LISTS_DB = path.join(process.cwd(), 'data', 'shopping-lists.json');
 
@@ -35,13 +59,22 @@ async function saveDb(data: any) {
  * 建立新清單 - 含驗證和速率限制
  */
 export async function POST(request: NextRequest) {
+  const traceId = generateTraceId();
+
   try {
     // 速率限制
     const clientIp = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
     if (!checkRateLimit(`shopping_list_${clientIp}`, 10, 60000)) {
       return NextResponse.json(
-        { error: '操作過於頻繁，請稍候後再試' },
-        { status: 429 }
+        {
+          success: false,
+          error: {
+            code: 'RATE_LIMIT_EXCEEDED',
+            message: '操作過於頻繁，請稍候後再試',
+            traceId,
+          },
+        },
+        { status: 429, headers: { 'X-Trace-Id': traceId } }
       );
     }
 
@@ -51,27 +84,45 @@ export async function POST(request: NextRequest) {
 
     if (!validationResult.success) {
       const errors = validationResult.error.flatten().fieldErrors;
-      const errorMsg = Object.entries(errors)
-        .map(([field, msgs]) => `${field}: ${msgs?.join(', ') || '未知錯誤'}`)
-        .join('; ');
-      return NextResponse.json(
-        { error: `驗證失敗: ${errorMsg}` },
-        { status: 400 }
+      const details = Object.fromEntries(
+        Object.entries(errors).map(([field, msgs]) => [
+          field,
+          msgs?.join(', ') || '未知錯誤',
+        ])
+      );
+      return createErrorResponse(
+        new ValidationError('購物清單驗證失敗', details),
+        traceId
       );
     }
 
     const { name, description } = validationResult.data;
+
+    // 在開發模式使用 Prisma，否則使用 JSON 檔案
+    if (isDevelopment) {
+      const db = await getPrisma();
+      const newList = await db.shoppingList.create({
+        data: {
+          name: sanitizeInput(name),
+          description: description ? sanitizeInput(description) : undefined,
+          isShared: false,
+        },
+        include: { items: true },
+      });
+
+      const response = createSuccessResponse(newList, 201);
+      response.headers.set('X-Trace-Id', traceId);
+      return response;
+    }
+
+    // 生產模式：使用 JSON 檔案
     const db = await initDb();
     const listId = crypto.randomUUID();
 
-    // 清理輸入
-    const sanitizedName = sanitizeInput(name);
-    const sanitizedDescription = description ? sanitizeInput(description) : '';
-
     const newList = {
       id: listId,
-      name: sanitizedName,
-      description: sanitizedDescription,
+      name: sanitizeInput(name),
+      description: description ? sanitizeInput(description) : '',
       items: [],
       isShared: false,
       createdAt: new Date().toISOString(),
@@ -81,12 +132,14 @@ export async function POST(request: NextRequest) {
     db.lists[listId] = newList;
     await saveDb(db);
 
-    return NextResponse.json(newList, { status: 201 });
+    const response = createSuccessResponse(newList, 201);
+    response.headers.set('X-Trace-Id', traceId);
+    return response;
   } catch (error) {
     console.error('[Shopping Lists] Error creating list:', error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : '建立清單失敗' },
-      { status: 500 }
+    return createErrorResponse(
+      error instanceof Error ? new InternalError(error.message) : new InternalError(),
+      traceId
     );
   }
 }
@@ -96,44 +149,80 @@ export async function POST(request: NextRequest) {
  * 取得清單列表或單個清單
  */
 export async function GET(request: NextRequest) {
+  const traceId = generateTraceId();
+
   try {
     const { searchParams } = new URL(request.url);
     const listId = searchParams.get('id');
     const shareCode = searchParams.get('share');
 
-    const db = await initDb();
+    if (isDevelopment) {
+      const db = await getPrisma();
+
+      if (listId) {
+        const list = await db.shoppingList.findUnique({
+          where: { id: listId },
+          include: { items: { include: { plan: true } } },
+        });
+
+        if (!list) {
+          return createErrorResponse(new NotFoundError('購物清單'), traceId);
+        }
+
+        const response = createSuccessResponse(list);
+        response.headers.set('X-Trace-Id', traceId);
+        return response;
+      }
+
+      const lists = await db.shoppingList.findMany({
+        include: { items: true },
+      });
+
+      const response = createSuccessResponse({ lists });
+      response.headers.set('X-Trace-Id', traceId);
+      return response;
+    }
+
+    // 生產模式：使用 JSON 檔案
+    const fileDb = await initDb();
 
     if (shareCode) {
       // 通過分享碼取得清單
-      const sharedListId = db.shares[shareCode];
+      const sharedListId = fileDb.shares[shareCode];
       if (!sharedListId) {
-        return NextResponse.json({ error: '分享鏈接不存在或已過期' }, { status: 404 });
+        return createErrorResponse(new NotFoundError('分享鏈接'), traceId);
       }
-      const list = db.lists[sharedListId];
+      const list = fileDb.lists[sharedListId];
       if (!list) {
-        return NextResponse.json({ error: '清單不存在' }, { status: 404 });
+        return createErrorResponse(new NotFoundError('購物清單'), traceId);
       }
-      return NextResponse.json(list);
+      const response = createSuccessResponse(list);
+      response.headers.set('X-Trace-Id', traceId);
+      return response;
     }
 
     if (listId) {
       // 取得單個清單
-      const list = db.lists[listId];
+      const list = fileDb.lists[listId];
       if (!list) {
-        return NextResponse.json({ error: '清單不存在' }, { status: 404 });
+        return createErrorResponse(new NotFoundError('購物清單'), traceId);
       }
-      return NextResponse.json(list);
+      const response = createSuccessResponse(list);
+      response.headers.set('X-Trace-Id', traceId);
+      return response;
     }
 
     // 取得所有清單
-    return NextResponse.json({
-      lists: Object.values(db.lists),
+    const response = createSuccessResponse({
+      lists: Object.values(fileDb.lists),
     });
+    response.headers.set('X-Trace-Id', traceId);
+    return response;
   } catch (error) {
     console.error('[Shopping Lists] Error fetching lists:', error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : '取得清單失敗' },
-      { status: 500 }
+    return createErrorResponse(
+      error instanceof Error ? new InternalError(error.message) : new InternalError(),
+      traceId
     );
   }
 }
@@ -143,24 +232,52 @@ export async function GET(request: NextRequest) {
  * 更新清單
  */
 export async function PUT(request: NextRequest) {
+  const traceId = generateTraceId();
+
   try {
     const body = await request.json();
     const { id, name, description, items } = body;
 
     if (!id) {
-      return NextResponse.json({ error: '清單 ID 必填' }, { status: 400 });
+      return createErrorResponse(
+        new ValidationError('清單 ID 必填'),
+        traceId
+      );
     }
 
-    const db = await initDb();
-    const list = db.lists[id];
+    if (isDevelopment) {
+      const db = await getPrisma();
+      const list = await db.shoppingList.findUnique({ where: { id } });
+
+      if (!list) {
+        return createErrorResponse(new NotFoundError('購物清單'), traceId);
+      }
+
+      const updatedList = await db.shoppingList.update({
+        where: { id },
+        data: {
+          name: name ? sanitizeInput(name) : undefined,
+          description: description ? sanitizeInput(description) : undefined,
+        },
+        include: { items: true },
+      });
+
+      const response = createSuccessResponse(updatedList);
+      response.headers.set('X-Trace-Id', traceId);
+      return response;
+    }
+
+    // 生產模式：使用 JSON 檔案
+    const fileDb = await initDb();
+    const list = fileDb.lists[id];
 
     if (!list) {
-      return NextResponse.json({ error: '清單不存在' }, { status: 404 });
+      return createErrorResponse(new NotFoundError('購物清單'), traceId);
     }
 
     // 更新欄位
-    if (name !== undefined) list.name = name;
-    if (description !== undefined) list.description = description;
+    if (name !== undefined) list.name = sanitizeInput(name);
+    if (description !== undefined) list.description = sanitizeInput(description);
     if (items !== undefined) {
       list.items = items.map((item: any) => ({
         ...item,
@@ -169,14 +286,16 @@ export async function PUT(request: NextRequest) {
     }
 
     list.updatedAt = new Date().toISOString();
-    await saveDb(db);
+    await saveDb(fileDb);
 
-    return NextResponse.json(list);
+    const response = createSuccessResponse(list);
+    response.headers.set('X-Trace-Id', traceId);
+    return response;
   } catch (error) {
     console.error('[Shopping Lists] Error updating list:', error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : '更新清單失敗' },
-      { status: 500 }
+    return createErrorResponse(
+      error instanceof Error ? new InternalError(error.message) : new InternalError(),
+      traceId
     );
   }
 }
@@ -186,37 +305,60 @@ export async function PUT(request: NextRequest) {
  * 刪除清單
  */
 export async function DELETE(request: NextRequest) {
+  const traceId = generateTraceId();
+
   try {
     const { searchParams } = new URL(request.url);
     const listId = searchParams.get('id');
 
     if (!listId) {
-      return NextResponse.json({ error: '清單 ID 必填' }, { status: 400 });
+      return createErrorResponse(
+        new ValidationError('清單 ID 必填'),
+        traceId
+      );
     }
 
-    const db = await initDb();
+    if (isDevelopment) {
+      const db = await getPrisma();
+      const list = await db.shoppingList.findUnique({ where: { id: listId } });
 
-    if (!db.lists[listId]) {
-      return NextResponse.json({ error: '清單不存在' }, { status: 404 });
+      if (!list) {
+        return createErrorResponse(new NotFoundError('購物清單'), traceId);
+      }
+
+      await db.shoppingList.delete({ where: { id: listId } });
+
+      const response = createSuccessResponse({ success: true, id: listId });
+      response.headers.set('X-Trace-Id', traceId);
+      return response;
     }
 
-    delete db.lists[listId];
+    // 生產模式：使用 JSON 檔案
+    const fileDb = await initDb();
+
+    if (!fileDb.lists[listId]) {
+      return createErrorResponse(new NotFoundError('購物清單'), traceId);
+    }
+
+    delete fileDb.lists[listId];
 
     // 刪除相關的分享鏈接
-    Object.keys(db.shares).forEach((code) => {
-      if (db.shares[code] === listId) {
-        delete db.shares[code];
+    Object.keys(fileDb.shares).forEach((code) => {
+      if (fileDb.shares[code] === listId) {
+        delete fileDb.shares[code];
       }
     });
 
-    await saveDb(db);
+    await saveDb(fileDb);
 
-    return NextResponse.json({ success: true });
+    const response = createSuccessResponse({ success: true, id: listId });
+    response.headers.set('X-Trace-Id', traceId);
+    return response;
   } catch (error) {
     console.error('[Shopping Lists] Error deleting list:', error);
-    return NextResponse.json(
-      { error: error instanceof Error ? error.message : '刪除清單失敗' },
-      { status: 500 }
+    return createErrorResponse(
+      error instanceof Error ? new InternalError(error.message) : new InternalError(),
+      traceId
     );
   }
 }
