@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import {
   Filter, X, ChevronDown, ChevronUp, RotateCcw,
   Sparkles, TrendingUp, Users, DollarSign, Truck, Leaf,
-  SortAsc, Tag, MapPin, Check, Search, Store, ArrowUpDown
+  SortAsc, Tag, MapPin, Check, Search, Store, ArrowUpDown, ShoppingCart
 } from 'lucide-react';
 import { usePlanStore } from '@/stores/planStore';
 import type { SortOption } from '@/types';
@@ -179,9 +179,10 @@ function VendorTabContent({
 
 interface MobileFilterBarProps {
   onOpenVendorList?: () => void;
+  onOpenShoppingList?: () => void;
 }
 
-export default function MobileFilterBar({ onOpenVendorList }: MobileFilterBarProps) {
+export default function MobileFilterBar({ onOpenVendorList, onOpenShoppingList }: MobileFilterBarProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeQuickFilter, setActiveQuickFilter] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'basic' | 'sort' | 'tags' | 'region' | 'vendor'>('basic');
@@ -286,6 +287,14 @@ export default function MobileFilterBar({ onOpenVendorList }: MobileFilterBarPro
               清除
             </button>
           )}
+          <button
+            onClick={() => onOpenShoppingList?.()}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-all"
+            title="購物清單"
+          >
+            <ShoppingCart className="w-4 h-4" />
+            <span className="hidden sm:inline">清單</span>
+          </button>
           <button
             onClick={() => setIsExpanded(!isExpanded)}
             className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition-all ${

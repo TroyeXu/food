@@ -60,7 +60,10 @@ export default function Home() {
 
       {/* 手機版：精簡的篩選列 */}
       <div className="lg:hidden">
-        <MobileFilterBar onOpenVendorList={() => setIsVendorListOpen(true)} />
+        <MobileFilterBar
+          onOpenVendorList={() => setIsVendorListOpen(true)}
+          onOpenShoppingList={() => setIsShoppingListOpen(true)}
+        />
       </div>
 
       {/* 桌面版：智慧推薦區塊 */}

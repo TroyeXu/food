@@ -7,6 +7,7 @@ interface ShoppingListState {
   currentList: ShoppingList | null;
   loading: boolean;
   error: string | null;
+  previousState: ShoppingList | null; // 用於回滾
 
   // 操作
   fetchLists: () => Promise<void>;
@@ -18,6 +19,7 @@ interface ShoppingListState {
   removeItem: (listId: string, planId: string) => Promise<void>;
   updateItem: (listId: string, planId: string, quantity?: number, notes?: string) => Promise<void>;
   setError: (error: string | null) => void;
+  rollbackToLastState: () => void; // 回滾到之前的狀態
 }
 
 export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
@@ -25,6 +27,7 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
   currentList: null,
   loading: false,
   error: null,
+  previousState: null,
 
   fetchLists: async () => {
     set({ loading: true });
@@ -138,6 +141,8 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
   },
 
   addItem: async (listId: string, planId: string, quantity = 1) => {
+    const previousState = get().currentList;
+
     set((state) => {
       if (!state.currentList || state.currentList.id !== listId) {
         return {};
@@ -156,6 +161,7 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
 
       return {
         currentList: { ...state.currentList, items: newItems },
+        previousState: previousState, // 保存之前的狀態
       };
     });
 
@@ -163,7 +169,7 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
     try {
       const state = get();
       if (state.currentList) {
-        await fetch('/api/shopping-lists', {
+        const response = await fetch('/api/shopping-lists', {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -171,14 +177,21 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
             items: state.currentList.items,
           }),
         });
+
+        if (!response.ok) throw new Error('Failed to sync');
       }
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unknown error';
-      set({ error: message });
+      set({
+        error: message,
+        currentList: previousState, // 發生錯誤時回滾
+      });
     }
   },
 
   removeItem: async (listId: string, planId: string) => {
+    const previousState = get().currentList;
+
     set((state) => {
       if (!state.currentList || state.currentList.id !== listId) {
         return {};
@@ -189,6 +202,7 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
           ...state.currentList,
           items: state.currentList.items.filter((i) => i.planId !== planId),
         },
+        previousState: previousState, // 保存之前的狀態
       };
     });
 
@@ -196,7 +210,7 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
     try {
       const state = get();
       if (state.currentList) {
-        await fetch('/api/shopping-lists', {
+        const response = await fetch('/api/shopping-lists', {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -204,14 +218,21 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
             items: state.currentList.items,
           }),
         });
+
+        if (!response.ok) throw new Error('Failed to sync');
       }
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unknown error';
-      set({ error: message });
+      set({
+        error: message,
+        currentList: previousState, // 發生錯誤時回滾
+      });
     }
   },
 
   updateItem: async (listId: string, planId: string, quantity?: number, notes?: string) => {
+    const previousState = get().currentList;
+
     set((state) => {
       if (!state.currentList || state.currentList.id !== listId) {
         return {};
@@ -230,6 +251,7 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
               : i
           ),
         },
+        previousState: previousState, // 保存之前的狀態
       };
     });
 
@@ -237,7 +259,7 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
     try {
       const state = get();
       if (state.currentList) {
-        await fetch('/api/shopping-lists', {
+        const response = await fetch('/api/shopping-lists', {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -245,12 +267,24 @@ export const useShoppingListStore = create<ShoppingListState>((set, get) => ({
             items: state.currentList.items,
           }),
         });
+
+        if (!response.ok) throw new Error('Failed to sync');
       }
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Unknown error';
-      set({ error: message });
+      set({
+        error: message,
+        currentList: previousState, // 發生錯誤時回滾
+      });
     }
   },
 
   setError: (error: string | null) => set({ error }),
+
+  rollbackToLastState: () => {
+    set((state) => ({
+      currentList: state.previousState,
+      previousState: null,
+    }));
+  },
 }));

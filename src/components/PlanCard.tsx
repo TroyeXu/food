@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import {
   Truck,
   Store,
@@ -18,6 +19,7 @@ import {
   ExternalLink,
   Clock,
   ShoppingCart,
+  ImageOff,
 } from 'lucide-react';
 import type { Plan } from '@/types';
 import { REGION_LABELS } from '@/types';
@@ -30,6 +32,7 @@ interface PlanCardProps {
 }
 
 export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) {
+  const [imageError, setImageError] = useState(false);
   const { comparisonIds, toggleComparison, editMode, deletePlan, favoriteIds, toggleFavorite, userLocation, getDistanceToPlan } = usePlanStore();
 
   // 計算距離
@@ -168,14 +171,13 @@ export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) 
     >
       {/* Image */}
       <div className={`relative h-40 bg-gradient-to-br ${defaultImage.bgClass} rounded-t-xl overflow-hidden`}>
-        {plan.imageUrl ? (
+        {plan.imageUrl && !imageError ? (
           <img
             src={plan.imageUrl}
             alt={plan.title}
             className="w-full h-full object-cover"
-            onError={(e) => {
-              // 圖片載入失敗時隱藏
-              e.currentTarget.style.display = 'none';
+            onError={() => {
+              setImageError(true);
             }}
           />
         ) : (
@@ -187,9 +189,19 @@ export default function PlanCard({ plan, onEdit, onViewDetail }: PlanCardProps) 
               <div className="absolute top-2 right-8 text-2xl">✨</div>
               <div className="absolute bottom-8 left-4 text-2xl">🎉</div>
             </div>
-            <span className="text-5xl mb-2 relative z-10">{defaultImage.emoji}</span>
-            <span className="text-sm font-medium text-gray-600 relative z-10">{plan.vendorName}</span>
-            <span className="text-xs text-gray-400 mt-1 relative z-10">{defaultImage.label}</span>
+            {imageError ? (
+              <>
+                <ImageOff className="w-8 h-8 text-gray-400 mb-2 relative z-10" />
+                <span className="text-sm font-medium text-gray-600 relative z-10">{plan.vendorName}</span>
+                <span className="text-xs text-gray-400 mt-1 relative z-10">圖片載入失敗</span>
+              </>
+            ) : (
+              <>
+                <span className="text-5xl mb-2 relative z-10">{defaultImage.emoji}</span>
+                <span className="text-sm font-medium text-gray-600 relative z-10">{plan.vendorName}</span>
+                <span className="text-xs text-gray-400 mt-1 relative z-10">{defaultImage.label}</span>
+              </>
+            )}
           </div>
         )}
 

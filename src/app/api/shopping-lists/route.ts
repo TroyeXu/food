@@ -2,6 +2,12 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
+import {
+  CreateShoppingListSchema,
+  AddShoppingListItemSchema,
+  checkRateLimit,
+  sanitizeInput
+} from '@/lib/validations';
 
 export const dynamic = 'force-dynamic';
 
@@ -26,28 +32,47 @@ async function saveDb(data: any) {
 
 /**
  * POST /api/shopping-lists
- * 建立新清單
+ * 建立新清單 - 含驗證和速率限制
  */
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const { name, description, items = [] } = body;
-
-    if (!name) {
-      return NextResponse.json({ error: '清單名稱必填' }, { status: 400 });
+    // 速率限制
+    const clientIp = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
+    if (!checkRateLimit(`shopping_list_${clientIp}`, 10, 60000)) {
+      return NextResponse.json(
+        { error: '操作過於頻繁，請稍候後再試' },
+        { status: 429 }
+      );
     }
 
+    // 驗證請求
+    const body = await request.json();
+    const validationResult = CreateShoppingListSchema.safeParse(body);
+
+    if (!validationResult.success) {
+      const errors = validationResult.error.flatten().fieldErrors;
+      const errorMsg = Object.entries(errors)
+        .map(([field, msgs]) => `${field}: ${msgs?.join(', ') || '未知錯誤'}`)
+        .join('; ');
+      return NextResponse.json(
+        { error: `驗證失敗: ${errorMsg}` },
+        { status: 400 }
+      );
+    }
+
+    const { name, description } = validationResult.data;
     const db = await initDb();
-    const listId = `list_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    const listId = crypto.randomUUID();
+
+    // 清理輸入
+    const sanitizedName = sanitizeInput(name);
+    const sanitizedDescription = description ? sanitizeInput(description) : '';
 
     const newList = {
       id: listId,
-      name,
-      description: description || '',
-      items: items.map((item: any) => ({
-        ...item,
-        addedAt: new Date().toISOString(),
-      })),
+      name: sanitizedName,
+      description: sanitizedDescription,
+      items: [],
       isShared: false,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),

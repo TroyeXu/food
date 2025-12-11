@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
+import { CreateReviewSchema, checkRateLimit, sanitizeInput, shouldModerateReview } from '@/lib/validations';
 
 export const dynamic = 'force-dynamic';
 
@@ -98,48 +99,65 @@ function calculateStats(planId: string, reviews: any[]) {
 
 /**
  * POST /api/reviews
- * 新增評價
+ * 新增評價 - 含驗證和速率限制
  */
 export async function POST(request: NextRequest) {
   try {
+    // 獲取客戶端 IP 用於速率限制
+    const clientIp = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
+
+    // 檢查速率限制 (每個 IP 每分鐘最多 5 條評價)
+    if (!checkRateLimit(`review_${clientIp}`, 5, 60000)) {
+      return NextResponse.json(
+        { error: '提交過於頻繁，請稍候後再試' },
+        { status: 429 }
+      );
+    }
+
+    // 驗證請求體
     const body = await request.json();
-    const { planId, userName, rating, dimensionRatings, title, content } = body;
+    const validationResult = CreateReviewSchema.safeParse(body);
 
-    if (!planId || !rating || !title || !content) {
+    if (!validationResult.success) {
+      const errors = validationResult.error.flatten().fieldErrors;
+      const errorMsg = Object.entries(errors)
+        .map(([field, msgs]) => `${field}: ${msgs?.join(', ') || '未知錯誤'}`)
+        .join('; ');
       return NextResponse.json(
-        { error: '缺少必要欄位' },
+        { error: `驗證失敗: ${errorMsg}` },
         { status: 400 }
       );
     }
 
-    if (rating < 1 || rating > 5) {
-      return NextResponse.json(
-        { error: '評分必須在 1-5 之間' },
-        { status: 400 }
-      );
-    }
+    const { planId, userName, rating, dimensionRatings, title, content } = validationResult.data;
 
     const db = await initReviewsDb();
     const statsDb = await initReviewStatsDb();
 
-    // 生成匿名 userId
-    const userHash = crypto.createHash('sha256')
-      .update(`${planId}_${Date.now()}_${Math.random()}`)
-      .digest('hex')
-      .substring(0, 16);
+    // 生成安全的匿名 userId
+    const userHash = crypto.randomUUID();
+
+    // 清理用戶輸入以防止 XSS
+    const sanitizedTitle = sanitizeInput(title);
+    const sanitizedContent = sanitizeInput(content);
+    const sanitizedUserName = userName ? sanitizeInput(userName) : undefined;
+
+    // 自動檢測是否需要審核
+    const needsModeration = shouldModerateReview(sanitizedTitle, sanitizedContent);
 
     const newReview = {
-      id: `review_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      id: crypto.randomUUID(),
       planId,
       userId: userHash,
-      userName: userName || `用户_${userHash.substring(0, 8)}`,
+      userName: sanitizedUserName || `用户_${userHash.substring(0, 8)}`,
       rating,
       dimensionRatings: dimensionRatings || {},
-      title,
-      content,
+      title: sanitizedTitle,
+      content: sanitizedContent,
       helpful: 0,
       unhelpful: 0,
-      status: 'published', // 簡單實現，直接發佈（生產環境應加審核）
+      status: needsModeration ? 'flagged' : 'pending', // 'flagged' 表示自動檢測可能是垃圾，'pending' 表示待人工審核
+      moderationReason: needsModeration ? '自動檢測到可疑內容' : undefined,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
@@ -147,12 +165,18 @@ export async function POST(request: NextRequest) {
     db.reviews.push(newReview);
     await saveReviewsDb(db);
 
-    // 更新統計
+    // 更新統計 (只計算已發佈的評價)
     const stats = calculateStats(planId, db.reviews);
     statsDb.stats[planId] = stats;
     await saveReviewStatsDb(statsDb);
 
-    return NextResponse.json(newReview, { status: 201 });
+    return NextResponse.json(
+      {
+        ...newReview,
+        message: '評價已提交，等待審核後發佈'
+      },
+      { status: 201 }
+    );
   } catch (error) {
     console.error('[Reviews] Error posting review:', error);
     return NextResponse.json(

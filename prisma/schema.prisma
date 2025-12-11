@@ -1,0 +1,405 @@
+// Prisma 數據庫架構 - 年菜比較系統
+// 完整的 PostgreSQL 模型定義
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ====== 廠商模型 ======
+model Vendor {
+  id        String   @id @default(cuid())
+  name      String   @unique
+  website   String?
+  phone     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  plans Plan[]
+
+  @@map("vendors")
+}
+
+// ====== 年菜方案模型 ======
+model Plan {
+  id        String   @id @default(cuid())
+  vendorId  String
+  vendorName String
+
+  // 基本資訊
+  title       String
+  description String?
+  imageUrl    String?
+  images      String[] @default([])
+
+  // 價格
+  priceOriginal Float?
+  priceDiscount Float
+  shippingFee   Float?
+
+  // 配送
+  shippingType ShippingType
+  storageType  StorageType
+  pickupPoints PickupPoint[]
+  deliveryAreas String[] @default([])
+
+  // 地點
+  region      TaiwanRegion?
+  city        TaiwanCity?
+  address     String?
+
+  // 份量
+  servingsMin Int
+  servingsMax Int?
+
+  // 日期
+  orderDeadline String?
+  fulfillStart  String?
+  fulfillEnd    String?
+  canSelectDate Boolean @default(false)
+
+  // 內容
+  tags      String[] @default([])
+  dishes    String[] @default([])
+  allergens String[] @default([])
+
+  // 分類欄位
+  vendorType    VendorType?
+  productType   ProductType?
+  cuisineStyle  CuisineStyle?
+  priceLevel    PriceLevel?
+  familySize    FamilySize?
+
+  // 來源
+  sourceUrl String?
+
+  // 狀態
+  status PlanStatus
+
+  // 欄位信心度
+  fieldConfidence Json?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  vendor         Vendor   @relation(fields: [vendorId], references: [id], onDelete: Cascade)
+  extractions    Extraction[]
+  reviews        Review[]
+  shoppingListItems ShoppingListItem[]
+
+  @@index([vendorId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("plans")
+}
+
+// ====== 抽取紀錄模型 ======
+model Extraction {
+  id        String   @id @default(cuid())
+  planId    String
+  sourceUrl String?
+  extractedData Json?
+  confidence Float?
+  createdAt DateTime @default(now())
+
+  plan Plan @relation(fields: [planId], references: [id], onDelete: Cascade)
+
+  @@index([planId])
+  @@map("extractions")
+}
+
+// ====== 用戶評價模型 ======
+model Review {
+  id        String   @id @default(cuid())
+  planId    String
+  userId    String
+  userName  String?
+
+  rating    Int
+  title     String
+  content   String   @db.Text
+  dimensionRatings Json?
+
+  helpful   Int @default(0)
+  unhelpful Int @default(0)
+  vendorReply VendorReply?
+
+  status    ReviewStatus @default(PENDING)
+  moderationReason String?
+  adminNotes String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  plan Plan @relation(fields: [planId], references: [id], onDelete: Cascade)
+
+  @@index([planId])
+  @@index([status])
+  @@index([createdAt])
+  @@map("reviews")
+}
+
+model VendorReply {
+  id        String   @id @default(cuid())
+  reviewId  String   @unique
+  content   String   @db.Text
+  respondedAt DateTime @default(now())
+
+  review Review @relation(fields: [reviewId], references: [id], onDelete: Cascade)
+
+  @@map("vendor_replies")
+}
+
+// ====== 購物清單模型 ======
+model ShoppingList {
+  id        String   @id @default(cuid())
+  name      String
+  description String?
+  isShared  Boolean @default(false)
+  shareCode String? @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  items ShoppingListItem[]
+
+  @@index([shareCode])
+  @@map("shopping_lists")
+}
+
+model ShoppingListItem {
+  id        String   @id @default(cuid())
+  listId    String
+  planId    String
+  quantity  Int
+  notes     String?
+  addedAt   DateTime @default(now())
+
+  list ShoppingList @relation(fields: [listId], references: [id], onDelete: Cascade)
+  plan Plan @relation(fields: [planId], references: [id], onDelete: Cascade)
+
+  @@unique([listId, planId])
+  @@index([listId])
+  @@index([planId])
+  @@map("shopping_list_items")
+}
+
+// ====== 價格監控模型 ======
+model PriceMonitor {
+  id        String   @id @default(cuid())
+  planId    String
+  targetPrice Float
+  email     String
+  isActive  Boolean @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([planId])
+  @@index([email])
+  @@map("price_monitors")
+}
+
+// ====== 爬蟲相關模型 ======
+model ScraperJob {
+  id          String   @id @default(cuid())
+  url         String
+  status      ScraperJobStatus
+  planId      String?
+  batchId     String?
+  sourceData  Json?
+  extractedData Json?
+  error       String?
+  startedAt   DateTime?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  batch ScraperBatch? @relation(fields: [batchId], references: [id], onDelete: SetNull)
+
+  @@index([status])
+  @@index([batchId])
+  @@index([createdAt])
+  @@map("scraper_jobs")
+}
+
+model ScraperBatch {
+  id        String   @id @default(cuid())
+  name      String
+  status    ScraperBatchStatus @default(PENDING)
+  totalJobs Int @default(0)
+  completedJobs Int @default(0)
+  failedJobs Int @default(0)
+  startedAt DateTime?
+  completedAt DateTime?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  jobs ScraperJob[]
+
+  @@map("scraper_batches")
+}
+
+// ====== 複合類型 ======
+model PickupPoint {
+  id        String   @id @default(cuid())
+  planId    String
+  name      String
+  address   String
+  phone     String?
+  latitude  Float?
+  longitude Float?
+
+  plan Plan @relation(fields: [planId], references: [id], onDelete: Cascade)
+
+  @@map("pickup_points")
+}
+
+// ====== 列舉 ======
+
+enum PlanStatus {
+  DRAFT
+  NEEDS_REVIEW
+  PUBLISHED
+
+  @@map("plan_status")
+}
+
+enum ShippingType {
+  DELIVERY
+  PICKUP
+  BOTH
+
+  @@map("shipping_type")
+}
+
+enum StorageType {
+  FROZEN
+  CHILLED
+  ROOM_TEMP
+  UNKNOWN
+
+  @@map("storage_type")
+}
+
+enum VendorType {
+  HOTEL
+  RESTAURANT
+  BRAND
+  CONVENIENCE
+  HYPERMARKET
+  VEGETARIAN
+  OTHER
+
+  @@map("vendor_type")
+}
+
+enum ProductType {
+  SET_MEAL
+  SINGLE_DISH
+  DESSERT
+  GIFT_BOX
+  SOUP
+  OTHER
+
+  @@map("product_type")
+}
+
+enum CuisineStyle {
+  TAIWANESE
+  CANTONESE
+  SHANGHAINESE
+  SZECHUAN
+  JAPANESE
+  VEGETARIAN
+  FUSION
+  WESTERN
+  OTHER
+
+  @@map("cuisine_style")
+}
+
+enum PriceLevel {
+  BUDGET
+  MID_RANGE
+  PREMIUM
+  LUXURY
+
+  @@map("price_level")
+}
+
+enum FamilySize {
+  COUPLE
+  SMALL
+  MEDIUM
+  LARGE
+
+  @@map("family_size")
+}
+
+enum TaiwanRegion {
+  NORTH
+  CENTRAL
+  SOUTH
+  EAST
+  ISLANDS
+  NATIONWIDE
+
+  @@map("taiwan_region")
+}
+
+enum TaiwanCity {
+  TAIPEI
+  NEW_TAIPEI
+  TAOYUAN
+  HSINCHU_CITY
+  HSINCHU_COUNTY
+  MIAOLI
+  TAICHUNG
+  CHANGHUA
+  NANTOU
+  YUNLIN
+  CHIAYI_CITY
+  CHIAYI_COUNTY
+  TAINAN
+  KAOHSIUNG
+  PINGTUNG
+  YILAN
+  HUALIEN
+  TAITUNG
+  PENGHU
+  KINMEN
+  LIENCHIANG
+
+  @@map("taiwan_city")
+}
+
+enum ReviewStatus {
+  PENDING
+  PUBLISHED
+  FLAGGED
+  REJECTED
+
+  @@map("review_status")
+}
+
+enum ScraperJobStatus {
+  PENDING
+  RUNNING
+  SUCCESS
+  FAILED
+  CANCELLED
+
+  @@map("scraper_job_status")
+}
+
+enum ScraperBatchStatus {
+  PENDING
+  RUNNING
+  SUCCESS
+  FAILED
+  PARTIAL
+
+  @@map("scraper_batch_status")
+}
