@@ -5,6 +5,7 @@ import { useState } from 'react';
 import type { Plan } from '@/types';
 import { usePlanStore } from '@/stores/planStore';
 import { REGION_LABELS } from '@/types';
+import { ReviewSection } from './ReviewSection';
 
 interface PlanDetailModalProps {
   plan: Plan;
@@ -332,6 +333,11 @@ export default function PlanDetailModal({ plan, onClose }: PlanDetailModalProps)
                 </p>
               </div>
             )}
+
+            {/* Reviews Section */}
+            <div className="pt-2 border-t border-[var(--border)]">
+              <ReviewSection planId={plan.id} />
+            </div>
 
           </div>
         </div>

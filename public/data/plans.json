@@ -47,7 +47,8 @@
     "storageTypes": [
       "room_temp"
     ],
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "plan-2026-002",
@@ -94,7 +95,8 @@
     "storageTypes": [
       "room_temp"
     ],
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "plan-2026-003",
@@ -149,7 +151,7 @@
     "vendorName": "老協珍",
     "title": "鮑魚干貝佛跳牆",
     "description": "八十年選料經驗，嚴選頂級食材打造的經典佛跳牆",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1998,
@@ -201,7 +203,7 @@
     "vendorName": "台北寒舍艾美酒店",
     "title": "宴會廳常溫外帶年菜套餐",
     "description": "由宴會廳主掌7道式的常溫外帶年菜套餐，適合四人享用的豪華菜品",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 10100,
     "priceDiscount": 8888,
@@ -246,7 +248,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7s4twd1mf6w_3",
@@ -254,7 +257,7 @@
     "vendorName": "台北新板希爾頓酒店",
     "title": "金駿慶團圓六人饗宴",
     "description": "榮獲2025臺灣米其林指南推薦，青雅中餐廳推出的年菜外帶系列",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 14800,
     "priceDiscount": 9988,
@@ -299,7 +302,8 @@
       "room_temp"
     ],
     "duplicateOf": "033ed61b7535ab42f66bd1d26f99e6e6",
-    "duplicateReason": "菜名數量: 4 > 3"
+    "duplicateReason": "菜名數量: 4 > 3",
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7sonypz7nei_4",
@@ -307,7 +311,7 @@
     "vendorName": "台北福華大飯店",
     "title": "蓬萊邨素食年菜套餐",
     "description": "首度推出素食年菜組合，四喜拼盤以松子素鵝、梅漬百香果、蟲草川耳與椒麻腐竹組成",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 5555,
     "priceDiscount": 4888,
@@ -360,7 +364,7 @@
     "vendorName": "台北福華大飯店",
     "title": "珍珠坊高陞套餐",
     "description": "以粵式海味著稱，六人份套餐含八道佳餚",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 11136,
     "priceDiscount": 9800,
@@ -415,7 +419,7 @@
     "vendorName": "彭園",
     "title": "馬運亨通富貴組",
     "description": "2026年菜外帶限量預購，當天現做",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 6888,
@@ -462,7 +466,8 @@
       "room_temp"
     ],
     "duplicateOf": "plan_mixrwo7snhfc84ff0_7",
-    "duplicateReason": "較早建立"
+    "duplicateReason": "較早建立",
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7snhfc84ff0_7",
@@ -470,7 +475,7 @@
     "vendorName": "彭園",
     "title": "金馬富貴大發組",
     "description": "魚翅花膠土雞鍋搭配5道主菜，預購送湖南臘味蘿蔔糕",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 6888,
@@ -515,7 +520,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7szmsrnf9u2_8",
@@ -625,7 +631,7 @@
     "vendorName": "海霸王",
     "title": "經典榮華富貴年菜5件組",
     "description": "海霸王原廠真材實料出品，復熱即可復刻餐廳最豪華的年菜佳餚",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2199,
@@ -735,7 +741,7 @@
     "vendorName": "Costco大成",
     "title": "享點子開運年菜六道菜",
     "description": "約3-4人份年菜套組",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1999,
@@ -790,7 +796,7 @@
     "vendorName": "台酒",
     "title": "嚴選海味街紹興烏參佛跳牆",
     "description": "台酒嚴選海味，紹興酒香佛跳牆",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 650,
@@ -839,7 +845,7 @@
     "vendorName": "台酒",
     "title": "紅露醉雞腿禮盒",
     "description": "台酒經典紅露醉雞腿",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 350,
@@ -937,7 +943,7 @@
     "vendorName": "蔡老師蔬食",
     "title": "駿馬奔騰福迎春全素手工年菜",
     "description": "每道年菜均由專業大廚精心手工製作，限量供應300套",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 4888,
@@ -989,7 +995,7 @@
     "vendorName": "祥和蔬食",
     "title": "八寶呈祥年菜套組",
     "description": "台北米其林必比登連續多年推薦蔬食餐廳",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3888,
@@ -1047,7 +1053,7 @@
     "vendorName": "典華",
     "title": "2026除夕圍爐宴",
     "description": "承襲粵菜百年底蘊，頂級粵式珍饈",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 14545,
     "priceDiscount": 12800,
@@ -1091,7 +1097,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7slglxwk82d_19",
@@ -1099,7 +1106,7 @@
     "vendorName": "山海樓",
     "title": "起家興旺掛爐燒雞",
     "description": "蓬萊閣黃德興老師傅親自傳授，選用台灣放山古早雞",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1880,
@@ -1140,7 +1147,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7say6ydp5af_20",
@@ -1148,7 +1156,7 @@
     "vendorName": "山海樓",
     "title": "諸事大吉金銀燒豬",
     "description": "失傳近五十年的蓬萊閣經典台菜",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2880,
@@ -1189,7 +1197,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7sys8wo79og_21",
@@ -1197,7 +1206,7 @@
     "vendorName": "山海樓",
     "title": "山海樓佛跳牆",
     "description": "長時間精心燜煮整隻放山古早雞湯為基底，融匯烏海參、北海道干貝、鮑魚、金華火腿片等",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3280,
@@ -1238,7 +1247,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7shk1n8ffpr_22",
@@ -1290,7 +1300,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7s62tzee4nf_23",
@@ -1458,7 +1469,7 @@
     "vendorName": "呷七碗",
     "title": "全福團圓年菜6件組",
     "description": "40年老品牌，堅持嚴選台灣在地食材",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3888,
@@ -1660,7 +1671,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7soobow3mxn_30",
@@ -1710,7 +1722,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7sa9d8p38vk_31",
@@ -1807,7 +1820,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7sjbky30z0p_33",
@@ -1815,7 +1829,7 @@
     "vendorName": "板橋凱撒大飯店",
     "title": "駿馬迎春瑞滿堂八人組合餐",
     "description": "家宴中餐廳推出，12月31日前預訂贈法國頂級氣泡酒",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 11236,
     "priceDiscount": 9888,
@@ -1860,7 +1874,8 @@
       "room_temp"
     ],
     "duplicateOf": "60baf4e4d41598c287546088f67969e7",
-    "duplicateReason": "資料完整度: 10.5 > 9"
+    "duplicateReason": "資料完整度: 10.5 > 9",
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7sq0snerrmg_34",
@@ -1964,7 +1979,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7syvfc2q4zn_36",
@@ -2017,7 +2033,8 @@
     ],
     "storageTypes": [
       "chilled"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7szel88ihe3_37",
@@ -2025,7 +2042,7 @@
     "vendorName": "台北萬豪酒店",
     "title": "四人小家庭海陸年菜組合",
     "description": "手工年節精湛美饌，1月31日前訂購享早鳥九折",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 8282,
     "priceDiscount": 7288,
@@ -2066,7 +2083,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7stcgpu3v5k_38",
@@ -2116,7 +2134,8 @@
     "storageTypes": [
       "frozen",
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7stxfzbvx0u_39",
@@ -2167,7 +2186,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7s0y6o66ms1_40",
@@ -2175,7 +2195,7 @@
     "vendorName": "福容大飯店",
     "title": "大家庭宴10人桌菜",
     "description": "攜手韓國百年品牌正官庄推出聯名雞湯",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": 14545,
     "priceDiscount": 12800,
@@ -2217,7 +2237,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7s4es79b32t_41",
@@ -2264,7 +2285,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixrwo7siadgvvvti_42",
@@ -2312,7 +2334,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8ej2rzn0x35o_0",
@@ -2360,7 +2383,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8eklspjh40xr_1",
@@ -2408,7 +2432,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8ek3f6qkukk9_2",
@@ -2416,7 +2441,7 @@
     "vendorName": "炒湘湘",
     "title": "八品佳餚年菜套組",
     "description": "適合一到兩代同桌的小家庭，精緻湘菜風味",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2988,
@@ -2765,7 +2790,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8ek8opevoh9r_9",
@@ -2916,7 +2942,8 @@
     ],
     "storageTypes": [
       "chilled"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8ekt5q16pfay_12",
@@ -3074,7 +3101,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8eknu63lanf4_15",
@@ -3178,7 +3206,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8ek3kvv8w0zr_17",
@@ -3226,7 +3255,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8ek9qn7hf83m_18",
@@ -3278,7 +3308,8 @@
     ],
     "storageTypes": [
       "chilled"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsl8ekgb0upfn3d_19",
@@ -3442,7 +3473,7 @@
     "vendorName": "呷七碗",
     "title": "全福團圓年菜八件組",
     "description": "每道約可6~8人份，經典台式年菜完整組合",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 5888,
@@ -3499,7 +3530,7 @@
     "vendorName": "呷七碗",
     "title": "小家庭年菜組",
     "description": "適合4-6人小家庭的精選年菜組合",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3288,
@@ -3618,7 +3649,7 @@
     "vendorName": "老協珍",
     "title": "圓滿如意四件組",
     "description": "經典組合：烏參佛跳牆+經典牛雙寶+絕品海鮮羹+櫻花蝦干貝飯",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 2388,
@@ -3672,7 +3703,7 @@
     "vendorName": "老協珍",
     "title": "馬到成功六件組",
     "description": "豪華組合：鮑魚干貝佛跳牆+火腿雞湯+烏參牛腩煲等",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 3988,
@@ -3828,7 +3859,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcf122kfdjpl_7",
@@ -3880,7 +3912,8 @@
     ],
     "storageTypes": [
       "chilled"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcf93hou939m_8",
@@ -3931,7 +3964,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfbh4mp6mur_9",
@@ -3988,7 +4022,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfu3adts3uj_10",
@@ -4037,7 +4072,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcf75dlyjl82_11",
@@ -4086,7 +4122,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfu1zjt7juv_12",
@@ -4135,7 +4172,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfdrqzr8n1p_13",
@@ -4235,7 +4273,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcf4mczei725_15",
@@ -4288,7 +4327,8 @@
     ],
     "storageTypes": [
       "frozen"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfvlb8yyuxt_16",
@@ -4337,7 +4377,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfte7qfpi5x_17",
@@ -4389,7 +4430,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfk63ahwsnr_18",
@@ -4438,7 +4480,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcf12dlkgc8v_19",
@@ -4537,7 +4580,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcf39pifl8bl_21",
@@ -4585,7 +4629,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcfcx2ap6zey_22",
@@ -4634,7 +4679,8 @@
     ],
     "storageTypes": [
       "room_temp"
-    ]
+    ],
+    "maxDistance": 0
   },
   {
     "id": "plan_mixsowcf0xkjbu9h5_23",
@@ -4692,7 +4738,7 @@
     "vendorName": "鼎泰豐",
     "title": "新春禮盒",
     "description": "知名小籠包品牌的年節禮盒",
-    "imageUrl": "",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
     "images": [],
     "priceOriginal": null,
     "priceDiscount": 1680,
@@ -5302,7 +5348,8 @@
     "createdAt": "2025-12-09T00:53:46.284Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
     "shippingFee": 0,
-    "priceOriginal": 19091
+    "priceOriginal": 19091,
+    "maxDistance": 0
   },
   {
     "id": "a8299d4c4d35caee131887054bfc61c4",
@@ -5355,7 +5402,8 @@
     "createdAt": "2025-12-09T00:53:46.285Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
     "shippingFee": 0,
-    "priceOriginal": 11136
+    "priceOriginal": 11136,
+    "maxDistance": 0
   },
   {
     "id": "545cdd2489d34d382156fe4abb86619e",
@@ -5398,7 +5446,8 @@
     "createdAt": "2025-12-09T00:53:46.285Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
     "shippingFee": 0,
-    "priceOriginal": 4318
+    "priceOriginal": 4318,
+    "maxDistance": 0
   },
   {
     "id": "8d085134608f0cf7c7a0d75275995e19",
@@ -5440,7 +5489,8 @@
     "createdAt": "2025-12-09T00:53:46.285Z",
     "updatedAt": "2025-12-09T00:53:46.285Z",
     "shippingFee": 0,
-    "priceOriginal": 1591
+    "priceOriginal": 1591,
+    "maxDistance": 0
   },
   {
     "id": "2425bcc19052381531a4735efc73886e",
@@ -5484,7 +5534,9 @@
     "createdAt": "2025-12-09T05:56:50.757Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
     "shippingFee": 0,
-    "priceOriginal": 7827
+    "priceOriginal": 7827,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "60baf4e4d41598c287546088f67969e7",
@@ -5529,7 +5581,9 @@
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
     "shippingFee": 0,
-    "priceOriginal": 11633
+    "priceOriginal": 11633,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "033ed61b7535ab42f66bd1d26f99e6e6",
@@ -5573,7 +5627,9 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "f324d0871d8c3be3d901604ca7d60fad",
@@ -5615,7 +5671,8 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "baf8e556f43bcd7ab4ed73030ce5d985",
@@ -5656,7 +5713,9 @@
     "updatedAt": "2025-12-09T05:56:50.758Z",
     "shippingFee": 0,
     "priceOriginal": 14545,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "05d7bd0b37ceadf8a493d3702ae997ff",
@@ -5697,7 +5756,9 @@
     "updatedAt": "2025-12-09T05:56:50.758Z",
     "shippingFee": 0,
     "priceOriginal": 21364,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "b9a1d55be921c863b47c4ee827ed0a67",
@@ -5786,7 +5847,8 @@
     "status": "published",
     "createdAt": "2025-12-09T05:56:50.758Z",
     "updatedAt": "2025-12-09T05:56:50.758Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "128673926b6ee2b44e1de09f1530ccc2",
@@ -5830,7 +5892,8 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "shippingFee": 0,
     "duplicateOf": "plan_mixsl8eklspjh40xr_1",
-    "duplicateReason": "菜名數量: 1 > 0"
+    "duplicateReason": "菜名數量: 1 > 0",
+    "maxDistance": 0
   },
   {
     "id": "23d60becb339e432ef695cea8be8f317",
@@ -5874,7 +5937,9 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "shippingFee": 0,
     "duplicateOf": "plan-2026-002",
-    "duplicateReason": "菜名數量: 6 > 0"
+    "duplicateReason": "菜名數量: 6 > 0",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "d4a8418f615e4cc767cedd2854953646",
@@ -5917,7 +5982,8 @@
     "updatedAt": "2025-12-09T05:58:53.047Z",
     "shippingFee": 0,
     "priceOriginal": 6818,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "007d5c85230b9a12508710039cb4a8cb",
@@ -5959,7 +6025,8 @@
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
     "shippingFee": 0,
-    "priceOriginal": 24705
+    "priceOriginal": 24705,
+    "maxDistance": 0
   },
   {
     "id": "5b3952a202f7ed80c5080415baa6dc45",
@@ -6002,7 +6069,8 @@
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
     "shippingFee": 0,
-    "priceOriginal": 35293
+    "priceOriginal": 35293,
+    "maxDistance": 0
   },
   {
     "id": "0111c93e3bd37be1229ae4cb3c729e01",
@@ -6045,7 +6113,8 @@
     "updatedAt": "2025-12-09T05:58:53.048Z",
     "shippingFee": 0,
     "priceOriginal": 31818,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "3475ee98f26440a47075f427113568a9",
@@ -6089,7 +6158,8 @@
     "updatedAt": "2025-12-09T05:58:53.048Z",
     "shippingFee": 0,
     "priceOriginal": 40909,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "8d054e696169747e563546ab184ff3f5",
@@ -6137,7 +6207,8 @@
     "updatedAt": "2025-12-09T05:58:53.048Z",
     "priceOriginal": 5506,
     "shippingFee": 50,
-    "maxDistance": 100
+    "maxDistance": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "ea44ba37eb74bc61a8b74a50204cee65",
@@ -6187,7 +6258,8 @@
     "updatedAt": "2025-12-09T05:58:53.048Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "9524d71911792f42ba7c06260bac0fc4",
@@ -6230,7 +6302,8 @@
     "status": "published",
     "createdAt": "2025-12-09T05:58:53.048Z",
     "updatedAt": "2025-12-09T05:58:53.048Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "d9af24b3236f0a80bc0c380ca698a091",
@@ -6279,7 +6352,8 @@
     "duplicateOf": "9719daf0ee38da063f712f3a0a1bd2ab",
     "duplicateReason": "菜名數量: 7 > 6",
     "shippingFee": 50,
-    "maxDistance": 100
+    "maxDistance": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "6605cd6b89bfaf0d01b6d601a6dd8834",
@@ -6327,7 +6401,8 @@
     "status": "published",
     "createdAt": "2025-12-09T06:00:13.750Z",
     "updatedAt": "2025-12-09T06:00:13.751Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "8fbac2f0931bc3c101b01d96542f5946",
@@ -6465,7 +6540,8 @@
     "updatedAt": "2025-12-09T06:00:13.751Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80"
   },
   {
     "id": "4af494975f49af655d321bcfd21b778a",
@@ -6593,7 +6669,9 @@
     "updatedAt": "2025-12-09T06:00:13.751Z",
     "shippingFee": 0,
     "priceOriginal": 10000,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "7c261810592af0642495dab914b8a054",
@@ -6635,7 +6713,8 @@
     "updatedAt": "2025-12-09T06:00:13.752Z",
     "shippingFee": 0,
     "priceOriginal": 6591,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "f5e977f54fb0b9a5913a545aa3584ce9",
@@ -6677,7 +6756,8 @@
     "updatedAt": "2025-12-09T06:00:13.752Z",
     "shippingFee": 0,
     "priceOriginal": 5455,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "6d36c63e6a90d0d584a0dab93baa2917",
@@ -6760,7 +6840,8 @@
     "updatedAt": "2025-12-09T06:00:13.752Z",
     "shippingFee": 0,
     "priceOriginal": 1909,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "55b219f930065e4988722bdbfcd1dd9c",
@@ -6801,7 +6882,8 @@
     "updatedAt": "2025-12-09T06:00:13.752Z",
     "shippingFee": 0,
     "priceOriginal": 1455,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "cb32227f92acd9d90438baf00c814219",
@@ -6842,7 +6924,8 @@
     "createdAt": "2025-12-09T06:01:37.926Z",
     "updatedAt": "2025-12-09T06:01:37.926Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "3fa5000db432c926e2bf7c75048e7795",
@@ -6882,7 +6965,8 @@
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "80438200ebf40a2316520e79914a16f9",
@@ -6924,7 +7008,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 50,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "2c71067c32db4d2295a3f601e0b272c3",
@@ -6965,7 +7050,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 50,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "4a60cb70b3c87c652c5f28f31ed0e468",
@@ -7006,7 +7092,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 50,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "10c99a295ebaeed46cb185e88fe945fc",
@@ -7050,7 +7137,8 @@
     "shippingFee": 0,
     "orderDeadline": "2026-01-25",
     "duplicateOf": "88a44c8c9457e73d67a89f7f7829cc21",
-    "duplicateReason": "資料完整度: 6 > 5"
+    "duplicateReason": "資料完整度: 6 > 5",
+    "maxDistance": 0
   },
   {
     "id": "fcbf81b377d58410f21d2f9794075390",
@@ -7092,7 +7180,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
     "priceOriginal": 272,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "bc7b19af135eda90ce32ce429cb77081",
@@ -7134,7 +7223,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
     "priceOriginal": 294,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "5c405743883ec4017ef03e39a9aee6cb",
@@ -7176,7 +7266,8 @@
     "status": "published",
     "createdAt": "2025-12-09T06:01:37.927Z",
     "updatedAt": "2025-12-09T06:01:37.927Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "7948944f6c6f048e2fbc4f643bb90542",
@@ -7219,7 +7310,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
     "priceOriginal": 14545,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "5564a9051038b20adf03f586df012ff2",
@@ -7263,7 +7355,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
     "priceOriginal": 11136,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "2a8549e2e7b7cfd45cb7d10d710a6385",
@@ -7303,7 +7396,8 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
     "priceOriginal": 12273,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "027cc376407e2782e38b90de2e414e29",
@@ -7343,7 +7437,9 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
     "priceOriginal": 10000,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "9ec610c60a5280186d0fbb1f4b6b236d",
@@ -7384,7 +7480,9 @@
     "updatedAt": "2025-12-09T06:01:37.927Z",
     "shippingFee": 0,
     "priceOriginal": 5455,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "818371238ca05b901ced0f764d967072",
@@ -7424,7 +7522,9 @@
     "createdAt": "2025-12-09T06:02:37.025Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "33d588badd8a4c9d107c647f4bcb8313",
@@ -7464,7 +7564,9 @@
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "b511ab3489d54ff36882bd19ae3350c9",
@@ -7505,7 +7607,9 @@
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "13178ff28d10cb063d0c67a3b7536927",
@@ -7545,7 +7649,9 @@
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "aef15751ee9f1d60a3205620d5298d27",
@@ -7585,7 +7691,9 @@
     "createdAt": "2025-12-09T06:02:37.026Z",
     "updatedAt": "2025-12-09T06:02:37.026Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "276d7bb16ba2fa1da54e1db0f91b2e3a",
@@ -7682,7 +7790,8 @@
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "0d13d44945305e9c73c16b2dd8e43b1a",
@@ -7724,7 +7833,8 @@
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "590a0e95183c8e398cd48e65ba02bb5e",
@@ -7766,7 +7876,8 @@
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "3102209ccecd3f75a753bd760323ccd0",
@@ -7813,7 +7924,8 @@
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "b6c7aec3fc9d8c8437ac8997efc020da",
@@ -7861,7 +7973,8 @@
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "92923c49fd32b603810badc5c8f2f8de",
@@ -7905,7 +8018,8 @@
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "5ffd8b1235af8a926e423fdee9a38e95",
@@ -7949,7 +8063,8 @@
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 100,
     "orderDeadline": "2026-01-20",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "05f75f07c44429df69eb88013adb0156",
@@ -7988,7 +8103,8 @@
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "f90eb80d465ad1b6cc95411120c71781",
@@ -8029,7 +8145,8 @@
     "createdAt": "2025-12-09T06:03:39.106Z",
     "updatedAt": "2025-12-09T06:03:39.106Z",
     "shippingFee": 0,
-    "orderDeadline": "2026-01-25"
+    "orderDeadline": "2026-01-25",
+    "maxDistance": 0
   },
   {
     "id": "a416c7f2c6327e8a2a1f5606ee5cf95b",
@@ -8116,7 +8233,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.509Z",
     "updatedAt": "2025-12-09T07:30:44.510Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "16703bda62d457066f384a62969abde4",
@@ -8159,7 +8277,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.510Z",
     "updatedAt": "2025-12-09T07:30:44.510Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "42002f747cfcc8b62dcd442d0717bcd3",
@@ -8202,7 +8321,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "11a3e5d82ac0122cf106672ccb3af961",
@@ -8244,7 +8364,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "8776fe6004606606267a3363e490517d",
@@ -8293,7 +8414,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "4091984f3a8e9099f1809aa00dab4bb6",
@@ -8473,7 +8595,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "62904c542ef68f5af5e5a491f5fb9cef",
@@ -8515,7 +8638,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "4cce4e942a6eb58f3f31a809833af2e8",
@@ -8557,7 +8681,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "d13c5751bb48e9c2a8e808f2744ed225",
@@ -8601,7 +8726,9 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "723af7d9bc2f860e5ebd5dce75ad0de7",
@@ -8643,7 +8770,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "c5973867595cfbc1f6c6cda3eda5b707",
@@ -8687,7 +8815,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:30:44.511Z",
     "updatedAt": "2025-12-09T07:30:44.511Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "a98381f135b99ef993e9efe8db446b0d",
@@ -8965,7 +9094,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "1dba7349d22578b23ce8cf483d080047",
@@ -9009,7 +9139,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.586Z",
     "updatedAt": "2025-12-09T07:33:58.586Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "0ab81060c0cbe324164ab3a01676a3e4",
@@ -9095,7 +9226,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "14825c4336bce30a89acec713ec45378",
@@ -9137,7 +9269,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "2fdc74fe59a11a3beb037a460e8fcd12",
@@ -9180,7 +9313,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "ba417893ce898c436b164baec571830b",
@@ -9222,7 +9356,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "e78066ef745ae882eedad43a57d2a9d0",
@@ -9264,7 +9399,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "eee6fb8e1fe01fca08b89a671c2d9b59",
@@ -9306,7 +9442,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "ba4fe353f8f49ca02d3643491f278f37",
@@ -9348,7 +9485,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "ace02afa2aa9c67ff5414689fa760613",
@@ -9573,7 +9711,8 @@
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "f9bb96a023aef52c445b25d9c7cdd7a4",
@@ -9616,7 +9755,9 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "f53a23d7eefb7b08a46fa7cdee4b9cf8",
@@ -9659,7 +9800,9 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "2ec38c2dfa490d8a5b0c24474cb9e7c9",
@@ -9749,7 +9892,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "8eca69c7198b767d1a1f58e0063bc945",
@@ -9793,7 +9937,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "452b205f80cfc529d2ad94cf2ae83eb9",
@@ -9836,7 +9981,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "d3cd12fb329aef72246e15b08d018748",
@@ -9967,7 +10113,8 @@
     "status": "published",
     "createdAt": "2025-12-09T07:33:58.587Z",
     "updatedAt": "2025-12-09T07:33:58.587Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "56a22cbb9ec9af8b5443678a08611617",
@@ -10013,7 +10160,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.862Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "286316d9aeb0dee0befd1e3324fc2370",
@@ -10060,7 +10208,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "ba3749c2a0f2264af26a328d16a86200",
@@ -10108,7 +10257,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "24d746afc27a9a62a8b9a84d2b4038fe",
@@ -10153,7 +10303,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "80e24f6488957d6e2126a36009f3139f",
@@ -10204,7 +10355,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "cfe782579b00572694eff894a05536d4",
@@ -10249,7 +10402,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "6d20908d46dfb8909f6a2991e3309e9c",
@@ -10293,7 +10447,8 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "4cce4e942a6eb58f3f31a809833af2e8",
     "duplicateReason": "較早建立",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "2f7df7e80d18a043e48d18331d4be576",
@@ -10336,7 +10491,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "3ef014c4e2fc253b6bdbf7309df67b61",
@@ -10380,7 +10536,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "2db28a61aa176368fc3fc52078c80f30",
@@ -10428,7 +10585,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "60ab22cee174dccffb393b5483631140",
@@ -10476,7 +10634,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "7d8455048f81804bf27588432005cc84",
@@ -10518,7 +10677,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "8dfc08751a674f82572ec6fb6a2a71c4",
@@ -10561,7 +10722,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "bff3d311fe87761e91dd7f056d91c45d",
@@ -10607,7 +10770,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "2d26dc1936528f0cf9bf418f34c86a5b",
@@ -10652,7 +10816,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "b1cfaa59744ad69924ee38c8e1588fdd",
@@ -10701,7 +10866,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "fc36a96faa869b5d72e05fa284aa2825",
@@ -10747,7 +10913,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "3aca7492b3726538d740e989262d0b95",
@@ -10793,7 +10960,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "f294a4dea5c729923fa58fd563ea59d6",
@@ -10841,7 +11009,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "cf2f438630efd9ab21a820729c370062",
@@ -10884,7 +11053,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "49bf6a1db46d87ebe3177cbb51ddb94e",
@@ -10929,7 +11099,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "58c0eaf93ef1bdcbd52438c473459bb0",
@@ -10975,7 +11146,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "b79c4e24ef9abf97b5f88e81c0a8bd49",
@@ -11304,7 +11477,8 @@
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "def1759131a8cfc72ad8bac5fc28e39f",
@@ -11346,7 +11520,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "63ad02cfeb73088f208127421887cd06",
@@ -11388,7 +11563,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "43e8ef8907097b64d2db87db7210b2e3",
@@ -11435,7 +11611,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "33602da1e07acadbbf9aa53b8ec9571f",
@@ -11478,7 +11655,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "12e04fc56cfa9d830416346a7f3ff0bc",
@@ -11519,7 +11697,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "3c1f17b28e9f8f8d2fa44f8d12f17907",
@@ -11561,7 +11741,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:24:23.863Z",
     "updatedAt": "2025-12-09T12:24:23.863Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "611206df7bcdcd6215ed55690c3655d7",
@@ -11609,7 +11791,8 @@
     "createdAt": "2025-12-09T12:43:58.036Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
     "shippingFee": 50,
-    "maxDistance": 100
+    "maxDistance": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "3b28cc4148692850696e9b43832d7556",
@@ -11651,7 +11834,8 @@
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
     "shippingFee": 50,
-    "maxDistance": 100
+    "maxDistance": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "a6d6ba273e8f634b8ee290d1764308dc",
@@ -11694,7 +11878,8 @@
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
     "shippingFee": 50,
-    "maxDistance": 100
+    "maxDistance": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "7c899e3b187280ef48d3c998d947627e",
@@ -11738,7 +11923,8 @@
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
     "shippingFee": 50,
-    "maxDistance": 100
+    "maxDistance": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "25859c00a0c4fe1a7b610bda3d1ac9e7",
@@ -11781,7 +11967,8 @@
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
     "shippingFee": 50,
-    "maxDistance": 100
+    "maxDistance": 100,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "335626ca583b500bf1e3081178a30104",
@@ -11826,7 +12013,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "0b101e9345a2fa49d345595a514db09c",
@@ -11868,7 +12057,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "6d54155cbb4f4eb216d5bc4eb102f412",
@@ -11910,7 +12100,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "3815c3fb47ca8c54d26deddf2cce90ec",
@@ -11952,7 +12143,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "51774f1672ac736ba597b9a6937eb29c",
@@ -11994,7 +12186,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "4d301b6f5a88294c123c866fd4794f77",
@@ -12036,7 +12229,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "a9213fc9bae5e8a3b2f5bb8448cf3fa5",
@@ -12077,7 +12271,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "815fbaecbb07e3c16bc2839acb34f43c",
@@ -12118,7 +12313,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "3780ca815ba6a1c59c3fc7cb93c238eb",
@@ -12159,7 +12355,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "88a44c8c9457e73d67a89f7f7829cc21",
@@ -12202,7 +12399,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "5a39e292a0a1447a85a1dd36a0c94127",
@@ -12246,7 +12444,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "dd57f913b05d681833fbebf3dd52d595",
@@ -12287,7 +12486,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "b851f928fcde5fb5ccbd5fc20d69a0dd",
@@ -12328,7 +12528,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "bab0d401fe0fb5ac9aa861b09702f27d",
@@ -12371,7 +12572,8 @@
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "663aac5758df698deef648cffd1adf9c",
@@ -12496,7 +12698,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "d9815113a32ff1315abab06771556c60",
@@ -12539,7 +12742,8 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.039Z",
     "updatedAt": "2025-12-09T12:43:58.039Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "d32ac2171b1838494f94a641ae94ecd1",
@@ -12667,7 +12871,9 @@
     "status": "published",
     "createdAt": "2025-12-09T12:43:58.040Z",
     "updatedAt": "2025-12-09T12:43:58.040Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "d2be5c76eb9b029f30d8139ad9c663b0",
@@ -12716,7 +12922,8 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "plan-2026-001",
     "duplicateReason": "資料完整度: 16 > 13",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "86e0adc978953ae21d0dbc38d9815f04",
@@ -12759,7 +12966,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "18f81a816330ce6e374a89a1da2e1334",
@@ -12801,7 +13009,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "2f5513bdf97e1420ec257fb354557ef0",
@@ -12842,7 +13051,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "734b979c2fbe834dacd4035aadaf98cd",
@@ -12886,7 +13096,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "d2d0c6578ba6f14d8aa8b359bea20282",
@@ -12930,7 +13141,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "4f6ef4c1d8a8b60a95970929852c3578",
@@ -12974,7 +13186,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "23659a2050732d6751c8958e7677536b",
@@ -13018,7 +13231,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "bfa370503d76a7ed5b8235220863943e",
@@ -13062,7 +13276,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "34490e31188d077573bff2bb66eccee5",
@@ -13105,7 +13320,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "07cb6476e9b6887999469d90d6dc246e",
@@ -13149,7 +13365,8 @@
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80"
   },
   {
     "id": "b9865b5c48f2039808f6679c8e6d5bb7",
@@ -13192,7 +13409,8 @@
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80"
   },
   {
     "id": "21df79f5b00a207a4effc08ef1136176",
@@ -13234,7 +13452,8 @@
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80"
   },
   {
     "id": "43d8715e22e4c596a38271b843e1c908",
@@ -13277,7 +13496,8 @@
     "createdAt": "2025-12-09T13:17:10.485Z",
     "updatedAt": "2025-12-09T13:17:10.485Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80"
   },
   {
     "id": "3c40cd2095a6d99b25d60230c6b66236",
@@ -13322,7 +13542,8 @@
     "createdAt": "2025-12-09T13:17:10.486Z",
     "updatedAt": "2025-12-09T13:17:10.486Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1564489551778-abb396281f4f?w=400&q=80"
   },
   {
     "id": "6bd6ae866866c875b4fe5a2ac7731d27",
@@ -13635,7 +13856,8 @@
     "createdAt": "2025-12-09T13:17:10.486Z",
     "updatedAt": "2025-12-09T13:17:10.486Z",
     "shippingFee": 50,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "f28f6ef9aec33a7c2437124594f513be",
@@ -13681,7 +13903,8 @@
     "createdAt": "2025-12-09T13:17:10.486Z",
     "updatedAt": "2025-12-09T13:17:10.486Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "ede64134353c453cbf36616b5bc9b89b",
@@ -13723,7 +13946,8 @@
     "createdAt": "2025-12-09T13:17:10.486Z",
     "updatedAt": "2025-12-09T13:17:10.486Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "4e9c13d99ec13fab83ff8e42d272030d",
@@ -13769,7 +13993,8 @@
     "createdAt": "2025-12-09T13:17:10.486Z",
     "updatedAt": "2025-12-09T13:17:10.486Z",
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   },
   {
     "id": "be4081dbc5ca45082653ef583b9a4045",
@@ -13897,7 +14122,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
     "updatedAt": "2025-12-09T13:22:50.290Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "9719daf0ee38da063f712f3a0a1bd2ab",
@@ -13943,7 +14169,9 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.290Z",
     "updatedAt": "2025-12-09T13:22:50.290Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "83850091765340c2fd24876bb81aa02f",
@@ -14291,7 +14519,9 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "b54ddab3f3d20875119a79d232c4b001",
@@ -14333,7 +14563,9 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "e87b65b4a21162159725037a61d9da8f",
@@ -14377,7 +14609,9 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "60baf4e4d41598c287546088f67969e7",
     "duplicateReason": "菜名數量: 4 > 0",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "7deb077d9fbb2505a1fe9205325cab25",
@@ -14419,7 +14653,9 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "2425bcc19052381531a4735efc73886e",
     "duplicateReason": "菜名數量: 4 > 0",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "8f283323394bd1aad0768542130bb577",
@@ -14461,7 +14697,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "8ba9c2ed7b43d4a631adf25a923071ae",
@@ -14504,7 +14741,9 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "5de8d8b22bf3d24d8b3c923dfa98b703",
@@ -14546,7 +14785,9 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "7716c14bde8fcf7da5fb24e1ee662118",
@@ -14587,7 +14828,9 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "7df7908e02841f7070eff3d2e6c7ad42",
@@ -14631,7 +14874,9 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80",
+    "maxDistance": 0
   },
   {
     "id": "bc94b8bd6db11621b9599c1de5db0b74",
@@ -14911,7 +15156,8 @@
     "updatedAt": "2025-12-10T03:06:49.694Z",
     "duplicateOf": "f324d0871d8c3be3d901604ca7d60fad",
     "duplicateReason": "較早建立",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "96d7cb3edeff544a1b78486ef525c55e",
@@ -14953,7 +15199,8 @@
     "status": "published",
     "createdAt": "2025-12-09T13:22:50.291Z",
     "updatedAt": "2025-12-09T13:22:50.291Z",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "id": "5d01863fbd0ff4187ea198d26b5cf817",
@@ -15035,7 +15282,8 @@
     "cuisineStyle": "shanghainese",
     "priceLevel": "luxury",
     "familySize": "medium",
-    "shippingFee": 0
+    "shippingFee": 0,
+    "maxDistance": 0
   },
   {
     "vendorName": "老協珍",
@@ -15071,6 +15319,7 @@
     "rating": 0,
     "ratingCount": 0,
     "shippingFee": 100,
-    "maxDistance": 999
+    "maxDistance": 999,
+    "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80"
   }
 ]

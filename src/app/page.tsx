@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, Settings, ChevronDown, Store } from 'lucide-react';
+import { Menu, Settings, ChevronDown, Store, ShoppingCart } from 'lucide-react';
 import { usePlanStore } from '@/stores/planStore';
 import { seedMockData } from '@/lib/mockData';
 import FilterSidebar from '@/components/FilterSidebar';
@@ -16,6 +16,7 @@ import SmartRecommend from '@/components/SmartRecommend';
 import MobileFilterBar from '@/components/MobileFilterBar';
 import VendorList from '@/components/VendorList';
 import SortDropdown from '@/components/SortDropdown';
+import { ShoppingListPanel } from '@/components/ShoppingListPanel';
 import type { Plan } from '@/types';
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
   const [isInitialized, setIsInitialized] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<Plan | null>(null);
   const [isVendorListOpen, setIsVendorListOpen] = useState(false);
+  const [isShoppingListOpen, setIsShoppingListOpen] = useState(false);
 
   const handleViewDetail = (plan: Plan) => {
     setSelectedPlan(plan);
@@ -71,13 +73,22 @@ export default function Home() {
         <QuickFilters />
         {/* 排序與廠商入口 */}
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between border-b border-gray-100">
-          <button
-            onClick={() => setIsVendorListOpen(true)}
-            className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-red-300 hover:bg-red-50 transition-all text-sm"
-          >
-            <Store className="w-4 h-4 text-red-600" />
-            <span className="font-medium text-gray-700">廠商總覽</span>
-          </button>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setIsVendorListOpen(true)}
+              className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-red-300 hover:bg-red-50 transition-all text-sm"
+            >
+              <Store className="w-4 h-4 text-red-600" />
+              <span className="font-medium text-gray-700">廠商總覽</span>
+            </button>
+            <button
+              onClick={() => setIsShoppingListOpen(true)}
+              className="flex items-center gap-2 px-4 py-2 bg-white border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-all text-sm"
+            >
+              <ShoppingCart className="w-4 h-4 text-blue-600" />
+              <span className="font-medium text-gray-700">購物清單</span>
+            </button>
+          </div>
           <SortDropdown />
         </div>
       </div>
@@ -128,6 +139,12 @@ export default function Home() {
       <VendorList
         isOpen={isVendorListOpen}
         onClose={() => setIsVendorListOpen(false)}
+      />
+
+      {/* Shopping List Panel */}
+      <ShoppingListPanel
+        isOpen={isShoppingListOpen}
+        onClose={() => setIsShoppingListOpen(false)}
       />
     </div>
   );

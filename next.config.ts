@@ -18,13 +18,39 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_BASE_PATH: isProduction ? `/${repoName}` : '',
   },
 
-  // 圖片優化在靜態匯出時需要關閉
+  // 圖片優化
   images: {
-    unoptimized: true,
+    unoptimized: isGitHubActions, // GitHub Pages 不支援動態優化
+    formats: ['image/webp', 'image/avif'], // 現代格式優先
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 31536000, // 1 年快取
   },
 
   // 禁用 trailing slash 以避免路由問題
   trailingSlash: true,
+
+  // ====== 性能優化 ======
+
+  // 啟用實驗性功能以改進性能
+  experimental: {
+    optimizePackageImports: ['zustand', 'dexie'],
+  },
+
+  // 壓縮
+  compress: true,
+
+  // 生成 ETag
+  generateEtags: true,
+
+  // 預連接
+  onDemandEntries: {
+    maxInactiveAge: 60 * 1000,
+    pagesBufferLength: 5,
+  },
+
+  // 頁面緩衝
+  staticPageGenerationTimeout: 120,
 };
 
 export default nextConfig;

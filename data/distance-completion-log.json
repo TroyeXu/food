@@ -1,0 +1,423 @@
+{
+  "timestamp": "2025-12-11T08:13:09.144Z",
+  "updated": 172,
+  "totalPlans": 326,
+  "updates": [
+    {
+      "planId": "plan-2026-001",
+      "vendor": "彭園會館",
+      "title": "馬運亨通富貴組（鮑魚魚翅佛跳牆）",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan-2026-002",
+      "vendor": "典華",
+      "title": "飛雪迎春・錦馬獻瑞 六人年菜組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sm98ncd92j_2",
+      "vendor": "台北寒舍艾美酒店",
+      "title": "宴會廳常溫外帶年菜套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s4twd1mf6w_3",
+      "vendor": "台北新板希爾頓酒店",
+      "title": "金駿慶團圓六人饗宴",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7svkebr6fal_6",
+      "vendor": "彭園",
+      "title": "馬運亨通富貴組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7snhfc84ff0_7",
+      "vendor": "彭園",
+      "title": "金馬富貴大發組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s7vdfc3evx_18",
+      "vendor": "典華",
+      "title": "2026除夕圍爐宴",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7slglxwk82d_19",
+      "vendor": "山海樓",
+      "title": "起家興旺掛爐燒雞",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7say6ydp5af_20",
+      "vendor": "山海樓",
+      "title": "諸事大吉金銀燒豬",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sys8wo79og_21",
+      "vendor": "山海樓",
+      "title": "山海樓佛跳牆",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7shk1n8ffpr_22",
+      "vendor": "全國大飯店",
+      "title": "常溫年菜套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: central, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s288mm0769_29",
+      "vendor": "三合院港式飲茶",
+      "title": "2026年團圓外帶年菜",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7soobow3mxn_30",
+      "vendor": "裕元花園酒店",
+      "title": "2026年菜套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: central, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7serbdya4ef_32",
+      "vendor": "台北六福萬怡酒店",
+      "title": "粵亮廣式料理六人份團圓饗宴",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7sjbky30z0p_33",
+      "vendor": "板橋凱撒大飯店",
+      "title": "駿馬迎春瑞滿堂八人組合餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7snaga3u5hk_35",
+      "vendor": "台北喜來登",
+      "title": "請客樓極品御璽六人海陸盛宴",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7syvfc2q4zn_36",
+      "vendor": "台北喜來登桃山",
+      "title": "御節年菜三段重",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7szel88ihe3_37",
+      "vendor": "台北萬豪酒店",
+      "title": "四人小家庭海陸年菜組合",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7stcgpu3v5k_38",
+      "vendor": "台北遠東香格里拉香宮",
+      "title": "六人份套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7stxfzbvx0u_39",
+      "vendor": "誠品行旅聚聚樓",
+      "title": "新春歡聚常溫外帶饗宴",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s0y6o66ms1_40",
+      "vendor": "福容大飯店",
+      "title": "大家庭宴10人桌菜",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: nationwide, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7s4es79b32t_41",
+      "vendor": "福爾摩沙遊艇酒店",
+      "title": "馬到金來外帶年菜組合",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixrwo7siadgvvvti_42",
+      "vendor": "高雄日航酒店",
+      "title": "桃泉中餐廳豐韻年菜組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: south, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ej2rzn0x35o_0",
+      "vendor": "白金花園酒店",
+      "title": "2026經典年菜外帶套餐組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8eklspjh40xr_1",
+      "vendor": "大直維多麗亞酒店",
+      "title": "金馬送福年菜專案套組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek8eemybccm_8",
+      "vendor": "台北凱達大飯店",
+      "title": "圓桌中餐廳年菜套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek0a5m26oje_11",
+      "vendor": "真的好海鮮餐廳",
+      "title": "2026海鮮年菜套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek02coxu169_14",
+      "vendor": "金蓬萊",
+      "title": "台菜宴席年菜組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8eky54zc5qcd_16",
+      "vendor": "華泰王子大飯店",
+      "title": "九華樓年菜套組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek3kvv8w0zr_17",
+      "vendor": "台中林酒店",
+      "title": "LIN餐廳年菜禮盒",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: central, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsl8ek9qn7hf83m_18",
+      "vendor": "高雄翰品酒店",
+      "title": "品日本料理御節重箱",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: south, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfwmkd7y7ei_6",
+      "vendor": "台北晶華酒店",
+      "title": "珍饌御宴組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf122kfdjpl_7",
+      "vendor": "台北喜來登比薩屋",
+      "title": "奢華帝王蟹分享餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf93hou939m_8",
+      "vendor": "7-ELEVEN",
+      "title": "五星飯店夢幻套組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: nationwide, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfbh4mp6mur_9",
+      "vendor": "全家便利商店",
+      "title": "金蛇迎春丟丟妹年菜套組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: nationwide, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfu3adts3uj_10",
+      "vendor": "萊爾富",
+      "title": "巨廚極品佛跳牆",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: nationwide, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf75dlyjl82_11",
+      "vendor": "萊爾富",
+      "title": "桃花源干貝扒繡球",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: nationwide, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfu1zjt7juv_12",
+      "vendor": "台北國泰萬怡酒店",
+      "title": "MJ Kitchen年菜套組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfebmwomfsq_14",
+      "vendor": "全聯",
+      "title": "福利中心年菜組合",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: nationwide, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf4mczei725_15",
+      "vendor": "Costco好市多",
+      "title": "年菜海鮮拼盤",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: nationwide, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfvlb8yyuxt_16",
+      "vendor": "台北W飯店",
+      "title": "紫艷中餐廳年菜套組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfte7qfpi5x_17",
+      "vendor": "台北文華東方酒店",
+      "title": "雅閣中餐廳年菜禮盒",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfk63ahwsnr_18",
+      "vendor": "美福大飯店",
+      "title": "潮粵坊年菜套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcft534qi8tp_20",
+      "vendor": "新竹老爺酒店",
+      "title": "明宮粵菜廳年菜組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcf39pifl8bl_21",
+      "vendor": "嘉義耐斯王子大飯店",
+      "title": "萬國百匯年菜組",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: south, shippingType: pickup"
+    },
+    {
+      "planId": "plan_mixsowcfcx2ap6zey_22",
+      "vendor": "花蓮遠雄悅來大飯店",
+      "title": "海景年菜套餐",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: east, shippingType: pickup"
+    },
+    {
+      "planId": "5077f310f7b7a29ffa1e80cdb035e297",
+      "vendor": "桃園國際機場凱悅酒店",
+      "title": "2026 馬耀豐年 年菜外帶桌菜（10人份）",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "a8299d4c4d35caee131887054bfc61c4",
+      "vendor": "桃園國際機場凱悅酒店",
+      "title": "2026 馬耀豐年 年菜外帶桌菜（6人份）",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "545cdd2489d34d382156fe4abb86619e",
+      "vendor": "桃園國際機場凱悅酒店",
+      "title": "百福臨門鮑魚佛跳牆",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    },
+    {
+      "planId": "8d085134608f0cf7c7a0d75275995e19",
+      "vendor": "桃園國際機場凱悅酒店",
+      "title": "金玉滿堂玫瑰油雞",
+      "oldValue": "undefined",
+      "newValue": 0,
+      "reason": "region: north, shippingType: pickup"
+    }
+  ],
+  "summary": {
+    "message": "成功補充 172 筆方案的配送距離",
+    "regionMapping": {
+      "north": 100,
+      "central": 150,
+      "south": 200,
+      "east": 250,
+      "offshore": 300,
+      "nationwide": 999
+    },
+    "shippingTypeMapping": {
+      "pickup": 0,
+      "delivery": 100,
+      "both": 100
+    }
+  }
+}

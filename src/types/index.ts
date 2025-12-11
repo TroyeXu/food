@@ -441,3 +441,82 @@ export interface Notification {
   read: boolean;
   createdAt: Date;
 }
+
+// ====== 用戶評價系統 ======
+
+// 評價維度
+export type ReviewDimension = 'taste' | 'value' | 'delivery' | 'packaging' | 'freshness' | 'variety';
+
+export const REVIEW_DIMENSION_LABELS: Record<ReviewDimension, string> = {
+  taste: '味道',
+  value: '性價比',
+  delivery: '配送品質',
+  packaging: '包裝',
+  freshness: '新鮮度',
+  variety: '菜色多樣性',
+};
+
+// 用戶評價
+export interface Review {
+  id: string;
+  planId: string;
+  userId: string; // 匿名評價用 hash
+  userName?: string; // 可選的昵稱
+  rating: number; // 1-5 星
+  dimensionRatings?: Partial<Record<ReviewDimension, number>>; // 各維度評分
+  title: string; // 評價標題
+  content: string; // 評價內容
+  helpful: number; // 有用票數
+  unhelpful: number; // 無用票數
+  userHelpful?: boolean; // 當前用戶是否投了有用票
+  images?: string[]; // 評價配圖
+  vendorReply?: {
+    // 賣家回覆
+    content: string;
+    respondedAt: Date;
+  };
+  status: 'pending' | 'published' | 'rejected'; // 審核狀態
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// 評價統計
+export interface ReviewStats {
+  planId: string;
+  totalReviews: number;
+  averageRating: number;
+  ratingDistribution: Record<number, number>; // 1-5 星分佈
+  dimensionAverages?: Partial<Record<ReviewDimension, number>>; // 各維度平均分
+  lastReviewAt?: Date;
+}
+
+// ====== 購物清單系統 ======
+
+// 購物清單項目
+export interface ShoppingListItem {
+  planId: string;
+  quantity: number; // 購買數量
+  notes?: string; // 備註（自訂需求等）
+  addedAt: Date;
+}
+
+// 購物清單
+export interface ShoppingList {
+  id: string;
+  name: string;
+  description?: string;
+  items: ShoppingListItem[];
+  shareUrl?: string; // 分享鏈接
+  isShared: boolean;
+  owner?: string; // 創建者（可選）
+  collaborators?: string[]; // 協作者
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// 購物清單統計
+export interface ShoppingListStats {
+  itemCount: number;
+  totalPrice: number; // 估計總價
+  servingCount: number; // 估計總人數
+}
