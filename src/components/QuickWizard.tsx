@@ -349,9 +349,9 @@ export default function QuickWizard() {
   if (showResult && recommendations) {
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-        <div className="bg-[var(--card-bg)] rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-200">
+        <div className="bg-[var(--card-bg)] rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200">
           {/* Header */}
-          <div className="relative bg-gradient-to-r from-[#c41e3a] to-[#e63946] p-4 text-white">
+          <div className="relative bg-gradient-to-r from-[#c41e3a] to-[#e63946] p-4 text-white flex-shrink-0">
             <button
               onClick={handleClose}
               className="absolute top-4 right-4 p-1 hover:bg-white/20 rounded-full transition-colors"
@@ -368,7 +368,7 @@ export default function QuickWizard() {
           </div>
 
           {/* Stats */}
-          <div className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 border-b">
+          <div className="p-4 bg-gradient-to-r from-amber-50 to-orange-50 border-b flex-shrink-0">
             <div className="grid grid-cols-3 gap-4 text-center">
               <div>
                 <div className="text-2xl font-bold text-[#c41e3a]">{recommendations.total}</div>
@@ -386,7 +386,7 @@ export default function QuickWizard() {
           </div>
 
           {/* Top Picks */}
-          <div className="p-4 max-h-[300px] overflow-y-auto">
+          <div className="p-4 overflow-y-auto flex-1 min-h-0">
             <h3 className="text-sm font-semibold text-gray-600 mb-3 flex items-center gap-1">
               <Star className="w-4 h-4 text-amber-500" />
               精選推薦 Top 5
@@ -414,7 +414,7 @@ export default function QuickWizard() {
           </div>
 
           {/* Actions */}
-          <div className="p-4 border-t bg-gray-50 flex gap-3">
+          <div className="p-4 border-t bg-gray-50 flex gap-3 flex-shrink-0">
             <button
               onClick={handleReset}
               className="flex-1 flex items-center justify-center gap-2 px-4 py-2.5 border border-gray-300 text-gray-600 rounded-lg hover:bg-white transition-colors"
@@ -438,9 +438,9 @@ export default function QuickWizard() {
   // 問答步驟頁面
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="bg-[var(--card-bg)] rounded-2xl shadow-2xl w-full max-w-md overflow-hidden animate-in fade-in zoom-in duration-200">
+      <div className="bg-[var(--card-bg)] rounded-2xl shadow-2xl w-full max-w-md max-h-[90vh] flex flex-col overflow-hidden animate-in fade-in zoom-in duration-200">
         {/* Header */}
-        <div className="relative bg-gradient-to-r from-[#c41e3a] to-[#e63946] p-4 text-white">
+        <div className="relative bg-gradient-to-r from-[#c41e3a] to-[#e63946] p-4 text-white flex-shrink-0">
           <button
             onClick={handleClose}
             className="absolute top-4 right-4 p-1 hover:bg-white/20 rounded-full transition-colors"
@@ -463,8 +463,8 @@ export default function QuickWizard() {
           </p>
         </div>
 
-        {/* Content */}
-        <div className="p-6">
+        {/* Content - 添加滾動支持 */}
+        <div className="p-6 overflow-y-auto flex-1">
           <h3 className="text-xl font-bold text-[var(--foreground)] mb-1 text-center">
             {step.question}
           </h3>
@@ -521,7 +521,7 @@ export default function QuickWizard() {
         </div>
 
         {/* Footer - Selected summary */}
-        <div className="px-6 pb-4">
+        <div className="px-6 pb-4 flex-shrink-0">
           <div className="flex items-center justify-center gap-3 text-xs text-[var(--muted)] flex-wrap">
             {selections.scenario && (
               <span className="px-2 py-1 bg-[var(--accent)] rounded-full">
